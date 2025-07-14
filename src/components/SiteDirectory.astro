@@ -5,9 +5,10 @@ const hostname = typeof window !== "undefined"
   : "kumaryeri.com";
 
 let sites = [];
+const url = "https://sitesconfig.pages.dev/"
 
 try {
-  const response = await fetch("https://sitesconfig.pages.dev/sites.json");
+  const response = await fetch(url + "sites.json");
   const data = await response.json();
 
   sites = data
@@ -37,7 +38,7 @@ try {
     >
       <div class="flex-shrink-0 flex items-center justify-center">
         <img
-          src={site.icon || "https://via.placeholder.com/64"}
+          src={"https://sitesconfig.pages.dev/" + site.icon || "https://via.placeholder.com/64"}
           alt={site.name}
           class="w-24 h-24 object-contain bg-white rounded-md p-2"
         />
