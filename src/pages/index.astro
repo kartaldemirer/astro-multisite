@@ -5,46 +5,59 @@ import SiteDirectory from '../components/SiteDirectory.astro';
 import schemaData from '../../public/rich-snippet-kumaryeri.json';
 ---
 
-<html lang="tr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/icons/kumar-yeri-logo.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>2025'in En İyi Online Casino Bonusları | KumarYeri.com</title>
-		<meta name="description" content="2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!">
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/kumar-yeri-logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>2025'in En İyi Online Casino Bonusları | KumarYeri.com</title>
+    <meta name="description" content="2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!" />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </head>
 
-	</head>
-	<body class="bg-[#0f0f0f] text-white font-sans">
-    <main class="max-w-2xl mx-auto p-8">
+  <body class="bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans">
+    <main class="max-w-3xl mx-auto px-6 py-10">
       <Hero 
-        title="2025’in En İyi Casino Bonusları"
+        title="2025'in En Yüksek Bonus Veren Siteleri"
         description="Online kumarhaneler artık ayağınıza geldi. KumarYeri.com, en güncel promosyonları ve bonusları sizin için listeliyor."
         ctaText="Bonusları Keşfet"
         ctaLink="#bonuslar"
       />
-      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
-        2025'in En İyi Casino Bonusları
-      </h1>
-      <p class="mb-6 text-lg leading-relaxed">
-        KumarYeri.com, 2025 yılı itibariyle en yüksek bonus sunan online kumarhaneleri sizin için listeliyor. Artık onlarca farklı site gezip bonus aramak yerine, tüm promosyonlara tek bir yerden ulaşabilirsiniz.
-      </p>
-      <ul class="space-y-2 mb-8">
-        <li>✅ Yeni üyelik bonusları</li>
-        <li>✅ Yatırım promosyonları</li>
-        <li>✅ Slot makinelerine özel kampanyalar</li>
-        <li>✅ Güncel platform listesi</li>
-      </ul>
-      <a href="#bonuslar" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded">
-        Bonusları Keşfet
-      </a>
+
+      <section class="text-center mt-12">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-yellow-400 drop-shadow-md">
+          2025’in En İyi Casino Bonusları
+        </h2>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
+          KumarYeri.com, en güncel bonusları ve fırsatları sunan <span class="text-yellow-500 font-bold">premium casino platformlarını</span> sizin için listeliyor. Onlarca site arasında vakit kaybetmeyin, en güvenilir ve yüksek kazandıran siteler burada!
+        </p>
+
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left text-sm text-white/80 mb-10">
+          <li>🎯 %200’e varan hoş geldin bonusları</li>
+          <li>🎁 Yatırım & kayıp iade promosyonları</li>
+          <li>🧲 Slot makinelerine özel ekstra çevrimler</li>
+          <li>🏆 Sadece güvenilir lisanslı siteler</li>
+        </ul>
+
+        <a 
+          href="#bonuslar"
+          class="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105"
+        >
+          🎰 Bonusları Keşfet
+        </a>
+      </section>
+
+      <section id="bonuslar" class="mt-16">
+        <h2 class="text-2xl font-bold text-white mb-6 border-b border-yellow-500 pb-2">
+          Casino Listesi
+        </h2>
+        <SiteDirectory />
+      </section>
     </main>
 
-    <footer class="mt-12 border-t border-white/10 pt-6">
-      <div class="max-w-2xl mx-auto px-8">
-        <SiteDirectory />
-      </div>
+    <footer class="mt-16 border-t border-white/10 pt-6 text-center text-sm text-gray-500">
+      <p>&copy; 2025 KumarYeri.com — En iyi bonuslar burada!</p>
     </footer>
   </body>
 </html>

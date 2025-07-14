@@ -1,4 +1,5 @@
 ---
+// Astro component
 const hostname = typeof window !== "undefined"
   ? window.location.hostname.replace("www.", "")
   : "kumaryeri.com";
@@ -10,7 +11,7 @@ try {
   const data = await response.json();
 
   sites = data
-    .map(site => {
+    .map((site: any) => {
       const order = site.visibilityMap?.[hostname] ?? site.visibilityMap?.default;
       if (order === undefined || order === false) return null;
       return { ...site, order };
@@ -22,40 +23,49 @@ try {
 }
 ---
 
-<section class="space-y-6">
-  {sites.map(site => (
+<section id="bonuslar" class="flex flex-col gap-6 scroll-mt-20">
+  {sites.map((site: any) => (
     <a
       href={site.ref}
       target="_blank"
       rel="noopener noreferrer"
-      class="flex flex-col gap-3 p-4 rounded-xl border border-gray-700 bg-gray-900 hover:bg-gray-800 transition"
+      class={`w-full p-4 rounded-xl border transition duration-300 flex flex-col sm:flex-row gap-4
+        ${site.slotSize === 2 
+          ? 'min-h-[280px] bg-yellow-900/20 border-yellow-500 shadow-lg'
+          : 'min-h-[140px] bg-[#0a0f1c] hover:bg-[#12182b] border-gray-700'
+        }`}
     >
-      <div class="flex items-center gap-4">
+      <div class="flex-shrink-0 flex items-center justify-center">
         <img
-          src={site.icon}
+          src={site.icon || "https://via.placeholder.com/64"}
           alt={site.name}
-          loading="lazy"
-          class="w-14 h-14 object-contain rounded-md bg-white p-1"
+          class="w-24 h-24 object-contain bg-white rounded-md p-2"
         />
-
-        <div>
-          <h3 class="text-lg font-bold text-white">{site.name}</h3>
-          <p class="text-sm text-green-400 font-medium">{site.bonus}</p>
-        </div>
       </div>
 
-      <div class="flex items-center gap-2 text-sm text-yellow-400 font-medium">
-        <span>⭐ {site.rating}</span>
-        <span class="text-gray-400">({site.votes} oy)</span>
-      </div>
-
-      <div class="flex flex-wrap gap-2 mt-1">
-        {site.features.map((feature, i) => (
-          <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-600" key={i}>
-            {feature}
+      <div class="flex flex-col justify-between w-full">
+        <div class="flex items-center justify-between">
+          <h3 class={`font-bold text-white ${site.slotSize === 2 ? 'text-2xl' : 'text-lg'}`}>
+            {site.name}
+          </h3>
+          <span class="text-yellow-400">
+            ⭐ {site.rating} <span class="text-gray-400">({site.votes} oy)</span>
           </span>
-        ))}
+        </div>
+
+        <p class="text-green-400 text-sm mt-1 font-medium">{site.bonus}</p>
+
+        <div class="flex flex-wrap gap-2 mt-2">
+          {site.features.map((feature: string, i: number) => (
+            <span key={i} class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-full border border-gray-600">
+              {feature}
+            </span>
+          ))}
+        </div>
       </div>
     </a>
   ))}
 </section>
+
+
+
