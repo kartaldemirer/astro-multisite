@@ -1,0 +1,21 @@
+---
+const res = await fetch('https://7931286b.sitesconfig.pages.dev/sites.json');
+const allSites = await res.json();
+const currentHost = Astro.request.url.hostname;
+
+const filtered = allSites
+  .map(site => {
+    const order = site.visibilityMap?.[currentHost] ?? site.visibilityMap?.default;
+    if (order === false || order === undefined) return null;
+    return { ...site, order };
+  })
+  .filter(Boolean)
+  .sort((a, b) => a.order - b.order);
+---
+
+
+<ul class="flex gap-2">
+  {filtered.map(site => (
+    <li><a href={site.url}><img src={site.icon} alt={site.name} width="24" /></a></li>
+  ))}
+</ul>
