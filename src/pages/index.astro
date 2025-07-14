@@ -1,5 +1,8 @@
 ---
+import '../styles/global.css';
+import Hero from '../components/Hero.astro';
 import SiteDirectory from '../components/SiteDirectory.astro';
+import schemaData from '../../public/rich-snippet-kumaryeri.json';
 ---
 
 <html lang="tr">
@@ -10,9 +13,17 @@ import SiteDirectory from '../components/SiteDirectory.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>2025'in En İyi Online Casino Bonusları | KumarYeri.com</title>
 		<meta name="description" content="2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!">
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+
 	</head>
 	<body class="bg-[#0f0f0f] text-white font-sans">
     <main class="max-w-2xl mx-auto p-8">
+      <Hero 
+        title="2025’in En İyi Casino Bonusları"
+        description="Online kumarhaneler artık ayağınıza geldi. KumarYeri.com, en güncel promosyonları ve bonusları sizin için listeliyor."
+        ctaText="Bonusları Keşfet"
+        ctaLink="#bonuslar"
+      />
       <h1 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
         2025'in En İyi Casino Bonusları
       </h1>
