@@ -1,11 +1,13 @@
-User-Agent: *
-Allow: /
+# 2025'in En İyi Online Casino Bonusları | KumarYeri.com
 
-User-Agent: GPTBot
-Allow: /
+2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!
 
-User-Agent: ClaudeBot
-Allow: /
+## Bonuslar
 
-User-Agent: PerplexityBot
-Allow: /
+[Bonusları Keşfet](https://kumaryeri.com/#bonuslar): Bu bölümde, 2025 yılı için en iyi online kumarhanelerin sunduğu bonusları detaylı bir şekilde keşfedebilirsiniz. Üyelik bonusları ve yatırım promosyonları hakkında bilgi alarak en avantajlı fırsatları değerlendirin.
+
+[Detayları Gör](http://mrgamb.com/?modal=register&ref=mrseo): Burada, mevcut bonusların ve kampanyaların detaylarını görebilir, hangi kumarhanelerin en iyi fırsatları sunduğunu öğrenebilirsiniz.
+
+## İletişim
+
+[info@kumaryeri.com](mailto:info@kumaryeri.com): Herhangi bir sorunuz veya destek talebiniz için bu e-posta adresi üzerinden KumarYeri.com ile iletişime geçebilirsiniz.
