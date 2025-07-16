@@ -3,34 +3,34 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "name": "KumarYeri.com",
-      "url": "https://kumaryeri.com",
-      "description": "2025 yılının en yüksek bonus veren online kumarhanelerini keşfedin. Üyelik bonusları, yatırım promosyonları ve güncel kampanyalar tek bir platformda!"
+      "name": "KumarPuan.com",
+      "url": "https://kumarpuan.com",
+      "description": "2025 yılının en yüksek bonus veren online casino sitelerini keşfedin. Üyelik bonusları, yatırım promosyonları ve güncel kampanyalar tek bir platformda!"
     },
     {
       "@type": "ItemList",
-      "name": "2025'in En İyi Kumar Siteleri",
+      "name": "2025'in En İyi Casino Siteleri",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "url": "https://kumaryeri.com/betarena",
+          "url": "https://kumarpuan.com/betarena",
           "name": "BetArena",
-          "image": "https://kumaryeri.com/icons/betarena.png"
+          "image": "https://kumarpuan.com/icons/betarena.png"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "url": "https://kumaryeri.com/casinostar",
+          "url": "https://kumarpuan.com/casinostar",
           "name": "CasinoStar",
-          "image": "https://kumaryeri.com/icons/casinostar.png"
+          "image": "https://kumarpuan.com/icons/casinostar.png"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "url": "https://kumaryeri.com/luckyspin",
+          "url": "https://kumarpuan.com/luckyspin",
           "name": "LuckySpin",
-          "image": "https://kumaryeri.com/icons/luckyspin.png"
+          "image": "https://kumarpuan.com/icons/luckyspin.png"
         }
       ]
     },
@@ -47,7 +47,7 @@
       },
       "author": {
         "@type": "Organization",
-        "name": "KumarYeri.com"
+        "name": "KumarPuan.com"
       }
     },
     {
@@ -63,7 +63,7 @@
       },
       "author": {
         "@type": "Organization",
-        "name": "KumarYeri.com"
+        "name": "KumarPuan.com"
       }
     },
     {
@@ -79,7 +79,7 @@
       },
       "author": {
         "@type": "Organization",
-        "name": "KumarYeri.com"
+        "name": "KumarPuan.com"
       }
     },
     {
@@ -90,7 +90,7 @@
           "name": "Online casino bonusu nedir?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Online casino bonusu, kullanıcıların daha fazla kazanç elde etmesi için sunulan promosyonlardır. Freespin, hoşgeldin bonusu ve yatırım promosyonları en yaygın olanlardır."
+            "text": "Online casino bonusları, oyunculara sunulan freespin, hoş geldin ve yatırım kampanyaları gibi avantajlarla daha fazla kazanma şansı sunar."
           }
         },
         {
@@ -98,7 +98,7 @@
           "name": "En iyi bonus nasıl seçilir?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Çevrim şartı düşük, yatırım gerektirmeyen ve lisanslı siteler tarafından sunulan bonuslar en iyi tercihlerdir."
+            "text": "Çevrim şartı düşük, güvenilir lisanslı platformlar tarafından verilen ve yatırım zorunluluğu olmayan bonuslar her zaman daha avantajlıdır."
           }
         }
       ]
