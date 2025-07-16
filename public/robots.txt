@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /admin
+Disallow: /cdn-cgi/
 
 Sitemap: https://kumaryeri.com/sitemap.xml
