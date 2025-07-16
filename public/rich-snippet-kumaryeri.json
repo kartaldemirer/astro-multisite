@@ -81,6 +81,27 @@
         "@type": "Organization",
         "name": "KumarYeri.com"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Online casino bonusu nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Online casino bonusu, kullanıcıların daha fazla kazanç elde etmesi için sunulan promosyonlardır. Freespin, hoşgeldin bonusu ve yatırım promosyonları en yaygın olanlardır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "En iyi bonus nasıl seçilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çevrim şartı düşük, yatırım gerektirmeyen ve lisanslı siteler tarafından sunulan bonuslar en iyi tercihlerdir."
+          }
+        }
+      ]
     }
   ]
 }
