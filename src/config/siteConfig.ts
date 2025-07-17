@@ -86,7 +86,7 @@ export const siteConfig = {
   },
 
   footer: {
-    text: "© 2025 Kumar Yeri — En iyi promosyonlar burada!",
+    text: "Kumar Yeri — En iyi promosyonlar burada!",
     classes: {
       wrapper: "border-t border-gray-800 mt-12",
       container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
