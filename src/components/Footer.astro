@@ -6,5 +6,12 @@ import {siteConfig} from "../config/siteConfig";
 <footer class={siteConfig.footer.classes.wrapper}>
   <div class={siteConfig.footer.classes.container}>
     {siteConfig.footer.text}
+    <div>
+      <a href="/">Ana Sayfa</a> | 
+      <a href="/hakkimizda">Hakkımızda</a> | 
+      <a href="/iletisim">İletişim</a>
+    </div>
+    <p class="mt-4 text-xs text-gray-500">&copy; {new Date().getFullYear()} {siteConfig.siteMeta.name} — Tüm hakları saklıdır.</p>
   </div>
+  
 </footer>
