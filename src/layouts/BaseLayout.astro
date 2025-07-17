@@ -1,0 +1,62 @@
+---
+// src/layouts/BaseLayout.astro
+import { siteConfig } from "../config/siteConfig"
+import '../styles/global.css';
+const { siteMeta } = siteConfig;
+import schemaData from '../../public/rich-snippet-kumaryeri.json';
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYHJLRCXDP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FYHJLRCXDP');
+    </script>
+    
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteMeta.title}</title>
+    <meta name="description" content={siteMeta.description} />
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+    <meta name="keywords" content={siteMeta.keywords} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={siteMeta.canonical} />
+    <meta name="author" content={siteMeta.author} />
+    <meta name="publisher" content={siteMeta.publisher} />
+
+    <!-- OpenGraph meta etiketleri -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteMeta.og.siteName} />
+    <meta property="og:title" content={siteMeta.og.title} />
+    <meta property="og:description" content={siteMeta.og.description} />
+    <meta property="og:url" content={siteMeta.og.url} />
+    <meta property="og:image" content={siteMeta.og.image} />
+
+    <!-- Twitter Card etiketleri -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={siteMeta.twitter.site} />
+    <meta name="twitter:title" content={siteMeta.twitter.title} />
+    <meta name="twitter:description" content={siteMeta.twitter.description} />
+    <meta name="twitter:image" content={siteMeta.twitter.image} />
+
+    <script src="/scroll-animate.js" defer></script>
+  </head>
+  <body class={siteConfig.layout.bodyClass}>
+    <Header />
+    <main class="max-w-3xl mx-auto px-6 py-10 flex-grow">
+        <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

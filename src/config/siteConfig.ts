@@ -65,8 +65,41 @@ export const siteConfig = {
   },
 
   layout: {
-    bodyClass: "bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans"
+    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans"
   },
+
+  header: {
+    logoText: "KumarYeri",
+    nav: [
+      { name: "Ana Sayfa", href: "/" },
+      { name: "Bonuslar", href: "/#bonuslar" },
+      { name: "Hakkımızda", href: "/hakkimizda" },
+      { name: "İletişim", href: "/iletisim" }
+    ],
+    classes: {
+      wrapper: "bg-black/90 backdrop-blur border-b border-gray-800",
+      container: "max-w-7xl mx-auto px-4 py-4 flex items-center justify-between",
+      logo: "text-yellow-400 text-2xl font-extrabold",
+      navList: "flex gap-6 text-sm sm:text-base text-white",
+      navLink: "hover:text-yellow-400 transition"
+    }
+  },
+
+  footer: {
+    text: "© 2025 Kumar Yeri — En iyi promosyonlar burada!",
+    classes: {
+      wrapper: "border-t border-gray-800 mt-12",
+      container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
+    }
+  },
+
+  nav: [
+    { label: "Ana Sayfa", href: "/" },
+    { label: "Hakkımızda", href: "/hakkimizda" },
+    { label: "İletişim", href: "/iletisim" },
+    { label: "Bonuslar", href: "/#bonuslar" },
+    { label: "S.S.S.", href: "/#faq" },
+  ],
 
   hero: {
     title: "2025’in En Avantajlı Casino Bonusları",
@@ -161,5 +194,25 @@ export const siteConfig = {
       title: "Mobil Uyumlu Casino Siteleri ve Avantajları",
       description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
     },
-  ]
+  ],
+
+  about: {
+    title: "Hakkımızda",
+    content: `
+      KumarYeri.com, 2025 yılında kurulmuş, tarafsız ve güncel casino içerikleri sunmayı amaçlayan bir platformdur.
+      Amacımız, oyunculara en güvenilir siteleri ve en avantajlı promosyonları objektif biçimde sunmaktır.
+      Her liste, uzman editörler tarafından detaylı analiz edilerek hazırlanır.
+    `,
+  },
+
+  contact: {
+    title: "İletişim",
+    email: "info@kumaryeri.com",
+    phone: "+90 555 555 5555",
+    address: "İstanbul, Türkiye",
+    content: `
+      Bizimle iletişime geçmek çok kolay! Aşağıdaki kanallar üzerinden destek ekibimize ulaşabilirsiniz.
+      Her türlü görüş, öneri ve işbirliği taleplerinizi bekliyoruz.
+    `,
+  },
 };

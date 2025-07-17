@@ -1,0 +1,10 @@
+---
+// components/Footer.astro
+import {siteConfig} from "../config/siteConfig";
+---
+
+<footer class={siteConfig.footer.classes.wrapper}>
+  <div class={siteConfig.footer.classes.container}>
+    {siteConfig.footer.text}
+  </div>
+</footer>

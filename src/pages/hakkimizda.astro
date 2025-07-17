@@ -1,0 +1,16 @@
+---
+// src/pages/hakkimizda.astro
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { siteConfig } from "../config/siteConfig"
+---
+
+<BaseLayout title="Hakkımızda | KumarYeri.com" description="KumarYeri.com hakkında bilgi alın.">
+  <section class="max-w-3xl mx-auto px-4 py-20">
+    <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">
+      {siteConfig.about.title}
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-300">
+      {siteConfig.about.content}
+    </p>
+  </section>
+</BaseLayout>
