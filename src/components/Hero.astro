@@ -1,15 +1,15 @@
 ---
-const { title, description, ctaText, ctaLink } = Astro.props;
+import { siteConfig } from "../config/siteConfig";
 ---
 
-<section class="py-16 px-6 text-center bg-yellow-50 text-black rounded-3xl shadow-2xl fade-in-up">
-  <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">{title}</h1>
-  <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-800">{description}</p>
+<section class={siteConfig.hero.sectionClass}>
+  <h1 class={siteConfig.hero.titleClass}>{siteConfig.hero.title}</h1>
+  <p class={siteConfig.hero.descClass}>{siteConfig.hero.description}</p>
   <a
-    href={ctaLink}
-    class="inline-block bg-black text-yellow-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
-    title="En İyi Casino Bonusları"
+    href={siteConfig.hero.ctaLink}
+    class={siteConfig.hero.ctaClass}
+    title={siteConfig.hero.title}
   >
-    {ctaText}
+    {siteConfig.hero.ctaText}
   </a>
 </section>

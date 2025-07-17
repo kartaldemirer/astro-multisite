@@ -2,7 +2,12 @@
 import '../styles/global.css';
 import Hero from '../components/Hero.astro';
 import SiteDirectory from '../components/SiteDirectory.astro';
+import { siteConfig } from '../config/siteConfig';
+const { siteMeta } = siteConfig;
 import schemaData from '../../public/rich-snippet-kumaryeri.json';
+import PromoIntro from '../components/PromoIntro.astro';
+import Faq from '../components/Faq.astro';
+import Highlights from '../components/Highlights.astro';
 ---
 
 <html lang="tr" class="scroll-smooth">
@@ -21,184 +26,44 @@ import schemaData from '../../public/rich-snippet-kumaryeri.json';
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>2025'in En İyi Online Casino Bonusları | KumarYeri.com</title>
-    <meta name="description" content="2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!" />
+    <title>{siteMeta.title}</title>
+    <meta name="description" content={siteMeta.description} />
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    <meta name="keywords" content="online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri" />
+    <meta name="keywords" content={siteMeta.keywords} />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://kumaryeri.com/" />
-    <meta name="author" content="KumarYeri.com" />
-    <meta name="publisher" content="KumarYeri.com" />
+    <link rel="canonical" href={siteMeta.canonical} />
+    <meta name="author" content={siteMeta.author} />
+    <meta name="publisher" content={siteMeta.publisher} />
 
     <!-- OpenGraph meta etiketleri -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="KumarYeri.com" />
-    <meta property="og:title" content="2025'in En İyi Online Casino Bonusları | KumarYeri.com" />
-    <meta property="og:description" content="En güvenilir casino siteleri ve en güncel yatırım bonusları, freespin kampanyaları burada!" />
-    <meta property="og:url" content="https://kumaryeri.com/" />
-    <meta property="og:image" content="https://kumaryeri.com/social-banner.jpg" />
+    <meta property="og:site_name" content={siteMeta.og.siteName} />
+    <meta property="og:title" content={siteMeta.og.title} />
+    <meta property="og:description" content={siteMeta.og.description} />
+    <meta property="og:url" content={siteMeta.og.url} />
+    <meta property="og:image" content={siteMeta.og.image} />
 
     <!-- Twitter Card etiketleri -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@kumaryeri" />
-    <meta name="twitter:title" content="2025'in En İyi Casino Bonusları" />
-    <meta name="twitter:description" content="Bonusları kaçırma! 2025'in en güvenilir kumar siteleri ve promosyonları burada." />
-    <meta name="twitter:image" content="https://kumaryeri.com/social-banner.jpg" />
+    <meta name="twitter:site" content={siteMeta.twitter.site} />
+    <meta name="twitter:title" content={siteMeta.twitter.title} />
+    <meta name="twitter:description" content={siteMeta.twitter.description} />
+    <meta name="twitter:image" content={siteMeta.twitter.image} />
 
     <script src="/scroll-animate.js" defer></script>
   </head>
 
-  <body class="bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans">
+  <body class={siteConfig.layout.bodyClass}>
     <main class="max-w-3xl mx-auto px-6 py-10">
-      <Hero 
-        title="2025'in En Yüksek Bonus Veren Siteleri"
-        description="En iyi casinoları ve en cazip bonusları tek sayfada senin için topladık."
-        ctaText="Bonusları Keşfet"
-        ctaLink="#bonuslar"
-      />
-
-      <section class="text-center mt-16 px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 drop-shadow-lg leading-tight mb-6">
-        2025’in En İyi Casino Bonusları
-      </h2>
-
-      <p class="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
-        <strong class="text-yellow-500">KumarYeri.com</strong>, en güncel <span class="font-semibold">bonusları</span> ve <span class="font-semibold">fırsatları</span> sunan <span class="text-yellow-400 font-bold">premium casino platformlarını</span> sizin için listeliyor. Onlarca site arasında kaybolmayın, en güvenilir ve yüksek kazandıran siteler burada!
-      </p>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-left text-white/90 max-w-xl mx-auto mb-12">
-        <div class="flex items-start gap-2">
-          <span class="text-xl">🎯</span>
-          <p>%200’e varan hoş geldin bonusları</p>
-        </div>
-        <div class="flex items-start gap-2">
-          <span class="text-xl">🎁</span>
-          <p>Yatırım & kayıp iade promosyonları</p>
-        </div>
-        <div class="flex items-start gap-2">
-          <span class="text-xl">🧲</span>
-          <p>Slot makinelerine özel ekstra çevrimler</p>
-        </div>
-        <div class="flex items-start gap-2">
-          <span class="text-xl">🏆</span>
-          <p>Sadece güvenilir lisanslı siteler</p>
-        </div>
-      </div>
-
-      <a 
-        href="#bonuslar"
-        title="Bonusları Keşfet"
-        class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg"
-      >
-        🎰 Bonusları Keşfet
-      </a>
-      </section>
-
-
-      <section id="bonuslar" class="mt-16">
-        <h2 class="text-2xl font-bold text-white mb-6 border-b border-yellow-500 pb-2">
-          Casino Listesi
-        </h2>
-        <SiteDirectory />
-      </section>
-
-      <section id="faq" class="mt-24 max-w-3xl mx-auto">
-      <h2 class="text-3xl font-extrabold text-white mb-8 border-b-2 border-yellow-500 pb-3 text-center">
-        Sıkça Sorulan Sorular
-      </h2>
-
-      <div class="space-y-4">
-        <!-- SORU 1 -->
-        <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
-          <summary class="flex justify-between items-center cursor-pointer text-yellow-400 font-semibold text-lg">
-            Online casino bonusu nedir?
-            <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
-          </summary>
-          <p class="mt-2 text-gray-300 text-sm leading-relaxed">
-            Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin bonusudur.
-          </p>
-        </details>
-
-        <!-- SORU 2 -->
-        <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
-          <summary class="flex justify-between items-center cursor-pointer text-yellow-400 font-semibold text-lg">
-            En iyi bonus nasıl seçilir?
-            <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
-          </summary>
-          <p class="mt-2 text-gray-300 text-sm leading-relaxed">
-            Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu bonuslar tercih edilmelidir.
-          </p>
-        </details>
-
-        <!-- SORU 3 -->
-        <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
-          <summary class="flex justify-between items-center cursor-pointer text-yellow-400 font-semibold text-lg">
-            Bonusların çevrim şartı ne demektir?
-            <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
-          </summary>
-          <p class="mt-2 text-gray-300 text-sm leading-relaxed">
-            Kazanılan bonusun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ bonus için 2000₺ bahis yapılması gerektiği anlamına gelir.
-          </p>
-        </details>
-
-        <!-- SORU 4 -->
-        <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
-          <summary class="flex justify-between items-center cursor-pointer text-yellow-400 font-semibold text-lg">
-            Bonuslar hemen kullanılabilir mi?
-            <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
-          </summary>
-          <p class="mt-2 text-gray-300 text-sm leading-relaxed">
-            Çoğu bonus, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı siteler bonusu manuel olarak talep etmenizi ister.
-          </p>
-        </details>
-
-        <!-- SORU 5 -->
-        <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
-          <summary class="flex justify-between items-center cursor-pointer text-yellow-400 font-semibold text-lg">
-            Her oyuncu aynı bonusu alabilir mi?
-            <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
-          </summary>
-          <p class="mt-2 text-gray-300 text-sm leading-relaxed">
-            Hayır. Bazı bonuslar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır.
-          </p>
-        </details>
-      </div>
-      </section>
-
-      <section class="mt-12 space-y-8 text-gray-200 text-sm leading-relaxed">
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">Türkiye’de En Popüler Online Casino Siteleri</h3>
-        <p>Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">Hoş Geldin Bonusu Nedir, Nasıl Alınır?</h3>
-        <p>Hoş geldin bonusu, yeni üye olan kullanıcılara özel verilen bir promosyondur. Genellikle ilk para yatırma işlemine %100 bonus ya da freespin şeklinde sunulur. Bonusun geçerli olması için bazı çevrim şartları vardır. Bonus almadan önce kullanım koşullarını dikkatlice incelemek gerekir.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">En İyi Casino Sitelerini Nasıl Seçiyoruz?</h3>
-        <p>KumarYeri.com olarak, her siteyi detaylı kriterlere göre değerlendiriyoruz: lisans durumu, bonus miktarı, ödeme hızı, kullanıcı yorumları ve müşteri desteği başlıca kriterlerimizdir. Sadece güvenilirliği kanıtlanmış platformlara sitemizde yer veriyoruz.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">%100 Bonus Veren Siteler Gerçek mi?</h3>
-        <p>Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında bonus sunar. Bu tür bonuslar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu bonusları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">Freespin ile Oynanabilecek Popüler Slot Oyunları</h3>
-        <p>Freespin bonusu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Bonusun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">Çevrim Şartsız Bonus Nedir, Gerçekten Var mı?</h3>
-        <p>Çevrim şartsız bonuslar, kazandığınız tutarı doğrudan çekebileceğiniz anlamına gelir. Ancak bu tür kampanyalar oldukça nadirdir. Bazı siteler “çevrim şartsız” ifadesini pazarlama amacıyla kullansa da, detaylara inildiğinde belirli şartların olduğu görülür. KumarYeri.com olarak bu konudaki tüm detayı şeffaf şekilde sunarız.</p>
-      </div>
-      <div>
-        <h3 class="text-lg text-yellow-400 font-semibold mb-1">Mobil Uyumlu Casino Siteleri ve Avantajları</h3>
-        <p>Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve bonuslara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar.</p>
-      </div>
-    </section>
+      <Hero />
+      <PromoIntro />
+      <SiteDirectory />
+      <Faq />
+      <Highlights />
     </main>
 
     <footer class="py-6 border-t border-white/10 pt-6 text-center text-sm text-gray-500">
-      <p>&copy; 2025 KumarYeri.com — En iyi bonuslar burada!</p>
+      <p>&copy; 2025 {siteConfig.siteMeta.name} — En iyi promosyonlar burada!</p>
     </footer>
   </body>
 </html>

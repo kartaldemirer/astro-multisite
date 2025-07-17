@@ -1,0 +1,15 @@
+---
+import { siteConfig } from '../config/siteConfig';
+const highlights = siteConfig.highlights
+---
+
+<section class="mt-12 space-y-8 text-gray-200 text-sm leading-relaxed">
+  {highlights.map((item, index) => (
+    <div>
+      <h3 class={`text-lg font-semibold mb-1 ${siteConfig.theme.text.highlight}`}>
+        {item.title}
+      </h3>
+      <p set:html={item.description} />
+    </div>
+  ))}
+</section>

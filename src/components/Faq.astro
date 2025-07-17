@@ -1,0 +1,24 @@
+---
+import { siteConfig } from "../config/siteConfig";
+const faqs = siteConfig.faq
+---
+
+<section id="faq" class="mt-24 max-w-3xl mx-auto">
+  <h2 class={`text-3xl font-extrabold ${siteConfig.theme.faq.heading} mb-8 border-b-2 ${siteConfig.theme.faq.border} pb-3 text-center`}>
+    Sıkça Sorulan Sorular
+  </h2>
+
+ <div class="space-y-4">
+    {faqs.map((item, index) => (
+      <details class={`group ${siteConfig.theme.faq.box}`} key={index}>
+        <summary class={`flex justify-between items-center cursor-pointer ${siteConfig.theme.faq.question}`}>
+          {item.question}
+          <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
+        </summary>
+        <p class={`mt-2 ${siteConfig.theme.faq.answer}`}>
+          {item.answer}
+        </p>
+      </details>
+    ))}
+  </div>
+</section>
