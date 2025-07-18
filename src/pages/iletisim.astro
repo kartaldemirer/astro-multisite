@@ -1,19 +1,26 @@
 ---
-// src/pages/iletisim.astro
-import BaseLayout from "../layouts/BaseLayout.astro"
-import { siteConfig } from "../config/siteConfig"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+
+const { contact } = siteConfig;
+const meta = siteConfig.pages.contact;
 ---
 
-<BaseLayout title="İletişim | KumarYeri.com" description="KumarYeri.com ile iletişime geçin.">
+<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
   <section class="max-w-3xl mx-auto px-4 py-20">
     <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">
-      {siteConfig.contact.title}
+      {contact.title}
     </h1>
     <p class="text-lg leading-relaxed text-gray-300 mb-6">
-      {siteConfig.contact.content}
+      {contact.content}
     </p>
     <ul class="text-white space-y-2 text-lg">
-      <li><strong>E-posta:</strong> <a href={`mailto:${siteConfig.contact.email}`} class="underline text-yellow-300">{siteConfig.contact.email}</a></li>
+      <li>
+        <strong>E-posta:</strong>
+        <a href={`mailto:${contact.email}`} class="underline text-yellow-300">
+          {contact.email}
+        </a>
+      </li>
     </ul>
   </section>
 </BaseLayout>

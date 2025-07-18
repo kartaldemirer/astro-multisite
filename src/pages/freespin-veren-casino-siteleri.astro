@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+import SiteDirectory from "../components/SiteDirectory.astro";
+
+const meta = siteConfig.pages.freespin;
+const { title, content, sites } = siteConfig.freespin;
+---
+
+<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
+  <section class="max-w-4xl mx-auto">
+    <h2 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    {siteConfig.freespin.title}
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">{content}</p>
+  </section>
+
+  <SiteDirectory />
+</BaseLayout>

@@ -1,62 +1,72 @@
 ---
-// src/layouts/BaseLayout.astro
-import { siteConfig } from "../config/siteConfig"
-import '../styles/global.css';
+import { siteConfig } from "../config/siteConfig";
+import "../styles/global.css";
 const { siteMeta } = siteConfig;
 import schemaData from '../../public/rich-snippet-kumaryeri.json';
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+// Sayfa bazlı meta değerleri
+const {
+  title = siteMeta.title,
+  description = siteMeta.description,
+  keywords = siteMeta.keywords,
+  canonical = siteMeta.canonical,
+  og = siteMeta.og,
+  twitter = siteMeta.twitter,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYHJLRCXDP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-FYHJLRCXDP');
     </script>
-    
+
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{siteMeta.title}</title>
-    <meta name="description" content={siteMeta.description} />
-    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    <meta name="keywords" content={siteMeta.keywords} />
+    
+    <!-- Dynamic Meta -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href={siteMeta.canonical} />
     <meta name="author" content={siteMeta.author} />
     <meta name="publisher" content={siteMeta.publisher} />
 
-    <!-- OpenGraph meta etiketleri -->
+    <!-- OpenGraph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={siteMeta.og.siteName} />
-    <meta property="og:title" content={siteMeta.og.title} />
-    <meta property="og:description" content={siteMeta.og.description} />
-    <meta property="og:url" content={siteMeta.og.url} />
-    <meta property="og:image" content={siteMeta.og.image} />
+    <meta property="og:site_name" content={og.siteName} />
+    <meta property="og:title" content={og.title} />
+    <meta property="og:description" content={og.description} />
+    <meta property="og:url" content={og.url} />
+    <meta property="og:image" content={og.image} />
 
-    <!-- Twitter Card etiketleri -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content={siteMeta.twitter.site} />
-    <meta name="twitter:title" content={siteMeta.twitter.title} />
-    <meta name="twitter:description" content={siteMeta.twitter.description} />
-    <meta name="twitter:image" content={siteMeta.twitter.image} />
+    <meta name="twitter:site" content={twitter.site} />
+    <meta name="twitter:title" content={twitter.title} />
+    <meta name="twitter:description" content={twitter.description} />
+    <meta name="twitter:image" content={twitter.image} />
 
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
     <script src="/scroll-animate.js" defer></script>
   </head>
   <body class={siteConfig.layout.bodyClass}>
     <Header />
     <main class="max-w-3xl mx-auto px-6 py-10 flex-grow">
-        <slot />
+      <slot />
     </main>
-
     <Footer />
   </body>
 </html>

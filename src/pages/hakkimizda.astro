@@ -1,16 +1,26 @@
 ---
-// src/pages/hakkimizda.astro
-import BaseLayout from "../layouts/BaseLayout.astro"
-import { siteConfig } from "../config/siteConfig"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+
+const { about } = siteConfig;
+const meta = siteConfig.pages.about;
 ---
 
-<BaseLayout title="Hakkımızda | KumarYeri.com" description="KumarYeri.com hakkında bilgi alın.">
+<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
   <section class="max-w-3xl mx-auto px-4 py-20">
     <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">
-      {siteConfig.about.title}
+      {about.title}
     </h1>
-    <p class="text-lg leading-relaxed text-gray-300">
-      {siteConfig.about.content}
+    <p class="text-lg leading-relaxed text-gray-300 mb-6">
+      {about.content}
     </p>
+    <ul class="text-white space-y-2 text-lg">
+      <li>
+        <strong>E-posta:</strong>
+        <a href={`mailto:${siteConfig.siteMeta.email}`} class="underline text-yellow-300">
+          {siteConfig.siteMeta.email}
+        </a>
+      </li>
+    </ul>
   </section>
 </BaseLayout>

@@ -1,14 +1,14 @@
 export const siteConfig = {
   siteMeta: {
     name: "Kumar Yeri",
-    url: "https://kumarpuan.com",
+    url: "https://kumayeri.com",
     title: "2025’in En Güvenilir Oyun Siteleri ve Özel Üyelik Fırsatları",
     description: "En güncel üyelik avantajlarını ve promosyon sunan lisanslı oyun platformlarını 2025 yılı için keşfedin. Tüm fırsatlar tek sayfada toplandı.",
     keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
     canonical: "https://kumaryeri.com/",
-    email: "info@kumarpuan.com",
+    email: "info@kumayeri.com",
     og: {
       siteName: "KumarYeri.com",
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
@@ -21,6 +21,29 @@ export const siteConfig = {
       title: "2025'in En İyi Casino Bonusları",
       description: "Bonusları kaçırma! 2025'in en güvenilir kumar siteleri ve promosyonları burada.",
       image: "https://kumaryeri.com/social-banner.jpg"
+    }
+  },
+
+  pages: {
+    home: {
+      title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
+      description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
+      canonical: "https://kumaryeri.com/"
+    },
+    about: {
+      title: "Hakkımızda | KumarYeri.com",
+      description: "KumarYeri.com, tarafsız ve güncel içerikleriyle güvenilir casino ve bahis sitelerini inceleyip sıralar. Doğru seçim için buradayız.",
+      canonical: "https://kumaryeri.com/hakkimizda"
+    },
+    contact: {
+      title: "İletişim | KumarYeri.com",
+      description: "Görüş, öneri ya da iş birliği için bize ulaşın. KumarYeri ekibi her zaman destek olmaya hazır.",
+      canonical: "https://kumaryeri.com/iletisim"
+    },
+    freespin: {
+      title: "2025’te En Çok Freespin Veren Casino Siteleri | KumarYeri.com",
+      description: "Bedava dönüş fırsatlarını kaçırmayın! En avantajlı freespin bonuslarını sunan güvenilir siteleri burada listeledik.",
+      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri"
     }
   },
 
@@ -215,4 +238,23 @@ export const siteConfig = {
       Her türlü görüş, öneri ve işbirliği taleplerinizi bekliyoruz.
     `,
   },
+
+  freespin: {
+    title: "En Çok Freespin Veren Siteler (2025)",
+    content: `Freespin veren casino siteleri, oyuncuların hiçbir yatırım yapmadan gerçek slot deneyimi yaşamasını sağlar. Bu sayfada, 2025 yılında en çok bedava dönüş (freespin) sunan ve kullanıcılar tarafından en çok tercih edilen casino platformlarını listeliyoruz.
+
+Her bir site, freespin kampanyaları, yatırım bonusu oranları, lisans bilgisi ve kullanıcı yorumlarına göre tarafımızdan analiz edilmiştir. Özellikle Türk kullanıcılar için optimize edilmiş, mobil uyumlu ve 7/24 destek sunan platformlara öncelik verdik.
+
+Listelenen siteler, MGA veya Curacao gibi uluslararası lisanslara sahiptir ve güvenilir altyapılar kullanır. Giriş sonrası freespin alabilmek için bazı platformlarda doğrulama süreci gerekebilir. Bu tür detayları da açıklamalar bölümünde belirttik.
+
+Unutmayın: Freespin ile elde edilen kazançlar bile çevrim şartına tabidir. Bu yüzden, bonus şartlarını dikkatlice okumanız önemlidir.
+
+En iyi freespin fırsatlarını kaçırmamak ve güncel promosyonlardan anında haberdar olmak için sayfamızı sık sık ziyaret etmeyi unutmayın.`,
+
+    sites: [
+      { name: "Spinco", bonus: "5000₺ + 250 FS", url: "https://..." },
+      { name: "Hayalbahis", bonus: "1000₺ + 50 FS", url: "https://..." },
+      { name: "Vaycasino", bonus: "2025₺ + 100 FS", url: "https://..." }
+    ]
+  }
 };
