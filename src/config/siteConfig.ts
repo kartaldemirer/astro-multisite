@@ -220,12 +220,57 @@ export const siteConfig = {
   ],
 
   about: {
-    title: "Hakkımızda",
+  title: "Hakkımızda",
+  content: `
+  KumarYeri.com, 2025 yılında kurulmuş; tarafsız, güncel ve kullanıcı odaklı casino rehberliği sunan bağımsız bir platformdur.
+
+  Amacımız, oyunculara yalnızca lisanslı ve güvenilir casino sitelerini tanıtmak; freespin, kayıt bonusu ve yatırım promosyonları gibi avantajları şeffaf biçimde karşılaştırmaktır.
+
+  Tüm içerikler, sektörde 10 yılı aşkın deneyime sahip editörümüz **Kumar Yeri Ekibimiz** tarafından manuel olarak hazırlanmakta, kaynaklarıyla birlikte düzenli olarak güncellenmektedir.
+
+  Hiçbir içerik reklam kaygısıyla öne çıkarılmaz. Platformumuzun etik ilkesi: “Kullanıcı ne görüyorsa, sistem de onu bilir.”
+
+  Yasa dışı oyunları teşvik etmeyiz. 18 yaş altındaki bireylerin sitemizi kullanması yasaktır. Tüm yönlendirmeler, kullanıcı sorumluluğundadır.
+  `
+  },
+
+  disclaimer: {
+    title: "Sorumluluk Reddi",
     content: `
-      KumarYeri.com, 2025 yılında kurulmuş, tarafsız ve güncel casino içerikleri sunmayı amaçlayan bir platformdur.
-      Amacımız, oyunculara en güvenilir siteleri ve en avantajlı promosyonları objektif biçimde sunmaktır.
-      Her liste, uzman editörler tarafından detaylı analiz edilerek hazırlanır.
-    `,
+  KumarYeri.com, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.
+
+  Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.
+
+  Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.
+
+  18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
+  `
+  },
+
+  privacy: {
+    title: "Gizlilik Politikası",
+    content: `
+  KumarYeri.com olarak ziyaretçilerimizin gizliliğine önem veriyoruz. Bu gizlilik politikası, sitemizi ziyaret ettiğinizde hangi bilgilerin toplandığını, nasıl kullanıldığını ve nasıl korunduğunu açıklar.
+
+  ## Çerezler (Cookies)
+
+  Sitemiz, kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanabilir. Bu çerezler, kişisel bilgi içermez ve yalnızca analiz ve performans takibi için kullanılır. Tarayıcı ayarlarınızdan çerezleri reddedebilirsiniz.
+
+  ## Kişisel Veri Toplama
+
+  KumarYeri.com üzerinden kullanıcıdan hiçbir doğrudan kişisel bilgi toplanmaz. İletişim için sağladığınız e-posta adresleri yalnızca cevap verme amaçlıdır ve üçüncü kişilerle paylaşılmaz.
+
+  ## Üçüncü Taraf Bağlantılar
+
+  Sitemizde yönlendirme yapılan üçüncü taraf web sitelerinin gizlilik politikaları bize ait değildir. Bu sitelere gitmeden önce ilgili sitelerin kendi politikalarını incelemenizi öneririz.
+
+  ## Analiz Araçları
+
+  Ziyaretçi istatistikleri, anonim şekilde toplanır (ör. IP, cihaz türü, sayfa görüntüleme). Bu bilgiler sadece genel analiz içindir.
+
+  Gizlilik ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:
+  📧 info@kumaryeri.com
+  `
   },
 
   contact: {

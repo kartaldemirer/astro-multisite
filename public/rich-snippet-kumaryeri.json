@@ -2,10 +2,75 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "name": "KumarYeri.com",
+      "url": "https://kumaryeri.com",
+      "logo": "https://kumaryeri.com/logo.png",
+      "email": "info@kumaryeri.com",
+      "sameAs": [
+        "https://twitter.com/kumaryericom",
+        "https://www.linkedin.com/company/kumaryericom"
+      ]
+    },
+     {
       "@type": "WebSite",
       "name": "KumarYeri.com",
       "url": "https://kumaryeri.com",
       "description": "2025 yılının en yüksek bonus veren online kumarhanelerini keşfedin. Üyelik bonusları, yatırım promosyonları ve güncel kampanyalar tek bir platformda!"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Ana Sayfa",
+      "url": "https://kumaryeri.com",
+      "isPartOf": {
+        "@id": "https://kumaryeri.com"
+      },
+      "inLanguage": "tr",
+      "about": {
+        "@type": "Organization",
+        "name": "KumarYeri.com"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Anasayfa",
+          "item": "https://kumaryeri.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "En İyi Casino Siteleri",
+          "item": "https://kumaryeri.com/freespin-veren-casino-siteleri"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hakkımızda",
+          "item": "https://kumaryeri.com/hakkimizda"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "İletişim",
+          "item": "https://kumaryeri.com/iletisim"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Gizlilik Politikası",
+          "item": "https://kumaryeri.com/gizlilik-politikasi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Sorumluluk Reddi",
+          "item": "https://kumaryeri.com/sorumluluk-reddi"
+        }
+      ]
     },
     {
       "@type": "ItemList",

@@ -1,5 +1,13 @@
 User-agent: *
 Disallow: /admin
 Disallow: /cdn-cgi/
+Allow: /
+
+# SEO için önerilen yollar
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://kumaryeri.com/sitemap-index.xml

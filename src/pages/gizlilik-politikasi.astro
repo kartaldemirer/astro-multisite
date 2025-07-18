@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+
+const meta = {
+  title: siteConfig.privacy.title + " | KumarYeri.com",
+  description: "KumarYeri.com gizlilik politikası. Hangi verilerin toplandığını ve nasıl korunduğunu öğrenin.",
+  canonical: "https://kumaryeri.com/gizlilik-politikasi"
+};
+
+const { privacy } = siteConfig;
+---
+
+<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
+  <section class="max-w-3xl mx-auto px-4 py-20">
+    <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">{privacy.title}</h1>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">{privacy.content}</p>
+  </section>
+</BaseLayout>
