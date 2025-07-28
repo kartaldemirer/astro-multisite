@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  site: 'https://kumaryeri.com/', // Mutlaka eklenmeli!
+  site: 'https://kumaryeri.com', // Mutlaka eklenmeli!
   trailingSlash: 'always', 
   output: 'static', 
   integrations: [sitemap({
