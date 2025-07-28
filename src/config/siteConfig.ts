@@ -28,7 +28,7 @@ export const siteConfig = {
     home: {
     title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
     description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
-    canonical: "https://kumaryeri.com/",
+    canonical: "https://kumaryeri.com",
     schemaType: "WebPage"
   },
 
