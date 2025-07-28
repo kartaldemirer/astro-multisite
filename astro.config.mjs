@@ -7,7 +7,9 @@ export default defineConfig({
   site: 'https://kumaryeri.com', // Mutlaka eklenmeli!
   trailingSlash: 'never', 
   output: 'static', 
-  integrations: [sitemap()],
+  integrations: [sitemap({
+      filter: (page) => !page.includes('/admin'), // örnek filtre
+    }),],
   vite: {
     plugins: [tailwindcss()]
   }
