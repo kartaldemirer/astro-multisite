@@ -308,10 +308,10 @@ export const siteConfig = {
 
   nav: [
     { label: "Ana Sayfa", href: "/" },
-    { label: "Hakkımızda", href: "/hakkimizda" },
-    { label: "İletişim", href: "/iletisim" },
-    { label: "Bonuslar", href: "/#bonuslar" },
-    { label: "S.S.S.", href: "/#faq" },
+    { label: "Hakkımızda", href: "/hakkimizda/" },
+    { label: "İletişim", href: "/iletisim/" },
+    { label: "Bonuslar", href: "/#bonuslar/" },
+    { label: "S.S.S.", href: "/#faq/" },
   ],
 
   hero: {
