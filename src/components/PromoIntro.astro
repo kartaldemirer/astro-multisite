@@ -1,21 +1,31 @@
 ---
 // src/components/PromoIntro.astro
-import { siteConfig } from "../config/siteConfig"
-const { promoIntro } = siteConfig
+import { siteConfig } from "../config/siteConfig";
+const { promoIntro } = siteConfig;
 ---
 
 <section class="text-center mt-16 px-4 sm:px-6 lg:px-8">
-  <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mb-6" class:list={[promoIntro.titleClass]}>
-    {promoIntro.title}
+  <!-- Başlık -->
+  <h2 class:list={[
+    "text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mb-6",
+    promoIntro.titleClass
+  ]}>
+    <a href='/' title='2025’in En İyi Casino Promosyonları'>{promoIntro.title}</a>
   </h2>
 
-  <p class="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-10" class:list={[promoIntro.descriptionClass]}>
+  <!-- Açıklama -->
+  <p class:list={[
+    "text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-10",
+    promoIntro.descriptionClass
+  ]}>
     <strong class={promoIntro.brandClass}>{promoIntro.brand}</strong>,
-    en güncel <span class="font-semibold">promosyonları</span> ve <span class="font-semibold">fırsatları</span> sunan
+    en güncel <span class="font-semibold">promosyonları</span> ve
+    <span class="font-semibold">fırsatları</span> sunan
     <span class={promoIntro.highlightClass}> premium casino platformlarını</span> sizin için listeliyor.
     Onlarca site arasında kaybolmayın, en güvenilir ve yüksek kazandıran siteler burada!
   </p>
 
+  <!-- Özellikler -->
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-left max-w-xl mx-auto mb-12">
     {promoIntro.features.map((item) => (
       <div class="flex items-start gap-2">
@@ -25,6 +35,7 @@ const { promoIntro } = siteConfig
     ))}
   </div>
 
+  <!-- CTA Butonu -->
   <a 
     href={promoIntro.ctaLink}
     title={promoIntro.ctaTitle}

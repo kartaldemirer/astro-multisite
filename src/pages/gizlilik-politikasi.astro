@@ -2,18 +2,55 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { siteConfig } from "../config/siteConfig";
 
-const meta = {
-  title: siteConfig.privacy.title + " | KumarYeri.com",
-  description: "KumarYeri.com gizlilik politikası. Hangi verilerin toplandığını ve nasıl korunduğunu öğrenin.",
-  canonical: "https://kumaryeri.com/gizlilik-politikasi"
-};
-
-const { privacy } = siteConfig;
+const page = siteConfig.pages.privacy;
 ---
 
-<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
-  <section class="max-w-3xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">{privacy.title}</h1>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">{privacy.content}</p>
-  </section>
+<BaseLayout 
+  title={page.title} 
+  description={page.description} 
+  canonical={page.canonical} 
+  schemaType={page.schemaType}
+  keywords={page.keywords}
+>
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>
+      {page.heading}
+    </h1>
+
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      KumarYeri.com olarak ziyaretçilerimizin gizliliğini korumak en önemli önceliklerimizden biridir. Bu politika, hangi bilgileri topladığımızı, bunları nasıl kullandığımızı ve nasıl koruduğumuzu açıklar.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Toplanan Bilgiler</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Sitemizi ziyaret ettiğinizde IP adresi, tarayıcı türü, cihaz bilgisi gibi anonim veriler toplanabilir. Bu bilgiler yalnızca istatistiksel analiz ve site performansı için kullanılır.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Çerezler (Cookies)</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Sitemiz, kullanıcı deneyimini geliştirmek için çerezler kullanır. Çerezleri tarayıcı ayarlarınızdan devre dışı bırakabilirsiniz.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Kişisel Bilgi Paylaşımı</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      KumarYeri.com üzerinden doğrudan kişisel bilgi toplanmaz. İletişim formu aracılığıyla sağlanan e-posta adresleri sadece yanıt vermek için kullanılır ve üçüncü taraflarla paylaşılmaz.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Üçüncü Taraf Bağlantılar</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Sitemiz, üçüncü taraf platformlara yönlendiren bağlantılar içerir. Bu sitelerin içerikleri ve gizlilik politikaları bizim sorumluluğumuzda değildir.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Veri Güvenliği</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Kullanıcı bilgilerinin korunması için modern güvenlik önlemleri uygulanmaktadır. Ancak, internet üzerinden iletilen verilerin %100 güvenliği garanti edilemez.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Politika Güncellemeleri</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Gizlilik politikası gerektiğinde güncellenebilir. Güncellemeler bu sayfada yayınlanır.
+    </p>
+
+    <p>Daha fazla bilgi için bize ulaşın: <a href="mailto:{siteConfig.siteMeta.email}" class="text-yellow-300 underline">{siteConfig.siteMeta.email}</a></p>
+  </article>
 </BaseLayout>

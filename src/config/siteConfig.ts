@@ -1,14 +1,14 @@
 export const siteConfig = {
   siteMeta: {
     name: "Kumar Yeri",
-    url: "https://kumayeri.com",
+    url: "https://kumaryeri.com",
     title: "2025’in En Güvenilir Oyun Siteleri ve Özel Üyelik Fırsatları",
     description: "En güncel üyelik avantajlarını ve promosyon sunan lisanslı oyun platformlarını 2025 yılı için keşfedin. Tüm fırsatlar tek sayfada toplandı.",
     keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
     canonical: "https://kumaryeri.com/",
-    email: "info@kumayeri.com",
+    email: "info@kumaryeri.com",
     og: {
       siteName: "KumarYeri.com",
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
@@ -26,25 +26,215 @@ export const siteConfig = {
 
   pages: {
     home: {
-      title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
-      description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
-      canonical: "https://kumaryeri.com/"
-    },
+    title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
+    description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
+    canonical: "https://kumaryeri.com/",
+    schemaType: "WebPage"
+  },
+
     about: {
       title: "Hakkımızda | KumarYeri.com",
-      description: "KumarYeri.com, tarafsız ve güncel içerikleriyle güvenilir casino ve bahis sitelerini inceleyip sıralar. Doğru seçim için buradayız.",
-      canonical: "https://kumaryeri.com/hakkimizda"
+      description: "KumarYeri.com, güvenilir casino rehberleri ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
+      keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
+      canonical: "https://kumaryeri.com/hakkimizda",
+      heading: "Hakkımızda",
+      schemaType: "AboutPage"
     },
     contact: {
       title: "İletişim | KumarYeri.com",
-      description: "Görüş, öneri ya da iş birliği için bize ulaşın. KumarYeri ekibi her zaman destek olmaya hazır.",
-      canonical: "https://kumaryeri.com/iletisim"
+      description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
+      keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
+      canonical: "https://kumaryeri.com/iletisim",
+      heading: "Bizimle İletişime Geçin",
+      schemaType: "ContactPage"
+    },
+    privacy: {
+      title: "Gizlilik Politikası | KumarYeri.com",
+      description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
+      keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
+      canonical: "https://kumaryeri.com/gizlilik-politikasi",
+      heading: "Gizlilik Politikası",
+      schemaType: "WebPage"
     },
     freespin: {
-      title: "2025’te En Çok Freespin Veren Casino Siteleri | KumarYeri.com",
-      description: "Bedava dönüş fırsatlarını kaçırmayın! En avantajlı freespin bonuslarını sunan güvenilir siteleri burada listeledik.",
-      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri"
-    }
+      title: "Freespin Veren Casino Siteleri (2025) | KumarYeri.com",
+      description: "En iyi freespin fırsatlarını keşfedin! Yatırım gerektirmeyen bedava dönüş promosyonları burada.",
+      keywords: "freespin veren siteler 2025, çevrim şartsız freespin bonusu, bedava freespin veren casino siteleri, yatırımsız freespin bonusu 2025, en iyi freespin fırsatları, 2025 casino bonusları ve freespinler, güncel freespin promosyonları, mobil freespin veren siteler, freespin kazanma yöntemleri, ücretsiz slot dönüş bonusu",
+      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri",
+      heading: "2025’te En Çok Freespin Veren Casino Siteleri",
+      extra: {
+        faq: [
+          { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan promosyon türüdür. Genellikle hoş geldin bonusları ile birlikte verilir." },
+          { question: "Çevrim şartsız freespin var mı?", answer: "Evet, çevrim şartsız freespin fırsatları bulunabilir ancak oldukça nadirdir. Genelde özel kampanya dönemlerinde sunulur." },
+          { question: "Yatırımsız freespin bonusu nasıl alınır?", answer: "Yatırımsız freespin bonusu, kayıt olduğunuzda veya belirli bir promosyon kodu ile aktif edilir. Her platformun şartları farklıdır." },
+          { question: "Mobilde freespin kullanabilir miyim?", answer: "Evet, listemizdeki tüm siteler mobil uyumludur. Freespinler hem iOS hem de Android cihazlarda kullanılabilir." },
+          { question: "Freespin ile hangi slot oyunlarını oynayabilirim?", answer: "En popüler oyunlar arasında Sweet Bonanza, Gates of Olympus ve Book of Dead bulunur. Kampanya detaylarında geçerli oyunlar belirtilir." },
+          { question: "Freespin kazançları nasıl çekilir?", answer: "Freespin ile kazandığınız tutarlar, çevrim şartını tamamladıktan sonra çekilebilir. Çevrim oranı genelde 20x-40x arası değişir." },
+          { question: "Freespin veren siteler güvenilir mi?", answer: "Bizim listemizde yer alan tüm siteler lisanslı ve bağımsız denetimden geçmiştir. MGA ve Curacao lisansına sahip platformlar tercih edilmelidir." },
+          { question: "En çok freespin veren siteler hangileri?", answer: "Spinco, Hayalbahis ve Vaycasino 2025 yılında en çok freespin sunan siteler arasında yer alıyor." },
+          { question: "Freespin kampanyaları ne kadar sürer?", answer: "Çoğu freespin promosyonu belirli bir süreyle sınırlıdır, genellikle 7 gün. Süresi dolmadan kullanmak önemlidir." },
+          { question: "Freespinler sadece yeni üyeler için mi geçerli?", answer: "Hayır, bazı freespin kampanyaları mevcut üyelere de sunulur. VIP kullanıcılar daha fazla avantaj elde eder." }
+        ],
+
+        highlights: [
+          { 
+            title: "Freespin Veren Siteler 2025", 
+            description: "2025 yılında en çok freespin sunan ve güvenilir lisansa sahip online casino sitelerini inceledik." 
+          },
+          { 
+            title: "Çevrim Şartı Detayları", 
+            description: "Freespin kazançlarının çekilebilir olması için gereken çevrim oranlarını ve örnek hesaplamaları öğrenin." 
+          },
+          { 
+            title: "Yatırımsız Freespin Fırsatları", 
+            description: "Para yatırmadan alınabilen freespin bonuslarını ve bu kampanyaların avantajlarını keşfedin." 
+          },
+          { 
+            title: "Mobil Freespin Kullanımı", 
+            description: "iOS ve Android cihazlarda freespin bonuslarının nasıl kullanılabileceğini detaylıca anlattık." 
+          },
+          { 
+            title: "Çevrim Şartsız Freespin Bonusları", 
+            description: "Çevrim şartsız freespin promosyonlarının gerçek olup olmadığını ve nasıl bulunacağını açıklıyoruz." 
+          },
+          { 
+            title: "En Popüler Slot Oyunları", 
+            description: "Sweet Bonanza, Gates of Olympus ve Book of Dead gibi freespinle oynanabilecek en popüler oyunları keşfedin." 
+          },
+          { 
+            title: "VIP Oyuncular İçin Özel Freespinler", 
+            description: "VIP üyeler için sunulan ekstra freespin kampanyalarını listeledik." 
+          },
+          { 
+            title: "Freespin Kazançları ve Çekim Süreci", 
+            description: "Kazançlarınızı nasıl nakde çevirebileceğinizi ve hangi adımları izlemeniz gerektiğini öğrenin." 
+          }
+        ],
+      }
+    },
+    freespin2: {
+      title: "2025’te En Çok Freespin Veren Siteler | KumarYeri.com",
+      description: "2025 yılında en çok freespin fırsatı sunan güvenilir siteleri keşfedin! Çevrim şartsız bonuslar, yatırımsız freespin kampanyaları ve VIP avantajlar burada.",
+      keywords: "freespin veren siteler 2025, en çok freespin sunan casino siteleri, çevrim şartsız freespin bonusları, yatırımsız freespin kampanyaları, mobil freespin veren siteler, bedava spin bonusları 2025, Sweet Bonanza freespin fırsatları, VIP freespin avantajları, güvenilir freespin platformları, en iyi freespin promosyonları",
+      canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025",
+      heading: "2025’te En Çok Freespin Veren Siteler",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan bir promosyondur. Genellikle hoş geldin bonusları ile birlikte verilir." },
+          { question: "Çevrim şartsız freespin var mı?", answer: "Evet, çevrim şartsız freespin promosyonları bulunabilir ancak nadirdir ve genellikle kısa süreli kampanyalar şeklinde sunulur." },
+          { question: "Yatırımsız freespin nasıl alınır?", answer: "Bazı siteler kayıt işlemi sonrası yatırım gerektirmeden freespin sunar. Şartlar platforma göre değişiklik gösterebilir." },
+          { question: "Mobilde freespin kullanabilir miyim?", answer: "Evet, listemizdeki tüm siteler mobil uyumludur ve freespinleri hem iOS hem de Android cihazlarda kullanabilirsiniz." },
+          { question: "Freespin kazançları nasıl çekilir?", answer: "Kazançlarınızı çekmek için kampanyada belirtilen çevrim şartlarını yerine getirmeniz gerekir. Oranlar genellikle 20x-40x arasıdır." },
+          { question: "En çok freespin veren siteler hangileri?", answer: "2025 yılında Spinco, Hayalbahis ve Vaycasino en yüksek freespin sunan platformlar arasında yer alıyor." },
+          { question: "Freespinler ne kadar süre geçerli?", answer: "Freespin promosyonları genelde 7 gün geçerlidir. Süresi dolmadan kullanmak önemlidir." },
+          { question: "Hangi oyunlarda freespin kullanılabilir?", answer: "En popüler oyunlar Sweet Bonanza, Gates of Olympus ve Book of Dead'dir. Kampanya detaylarında belirtilir." },
+          { question: "VIP kullanıcılar için özel freespin var mı?", answer: "Evet, bazı siteler VIP üyelerine ekstra freespin ve özel promosyonlar sunar." },
+          { question: "Freespin veren siteler güvenilir mi?", answer: "Listemizde yer alan tüm siteler lisanslı, denetimli ve güvenilir ödeme yöntemleri sunan platformlardır." }
+        ],
+        highlights: [
+          { title: "Freespin Veren Siteler 2025", description: "Bu rehberde, 2025 yılında en çok freespin sunan ve lisanslı platformları detaylıca inceledik." },
+          { title: "Çevrim Şartları ve Detaylar", description: "Kazançların çekilebilmesi için gerekli olan çevrim şartlarını ve hesaplama yöntemlerini açıklıyoruz." },
+          { title: "Yatırımsız Freespin Fırsatları", description: "Para yatırmadan elde edebileceğiniz freespin kampanyalarını listeledik." },
+          { title: "Mobil Uyumlu Freespin Promosyonları", description: "Freespin bonuslarını hem iOS hem Android cihazlarda sorunsuz kullanın." },
+          { title: "Çevrim Şartsız Freespin Bonusları", description: "Gerçekten çevrim şartsız freespin var mı? İşte detaylar." },
+          { title: "En Popüler Slot Oyunları", description: "Sweet Bonanza, Gates of Olympus ve Book of Dead gibi oyunlara özel freespin promosyonları bulunuyor." },
+          { title: "VIP Oyuncular İçin Özel Avantajlar", description: "VIP kullanıcılar için ekstra freespin ve özel bonuslar." },
+          { title: "Freespin Kazançlarının Çekim Süreci", description: "Kazançlarınızı çekebilmek için bilmeniz gereken her şey bu bölümde." }
+        ]
+      }
+    },
+    guvenilirCasino2025: {
+      title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
+      description: "Lisanslı ve güvenilir casino sitelerini keşfedin. MGA ve Curacao onaylı, hızlı ödeme ve yüksek güvenlik sunan platformlar burada!",
+      keywords: "güvenilir casino siteleri 2025, lisanslı online casinolar, MGA lisanslı casino siteleri, Curacao lisanslı casinolar, en güvenli online bahis siteleri",
+      canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025",
+      heading: "2025’in En Güvenilir Casino Siteleri",
+      schemaType: "Article",
+      content: `
+        Online casino dünyasında güvenlik, oyuncular için en kritik unsurlardan biridir. 2025 yılında hangi casino siteleri gerçekten güvenilir? Bu sayfada, lisanslı, denetlenmiş ve kullanıcı deneyimiyle öne çıkan en iyi casino platformlarını sıralıyoruz.
+      `,
+      extra: {
+        faq: [
+          {
+            question: "Güvenilir casino sitesi nasıl anlaşılır?",
+            answer: "Bir casino sitesinin güvenilir olup olmadığını anlamak için lisans bilgilerini kontrol edin (MGA, Curacao gibi), SSL sertifikasının aktif olduğundan emin olun ve bağımsız denetim raporlarını inceleyin."
+          },
+          {
+            question: "Türkiye’den güvenilir casino sitelerine giriş mümkün mü?",
+            answer: "Evet, Türkiye’den uluslararası lisanslı güvenilir casino sitelerine erişim mümkündür. Genellikle güncel giriş linkleri veya VPN yöntemleriyle sorunsuz erişebilirsiniz."
+          },
+          {
+            question: "Hangi lisanslar en güvenilir kabul edilir?",
+            answer: "MGA (Malta Gaming Authority), Curacao ve UKGC (United Kingdom Gambling Commission) lisansları dünya genelinde en güvenilir lisans sağlayıcıları olarak kabul edilir."
+          },
+          {
+            question: "2025’te güvenilir casino siteleri nasıl seçilmeli?",
+            answer: "2025 yılında güvenilir casino siteleri seçerken lisans, ödeme hızı, kullanıcı yorumları ve müşteri desteği gibi kriterleri göz önünde bulundurmalısınız."
+          },
+          {
+            question: "Mobilde güvenilir casino siteleri kullanılabilir mi?",
+            answer: "Evet, 2025’te listemizde yer alan tüm güvenilir casino siteleri mobil uyumludur ve hem iOS hem Android cihazlarda sorunsuz çalışır."
+          },
+          {
+            question: "Güvenilir casino siteleri hangi ödeme yöntemlerini destekler?",
+            answer: "Çoğu güvenilir casino sitesi kredi kartı, banka havalesi, e-cüzdan (Skrill, Neteller) ve kripto para ile ödeme imkanı sunar."
+          },
+          {
+            question: "Canlı destek hizmeti güvenilirlik için önemli mi?",
+            answer: "Evet, 7/24 canlı destek hizmeti sunan siteler, oyuncu memnuniyeti ve güvenilirlik açısından öne çıkar."
+          },
+          {
+            question: "2025 yılında en popüler güvenilir casino siteleri hangileri?",
+            answer: "Spinco, BetArena ve Vaycasino 2025 yılında en çok tercih edilen güvenilir casino siteleri arasında yer alıyor."
+          },
+          {
+            question: "Çevrim şartı güvenilirlik için bir ölçüt müdür?",
+            answer: "Çevrim şartı direkt olarak güvenilirliği göstermez, ancak şartların şeffaf bir şekilde sunulması siteye olan güveni artırır."
+          },
+          {
+            question: "Güvenilir casino sitelerinde oyunlar hileli olabilir mi?",
+            answer: "Lisanslı ve denetlenen sitelerde oyunlar bağımsız test laboratuvarları (eCOGRA gibi) tarafından denetlenir ve hile yapılması mümkün değildir."
+          }
+        ],
+
+        highlights: [
+          {
+            title: "Lisanslı ve Denetlenmiş Siteler",
+            description: "2025’in en güvenilir casino siteleri, MGA ve Curacao gibi uluslararası lisanslara sahiptir ve düzenli olarak bağımsız kuruluşlar tarafından denetlenir."
+          },
+          {
+            title: "Hızlı Ödeme Garantisi",
+            description: "Güvenilir casinolar, kazançlarınızı 24 saat içinde ödeyerek kullanıcı memnuniyetini ön planda tutar."
+          },
+          {
+            title: "Kullanıcı Yorumları ve Şeffaflık",
+            description: "Gerçek oyuncu yorumları ve detaylı incelemeler sayesinde 2025’te en güvenilir casino sitelerini seçmek artık çok kolay."
+          },
+          {
+            title: "Mobil Uyumluluk",
+            description: "Güvenilir casino siteleri, hem iOS hem Android cihazlarda sorunsuz oyun deneyimi sunar."
+          },
+          {
+            title: "Çeşitli Ödeme Seçenekleri",
+            description: "Kredi kartı, e-cüzdan ve kripto para destekleyen güvenilir sitelerle anında yatırım ve çekim yapabilirsiniz."
+          },
+          {
+            title: "24/7 Canlı Destek",
+            description: "Her an erişilebilir müşteri desteği ile güvenilir casino sitelerinde sorunlarınıza anında çözüm bulun."
+          },
+          {
+            title: "Çevrim Şartlarında Şeffaflık",
+            description: "Tüm bonus ve promosyonların çevrim şartları açıkça belirtilir, böylece kullanıcılar sürprizlerle karşılaşmaz."
+          },
+          {
+            title: "Popüler Oyun Sağlayıcıları",
+            description: "Pragmatic Play, NetEnt gibi sağlayıcıların oyunlarını sunan siteler güvenilirlik açısından öne çıkar."
+          }
+        ],
+      }
+    },
+
   },
 
   theme: {
@@ -191,7 +381,7 @@ export const siteConfig = {
   highlights: [
     {
       title: "Türkiye’de En Popüler Online Casino Siteleri",
-      description: "Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır."
+      description: "Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır. <a href='/guvenilir-casino-siteleri-2025'><strong>En Güvenilir Casino Siteleri 2025</strong></a> listemize sayfamızdan ulaşabilirsiniz."
     },
     {
       title: "Hoş Geldin Promosyonu Nedir, Nasıl Alınır?",
@@ -203,11 +393,11 @@ export const siteConfig = {
     },
     {
       title: "%100 Bonus Veren Siteler Gerçek mi?",
-      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz."
+      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
     },
     {
       title: "Freespin ile Oynanabilecek Popüler Slot Oyunları",
-      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz."
+      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/en-cok-freespin-veren-siteler-2025'><strong>En Çok Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
     },
     {
       title: "Çevrim Şartsız Bonus Nedir, Gerçekten Var mı?",
@@ -218,21 +408,6 @@ export const siteConfig = {
       description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
     },
   ],
-
-  about: {
-  title: "Hakkımızda",
-  content: `
-  KumarYeri.com, 2025 yılında kurulmuş; tarafsız, güncel ve kullanıcı odaklı casino rehberliği sunan bağımsız bir platformdur.
-
-  Amacımız, oyunculara yalnızca lisanslı ve güvenilir casino sitelerini tanıtmak; freespin, kayıt bonusu ve yatırım promosyonları gibi avantajları şeffaf biçimde karşılaştırmaktır.
-
-  Tüm içerikler, sektörde 10 yılı aşkın deneyime sahip editörümüz **Kumar Yeri Ekibimiz** tarafından manuel olarak hazırlanmakta, kaynaklarıyla birlikte düzenli olarak güncellenmektedir.
-
-  Hiçbir içerik reklam kaygısıyla öne çıkarılmaz. Platformumuzun etik ilkesi: “Kullanıcı ne görüyorsa, sistem de onu bilir.”
-
-  Yasa dışı oyunları teşvik etmeyiz. 18 yaş altındaki bireylerin sitemizi kullanması yasaktır. Tüm yönlendirmeler, kullanıcı sorumluluğundadır.
-  `
-  },
 
   disclaimer: {
     title: "Sorumluluk Reddi",
@@ -246,60 +421,4 @@ export const siteConfig = {
   18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
   `
   },
-
-  privacy: {
-    title: "Gizlilik Politikası",
-    content: `
-  KumarYeri.com olarak ziyaretçilerimizin gizliliğine önem veriyoruz. Bu gizlilik politikası, sitemizi ziyaret ettiğinizde hangi bilgilerin toplandığını, nasıl kullanıldığını ve nasıl korunduğunu açıklar.
-
-  ## Çerezler (Cookies)
-
-  Sitemiz, kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanabilir. Bu çerezler, kişisel bilgi içermez ve yalnızca analiz ve performans takibi için kullanılır. Tarayıcı ayarlarınızdan çerezleri reddedebilirsiniz.
-
-  ## Kişisel Veri Toplama
-
-  KumarYeri.com üzerinden kullanıcıdan hiçbir doğrudan kişisel bilgi toplanmaz. İletişim için sağladığınız e-posta adresleri yalnızca cevap verme amaçlıdır ve üçüncü kişilerle paylaşılmaz.
-
-  ## Üçüncü Taraf Bağlantılar
-
-  Sitemizde yönlendirme yapılan üçüncü taraf web sitelerinin gizlilik politikaları bize ait değildir. Bu sitelere gitmeden önce ilgili sitelerin kendi politikalarını incelemenizi öneririz.
-
-  ## Analiz Araçları
-
-  Ziyaretçi istatistikleri, anonim şekilde toplanır (ör. IP, cihaz türü, sayfa görüntüleme). Bu bilgiler sadece genel analiz içindir.
-
-  Gizlilik ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:
-  📧 info@kumaryeri.com
-  `
-  },
-
-  contact: {
-    title: "İletişim",
-    email: "info@kumaryeri.com",
-    phone: "+90 555 555 5555",
-    address: "İstanbul, Türkiye",
-    content: `
-      Bizimle iletişime geçmek çok kolay! Aşağıdaki kanallar üzerinden destek ekibimize ulaşabilirsiniz.
-      Her türlü görüş, öneri ve işbirliği taleplerinizi bekliyoruz.
-    `,
-  },
-
-  freespin: {
-    title: "En Çok Freespin Veren Siteler (2025)",
-    content: `Freespin veren casino siteleri, oyuncuların hiçbir yatırım yapmadan gerçek slot deneyimi yaşamasını sağlar. Bu sayfada, 2025 yılında en çok bedava dönüş (freespin) sunan ve kullanıcılar tarafından en çok tercih edilen casino platformlarını listeliyoruz.
-
-Her bir site, freespin kampanyaları, yatırım bonusu oranları, lisans bilgisi ve kullanıcı yorumlarına göre tarafımızdan analiz edilmiştir. Özellikle Türk kullanıcılar için optimize edilmiş, mobil uyumlu ve 7/24 destek sunan platformlara öncelik verdik.
-
-Listelenen siteler, MGA veya Curacao gibi uluslararası lisanslara sahiptir ve güvenilir altyapılar kullanır. Giriş sonrası freespin alabilmek için bazı platformlarda doğrulama süreci gerekebilir. Bu tür detayları da açıklamalar bölümünde belirttik.
-
-Unutmayın: Freespin ile elde edilen kazançlar bile çevrim şartına tabidir. Bu yüzden, bonus şartlarını dikkatlice okumanız önemlidir.
-
-En iyi freespin fırsatlarını kaçırmamak ve güncel promosyonlardan anında haberdar olmak için sayfamızı sık sık ziyaret etmeyi unutmayın.`,
-
-    sites: [
-      { name: "Spinco", bonus: "5000₺ + 250 FS", url: "https://..." },
-      { name: "Hayalbahis", bonus: "1000₺ + 50 FS", url: "https://..." },
-      { name: "Vaycasino", bonus: "2025₺ + 100 FS", url: "https://..." }
-    ]
-  }
 };

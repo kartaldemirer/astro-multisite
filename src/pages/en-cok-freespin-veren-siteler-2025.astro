@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import freespinVereSiteler2025 from '../assets/kumaryeri/en-cok-freespin-veren-siteler.jpg';
+import cevirimSartsizFreespinBonuslari from '../assets/kumaryeri/cevrim-sartsiz-freespin-bonuslari.jpg';
+import mobilFreespinVerenSiteler from '../assets/kumaryeri/mobil-freespin-veren-siteler.jpg';
+import bedavaSpinBonuslari from '../assets/kumaryeri/bedava-spin-bonusları-2025.jpg';
+import vipKullanicilaraOzelAvantajlar from '../assets/kumaryeri/vip-kullanicilara-ozel-avantajlar.jpg';
+
+const page = siteConfig.pages.freespin2;
+
+const { title, description, schemaType, extra } = Astro.props;
+
+const isFAQ = schemaType === "FAQPage";
+const schemaJSON = {
+  "@context": "https://schema.org",
+  "@type": schemaType || "Article",
+  ...(isFAQ
+    ? {
+        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
+          "@type": "Question",
+          "name": f.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.answer
+          }
+        }))
+      }
+    : {
+        "headline": title,
+        "description": description
+      }
+  )
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra}>
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={freespinVereSiteler2025} alt="En Çok Freespin Veren Casino Siteleri" width={720} height={420} class="mb-10" />
+    <h1 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+      {page.heading}
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Online casino dünyasında <strong>freespin promosyonları</strong>, oyunculara ek maliyet olmadan kazanç fırsatı sunar. 2025 yılı, bu alanda birçok yenilik ve avantajlı kampanya ile öne çıkıyor. Bu yazıda, en çok freespin veren siteleri, çevrim şartlarını, yatırımsız fırsatları ve VIP avantajlarını detaylıca inceliyoruz.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Freespin Nedir ve Nasıl Çalışır?
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Freespin, slot oyunlarında bedava dönüş hakkı sağlayan bir casino promosyonudur. Oyuncular, bu dönüşler sayesinde <strong>çek kazançlar elde edebilir</strong>, ancak genellikle belirli şartları yerine getirmeleri gerekir. Bu şartlar arasında <strong>çevrim gereklilikleri</strong>, kullanılabilir oyunlar ve geçerlilik süresi yer alır.
+    </p>
+
+    <Image src={cevirimSartsizFreespinBonuslari} alt="Freespin Nedir ve Nasıl Çalışır?" width={720} height={420} class="mb-10" />
+    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Freespin Türleri
+    </h3>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line mb-10">
+      <ul class="list-disc list-inside mb-10">
+        <li><strong>Hoş Geldin Freespin</strong>: Yeni üyeliklerde verilen bedava dönüşler.</li>
+        <li><strong>Yatırımsız Freespin</strong>: Para yatırmadan alınabilen promosyonlar.</li>
+        <li><strong>VIP Freespin</strong>: Sadakat programlarına özel kampanyalar.</li>
+      </ul>
+    </p>
+
+    <h2 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Çevrim Şartları: Bilmeniz Gerekenler
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Freespin promosyonlarında en kritik unsur, çevrim şartıdır. Örneğin, 100₺ değerinde kazanç elde ettiğinizde ve çevrim şartı 20x ise, toplamda 2000₺ bahis yapmanız gerekir. Çevrim şartsız freespin ise nadir bulunur ve genellikle kısa süreli kampanyalarla sınırlıdır.
+    </p>
+
+    <Image src={mobilFreespinVerenSiteler} alt="Çevrim Şartları: Bilmeniz Gerekenler" width={720} height={420} class="mb-10" />
+    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Çevrim Şartsız Freespin Var mı?
+    </h3>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Evet, bazı siteler belirli dönemlerde çevrim şartsız freespin promosyonu sunar. Ancak, bu fırsatlar sınırlıdır ve genellikle <strong>VIP oyunculara özel</strong> tanımlanır.
+    </p>
+
+    <h4 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Yatırımsız Freespin Kampanyaları
+    </h4>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Yatırımsız freespin, herhangi bir yatırım yapmadan elde edebileceğiniz promosyon türüdür. Çoğu platformda kayıt işlemini tamamladıktan sonra otomatik olarak hesabınıza tanımlanır. Bu kampanyalar, yeni başlayanlar için <strong>risksiz kazanç fırsatı</strong> sağlar.
+    </p>
+
+    <Image src={bedavaSpinBonuslari} alt="Mobil Uyum ve Kullanıcı Deneyimi" width={720} height={420} class="mb-10" />
+    <h5 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Mobil Uyum ve Kullanıcı Deneyimi
+    </h5>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      2025’in trendi <strong>mobil uyumlu casino siteleri</strong>dir. Freespin promosyonları, hem iOS hem Android cihazlarda sorunsuz şekilde kullanılabilir. Mobil tasarım ve hızlı erişim, kullanıcı deneyimini artırır.
+    </p>
+
+    <h5 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        En Popüler Slot Oyunları
+    </h5>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Freespin kampanyalarının en çok kullanıldığı oyunlar şunlardır:
+      <ul class="list-disc list-inside">
+        <li><strong>Sweet Bonanza</strong></li>
+        <li><strong>Gates of Olympus</strong></li>
+        <li><strong>Book of Dead</strong></li>
+      </ul>
+    </p>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Bu oyunlar yüksek kazanç potansiyeliyle oyuncuların ilgisini çekiyor.
+    </p>
+
+    <Image src={vipKullanicilaraOzelAvantajlar} alt="VIP Kullanıcılara Özel Avantajlar" width={720} height={420} class="mb-10" />
+    <h5 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        VIP Kullanıcılara Özel Avantajlar
+    </h5>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      VIP kullanıcılar, ekstra freespin promosyonları ve özel turnuvalara erişim gibi ayrıcalıklara sahip olur. Bazı siteler, VIP statüsüne geçen oyunculara haftalık freespin hediyeleri sunar.
+    </p>
+
+    <h6 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Sonuç: En İyi Freespin Fırsatlarını Kaçırmayın
+    </h6>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      2025 yılı, freespin promosyonları açısından oldukça zengin. Çevrim şartsız kampanyalar, yatırımsız fırsatlar ve mobil uyumlu siteler sayesinde oyuncular için büyük avantajlar söz konusu. Ancak, <strong>her zaman lisanslı ve güvenilir platformları tercih edin</strong> ve bonus şartlarını dikkatlice okuyun. <a href="/freespin-veren-casino-siteleri" title="freespin veren casion siteleri"><strong>Freespin veren casino siteleri</strong></a>'ni sitemizde bulabilirsiniz.
+    </p>
+  </article>
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>

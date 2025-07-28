@@ -2,25 +2,21 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { siteConfig } from "../config/siteConfig";
 
-const { contact } = siteConfig;
-const meta = siteConfig.pages.contact;
+const page = siteConfig.pages.contact;
 ---
 
-<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical}>
-  <section class="max-w-3xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">
-      {contact.title}
-    </h1>
-    <p class="text-lg leading-relaxed text-gray-300 mb-6">
-      {contact.content}
-    </p>
-    <ul class="text-white space-y-2 text-lg">
-      <li>
-        <strong>E-posta:</strong>
-        <a href={`mailto:${contact.email}`} class="underline text-yellow-300">
-          {contact.email}
-        </a>
-      </li>
-    </ul>
-  </section>
+<BaseLayout 
+  title={page.title} 
+  description={page.description} 
+  canonical={page.canonical} 
+  schemaType={page.schemaType}
+>
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
+
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">KumarYeri ekibi olarak her zaman kullanıcılarımızın görüşlerine ve sorularına açığız. İşbirliği teklifleri, teknik destek veya önerileriniz için aşağıdaki kanallardan bize ulaşabilirsiniz.</p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>E-posta</h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Daha fazla bilgi için bize ulaşabilirsiniz: <a href="mailto:{siteConfig.siteMeta.email}" class="text-yellow-300 underline">{siteConfig.siteMeta.email}</a></p>
+  </article>
 </BaseLayout>

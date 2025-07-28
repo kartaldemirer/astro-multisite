@@ -2,19 +2,35 @@
 import { siteConfig } from "../config/siteConfig";
 import "../styles/global.css";
 const { siteMeta } = siteConfig;
+const { faq } = Astro.props;
 import schemaData from '../../public/rich-snippet-kumaryeri.json';
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 // Sayfa bazlı meta değerleri
-const {
-  title = siteMeta.title,
-  description = siteMeta.description,
-  keywords = siteMeta.keywords,
-  canonical = siteMeta.canonical,
-  og = siteMeta.og,
-  twitter = siteMeta.twitter,
-} = Astro.props;
+const { title, description, canonical, schemaType, extra, keywords } = Astro.props;
+
+const isFAQ = schemaType === "FAQPage";
+const schemaJSON = {
+  "@context": "https://schema.org",
+  "@type": schemaType || "Article",
+  ...(isFAQ
+    ? {
+        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
+          "@type": "Question",
+          "name": f.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.answer
+          }
+        }))
+      }
+    : {
+        "headline": title,
+        "description": description
+      }
+  )
+};
 ---
 
 <!DOCTYPE html>
@@ -45,22 +61,20 @@ const {
 
     <!-- OpenGraph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={og.siteName} />
-    <meta property="og:title" content={og.title} />
-    <meta property="og:description" content={og.description} />
-    <meta property="og:url" content={og.url} />
-    <meta property="og:image" content={og.image} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={siteMeta.og.image} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content={twitter.site} />
-    <meta name="twitter:title" content={twitter.title} />
-    <meta name="twitter:description" content={twitter.description} />
-    <meta name="twitter:image" content={twitter.image} />
+    
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={siteMeta.twitter.image} />
 
     <!-- Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
-    <script src="/scroll-animate.js" defer></script>
+    <script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
   </head>
   <body class={siteConfig.layout.bodyClass}>
     <Header />
@@ -68,5 +82,6 @@ const {
       <slot />
     </main>
     <Footer />
+    <script src="/scroll-animate.js" defer></script>
   </body>
 </html>

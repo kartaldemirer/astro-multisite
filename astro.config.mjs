@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://kumaryeri.com', // Mutlaka eklenmeli!
+  trailingSlash: 'never', 
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]

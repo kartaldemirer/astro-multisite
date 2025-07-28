@@ -1,16 +1,26 @@
 ---
+import { siteConfig } from "../config/siteConfig";
 import BaseLayout from "../layouts/BaseLayout.astro"
 import Hero from "../components/Hero.astro"
 import Highlights from "../components/Highlights.astro"
 import PromoIntro from "../components/PromoIntro.astro"
 import SiteDirectory from "../components/SiteDirectory.astro"
 import FAQ from "../components/Faq.astro"
+
+const page = siteConfig.pages.home;
+
+
 ---
 
-<BaseLayout>
+<BaseLayout 
+  title={page.title} 
+  description={page.description} 
+  canonical={page.canonical} 
+  schemaType="WebPage"
+>
   <Hero />
   <PromoIntro />
   <SiteDirectory />
-  <Highlights />
-  <FAQ />
+  <Highlights items={siteConfig.highlights} />
+  <FAQ items={siteConfig.faq} />
 </BaseLayout>

@@ -20,16 +20,12 @@
     },
     {
       "@type": "WebPage",
-      "name": "Ana Sayfa",
-      "url": "https://kumaryeri.com",
-      "isPartOf": {
-        "@id": "https://kumaryeri.com"
-      },
+      "@id": "https://kumaryeri.com/#webpage",
+      "url": "https://kumaryeri.com/",
+      "name": "2025’in En Güvenilir Oyun Siteleri",
+      "description": "2025 yılına özel en yüksek bonus veren casino platformlarını karşılaştırın. Freespin ve yatırım promosyonlarını değerlendirin.",
       "inLanguage": "tr",
-      "about": {
-        "@type": "Organization",
-        "name": "KumarYeri.com"
-      }
+      "isPartOf": { "@id": "https://kumaryeri.com/#website" }
     },
     {
       "@type": "BreadcrumbList",
