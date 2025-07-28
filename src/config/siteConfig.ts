@@ -7,13 +7,13 @@ export const siteConfig = {
     keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
-    canonical: "https://kumaryeri.com/",
+    canonical: "https://kumaryeri.com",
     email: "info@kumaryeri.com",
     og: {
       siteName: "KumarYeri.com",
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
       description: "En güvenilir casino siteleri ve en güncel yatırım bonusları, freespin kampanyaları burada!",
-      url: "https://kumaryeri.com/",
+      url: "https://kumaryeri.com",
       image: "https://kumaryeri.com/social-banner.jpg"
     },
     twitter: {
@@ -36,7 +36,7 @@ export const siteConfig = {
       title: "Hakkımızda | KumarYeri.com",
       description: "KumarYeri.com, güvenilir casino rehberleri ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
-      canonical: "https://kumaryeri.com/hakkimizda",
+      canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
       schemaType: "AboutPage"
     },
@@ -44,7 +44,7 @@ export const siteConfig = {
       title: "İletişim | KumarYeri.com",
       description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
-      canonical: "https://kumaryeri.com/iletisim",
+      canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
       schemaType: "ContactPage"
     },
@@ -52,7 +52,7 @@ export const siteConfig = {
       title: "Gizlilik Politikası | KumarYeri.com",
       description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
-      canonical: "https://kumaryeri.com/gizlilik-politikasi",
+      canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
       schemaType: "WebPage"
     },
@@ -60,7 +60,7 @@ export const siteConfig = {
       title: "Freespin Veren Casino Siteleri (2025) | KumarYeri.com",
       description: "En iyi freespin fırsatlarını keşfedin! Yatırım gerektirmeyen bedava dönüş promosyonları burada.",
       keywords: "freespin veren siteler 2025, çevrim şartsız freespin bonusu, bedava freespin veren casino siteleri, yatırımsız freespin bonusu 2025, en iyi freespin fırsatları, 2025 casino bonusları ve freespinler, güncel freespin promosyonları, mobil freespin veren siteler, freespin kazanma yöntemleri, ücretsiz slot dönüş bonusu",
-      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri",
+      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri/",
       heading: "2025’te En Çok Freespin Veren Casino Siteleri",
       extra: {
         faq: [
@@ -116,7 +116,7 @@ export const siteConfig = {
       title: "2025’te En Çok Freespin Veren Siteler | KumarYeri.com",
       description: "2025 yılında en çok freespin fırsatı sunan güvenilir siteleri keşfedin! Çevrim şartsız bonuslar, yatırımsız freespin kampanyaları ve VIP avantajlar burada.",
       keywords: "freespin veren siteler 2025, en çok freespin sunan casino siteleri, çevrim şartsız freespin bonusları, yatırımsız freespin kampanyaları, mobil freespin veren siteler, bedava spin bonusları 2025, Sweet Bonanza freespin fırsatları, VIP freespin avantajları, güvenilir freespin platformları, en iyi freespin promosyonları",
-      canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025",
+      canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025/",
       heading: "2025’te En Çok Freespin Veren Siteler",
       schemaType: "Article",
       extra: {
@@ -148,7 +148,7 @@ export const siteConfig = {
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
       description: "Lisanslı ve güvenilir casino sitelerini keşfedin. MGA ve Curacao onaylı, hızlı ödeme ve yüksek güvenlik sunan platformlar burada!",
       keywords: "güvenilir casino siteleri 2025, lisanslı online casinolar, MGA lisanslı casino siteleri, Curacao lisanslı casinolar, en güvenli online bahis siteleri",
-      canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025",
+      canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025/",
       heading: "2025’in En Güvenilir Casino Siteleri",
       schemaType: "Article",
       content: `
