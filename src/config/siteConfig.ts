@@ -310,8 +310,8 @@ export const siteConfig = {
     { label: "Ana Sayfa", href: "/" },
     { label: "Hakkımızda", href: "/hakkimizda/" },
     { label: "İletişim", href: "/iletisim/" },
-    { label: "Bonuslar", href: "/#bonuslar/" },
-    { label: "S.S.S.", href: "/#faq/" },
+    { label: "Bonuslar", href: "/#bonuslar" },
+    { label: "S.S.S.", href: "/#faq" },
   ],
 
   hero: {
