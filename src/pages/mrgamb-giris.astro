@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import freespinVereSiteler2025 from '../assets/kumaryeri/mrgamb-giris-ve-guncel-link-bilgisi.jpg';
+import bedavaFreespinVerenCasinoSiteleri from '../assets/kumaryeri/mrgamb-promosyon-ve-bonus-firsatlari.jpg';
+import enIyiFreespinFirsatlari from '../assets/kumaryeri/mrgamb-mobil-giris-ve-kullanim-rehberi.jpg';
+import casinoBonuslariVeFreespinler from '../assets/kumaryeri/2025-casino-bonusları-ve-freespinler.jpg';
+
+const page = siteConfig.pages.mrgambGiris;
+
+const { title, description, schemaType, extra, keywords } = Astro.props;
+
+const isFAQ = schemaType === "FAQPage";
+const schemaJSON = {
+  "@context": "https://schema.org",
+  "@type": schemaType || "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": "KumarYeri.com",
+    "url": siteConfig.siteMeta.url
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "KumarYeri.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kumaryeri.com/logo.png"
+    }
+  },
+  "datePublished": "2025-07-24",
+  "mainEntity": isFAQ
+    ? extra?.faq?.map((f: { question: any; answer: any; }) => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    : undefined
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
+
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra}>
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={freespinVereSiteler2025} alt="Mrgamb giriş ve güncel link bilgisi" class="rounded-lg mb-6" />
+
+    <h1 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        <a href="/mrgamb-giris/" title="freespin veren siteler">{page.heading}</a>
+    </h1>
+
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+      Güncel <strong>Mrgamb giriş adresi</strong> üzerinden güvenli bir şekilde platforma erişebilir, en avantajlı promosyonlardan yararlanabilirsiniz. Mrgamb, lisanslı yapısı ve kullanıcı dostu arayüzü ile 2025’in en popüler oyun platformlarından biridir.
+    </p>
+
+    <ul class="my-10">
+        <li>✅ <a href="https://mrgamb.com" target="_blank" class="underline text-yellow-400">Hemen Mrgamb’e Giriş Yap</a></li>
+        <li>📲 <a href="https://t.me/mrgambofficial/" target="_blank" class="underline text-blue-400">Telegram kanalımıza katılın</a> ve anında güncellemeleri alın.</li>
+    </ul>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Mrgamb Neden Tercih Edilmeli?</h2>
+
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+      Mrgamb, yüksek bonus oranları, hızlı ödeme seçenekleri ve mobil uyumlu arayüzüyle dikkat çeker. Platform, <strong>MGA lisansı</strong> ile faaliyet göstermektedir ve SSL sertifikası ile kullanıcı verilerini korur.
+    </p>
+
+    <Image src={bedavaFreespinVerenCasinoSiteleri} alt="Mrgamb promosyon ve bonus fırsatları" class="rounded-lg my-8" />
+
+    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b mb-10 ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Mrgamb'in Sunduğu Avantajlar:
+    </h3>
+    <ul class="list-disc list-inside text-gray-300 mb-6">
+      <li>%200’e varan hoş geldin bonusu</li>
+      <li>Çevrim şartsız promosyon fırsatları</li>
+      <li>Hızlı ve güvenli para çekme yöntemleri</li>
+      <li>VIP kullanıcılar için özel kampanyalar</li>
+    </ul>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Mrgamb Giriş Nasıl Yapılır?</h2>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+      Türkiye’den erişim için VPN önerilir. Güncel linki kullanarak giriş yapabilir, kullanıcı adı ve şifrenizle oturum açabilirsiniz. Telegram kanalımızdan her zaman en yeni giriş bağlantısına ulaşabilirsiniz.
+    </p>
+
+    <Image src={enIyiFreespinFirsatlari} alt="Mrgamb mobil giriş ve kullanım rehberi" class="rounded-lg my-8" />
+
+    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Telegram ile Güncel Kalın
+    </h3>
+
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+      Giriş adresi değişiklikleri ve özel kampanyalar için Telegram kanalımıza katılmayı unutmayın:  
+      👉 <a href="https://t.me/mrgambofficial/" target="_blank" class="underline text-yellow-400">t.me/mrgambofficial</a>
+    </p>
+
+    <p class="mt-6 text-sm text-gray-500">
+      *18 yaş altı bireylerin bu platforma erişimi yasaktır. Kumar sorumluluk gerektirir.
+    </p>
+  </article>
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>
