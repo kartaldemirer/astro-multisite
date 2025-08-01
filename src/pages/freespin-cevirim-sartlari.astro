@@ -88,12 +88,5 @@ const schemaJSON = {
   </article>
 
   {page.extra?.faq && <FAQ items={page.extra.faq} />}
-  {page.extra?.highlights && (
-    <Highlights
-      items={page.extra.highlights.map((h: string) => ({
-        title: h,
-        description: h
-      }))}
-    />
-  )}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
 </BaseLayout>

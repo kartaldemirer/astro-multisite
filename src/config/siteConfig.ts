@@ -72,10 +72,22 @@ export const siteConfig = {
           { question: "Freespin kullanarak para çekebilir miyim?", answer: "Evet, ancak kazançlar genellikle çevrim şartına tabidir. Çevirimsiz freespin bonusları ise anında çekim imkanı sağlar." }
         ],
         highlights: [
-          "2025’in en iyi freespin veren siteleri listesi",
-          "Çevirimsiz freespin fırsatları",
-          "Lisanslı ve güvenilir platformlar",
-          "Mobil uyumlu ve hızlı ödeme garantisi"
+          {
+            title: "2025’in en iyi freespin veren siteleri hangileri?",
+            description: "2025’in en iyi freespin veren siteleri, lisanslı ve yüksek güvenlik standartlarına sahip olanlardır. Güncel listeyi sitemizde bulabilirsiniz."
+          },
+          {
+            title: "Çevirimsiz freespin fırsatları nerede bulunur?",
+            description: "Çevirimsiz freespin fırsatları genellikle özel kampanyalarda ve yeni üye promosyonlarında sunulur. Sitemizde düzenli olarak güncellenen fırsatları inceleyebilirsiniz."
+          },
+          {
+            title: "Lisanslı ve güvenilir platformları nasıl ayırt ederim?",
+            description: "Lisanslı platformlar, uluslararası denetim otoritelerince onaylanmış ve sertifikalandırılmıştır. Bizim önerdiğimiz siteler yalnızca lisanslı ve güvenilir olanlardır."
+          },
+          {
+            title: "Mobil uyumluluk ve hızlı ödeme garantisi hangi sitelerde var?",
+            description: "Mobil uyumlu ve hızlı ödeme garantisi sunan siteler, kullanıcı deneyimini ön planda tutar. En iyi alternatifleri rehberimizde bulabilirsiniz."
+          }
         ]
       }
     },
@@ -93,9 +105,18 @@ export const siteConfig = {
           { question: "Çevirimsiz bedava freespin var mı?", answer: "Evet, bazı siteler çevirimsiz bedava freespin kampanyaları sunuyor. Bu fırsatlar genellikle sınırlı süreyle geçerli." }
         ],
         highlights: [
-          "Bedava freespin listesi güncel",
-          "Çevirimsiz seçenekler mevcut",
-          "Kayıt sonrası anında bonus"
+          {
+            title: "Bedava freespin listesi güncel mi?",
+            description: "Evet, bedava freespin listemiz sürekli olarak güncellenir. En avantajlı fırsatları anında bulabilirsiniz."
+          },
+          {
+            title: "Çevirimsiz seçenekler mevcut mu?",
+            description: "Evet, bazı kampanyalarda çevirimsiz freespin seçenekleri sunulmaktadır. Detayları sitemizde inceleyebilirsiniz."
+          },
+          {
+            title: "Kayıt sonrası anında bonus alabilir miyim?",
+            description: "Evet, birçok platform kayıt işleminizin ardından anında bonus tanımlar. Güncel promosyonlar için listemizi kontrol edin."
+          }
         ]
       }
     },
@@ -113,9 +134,18 @@ export const siteConfig = {
           { question: "Çevirimsiz freespin nasıl bulunur?", answer: "Promosyon koşullarını dikkatle okuyun, ‘wagering requirement yok’ ibaresi varsa çevirimsizdir." }
         ],
         highlights: [
-          "Çevirim şartı ortalama 20x-40x",
-          "Çevirimsiz bonuslar daha avantajlı",
-          "Slot oyunlarında geçerli freespin"
+          {
+            title: "Çevirim şartı ortalama kaçtır?",
+            description: "Çoğu sitede çevirim şartı ortalama 20x ile 40x arasındadır. Bu oran, kazancınızı çekebilmeniz için gerekli çevrim miktarını gösterir."
+          },
+          {
+            title: "Çevirimsiz bonuslar daha mı avantajlı?",
+            description: "Evet, çevirimsiz bonuslar kazancınızı anında çekmenize imkan tanır. Bu nedenle oyuncular için en avantajlı seçenekler arasında yer alır."
+          },
+          {
+            title: "Freespinler hangi oyunlarda geçerlidir?",
+            description: "Freespinler genellikle popüler slot oyunlarında geçerlidir. Kampanyaya göre belirlenen oyun listesini detaylıca sitemizden öğrenebilirsiniz."
+          }
         ]
       }
     },
@@ -133,9 +163,18 @@ export const siteConfig = {
           { question: "Yatırım yapmadan freespin veriliyor mu?", answer: "Bazı kampanyalar yatırım şartı olmadan freespin sunar. Bu tür bonuslar sınırlıdır." }
         ],
         highlights: [
-          "Kayıt sonrası anında freespin",
-          "Yatırımsız fırsatlar mevcut",
-          "Hoş geldin bonusu ile birleşir"
+          {
+            title: "Kayıt sonrası anında freespin veriliyor mu?",
+            description: "Evet, birçok platform kayıt işlemi tamamlandıktan hemen sonra freespin sunar. Güncel fırsatları listemizde bulabilirsiniz."
+          },
+          {
+            title: "Yatırımsız fırsatlar mevcut mu?",
+            description: "Evet, bazı kampanyalarda yatırım yapmadan freespin kazanabilirsiniz. Detaylar için promosyon sayfamızı inceleyin."
+          },
+          {
+            title: "Hoş geldin bonusu ile freespin birleşiyor mu?",
+            description: "Çoğu platformda hoş geldin bonusu ile freespin teklifleri birleştirilebilir. Bu sayede ekstra kazanç elde edebilirsiniz."
+          }
         ]
       }
     },
@@ -153,9 +192,18 @@ export const siteConfig = {
           { question: "iOS ve Android uyumlu siteler var mı?", answer: "Evet, çoğu güvenilir casino hem iOS hem Android için optimize edilmiştir." }
         ],
         highlights: [
-          "Mobil uyumlu freespin kampanyaları",
-          "iOS & Android desteği",
-          "Hızlı ve güvenli ödeme"
+          {
+            title: "Mobil uyumlu freespin kampanyaları var mı?",
+            description: "Evet, pek çok site mobil uyumlu freespin kampanyaları sunar. Hem telefon hem tablet üzerinden sorunsuz şekilde kullanılabilir."
+          },
+          {
+            title: "iOS ve Android desteği sağlanıyor mu?",
+            description: "Evet, tüm büyük platformlar iOS ve Android desteği ile çalışır. Uygulama ya da mobil tarayıcı üzerinden kolayca erişebilirsiniz."
+          },
+          {
+            title: "Ödemeler hızlı ve güvenli mi?",
+            description: "Evet, lisanslı platformlar hızlı ve güvenli ödeme yöntemleri sunar. Çekim işlemleri genellikle birkaç dakika içinde tamamlanır."
+          }
         ]
       }
     },
@@ -173,9 +221,18 @@ export const siteConfig = {
           { question: "Freespin kullanımında strateji var mı?", answer: "Kazanç oranını artırmak için düşük riskli slotlar ve düşük bahis tutarlarıyla başlayın." }
         ],
         highlights: [
-          "RTP değeri yüksek slotları seçin",
-          "Çevirim şartlarını analiz edin",
-          "Bonusları birleştirme taktikleri"
+          {
+            title: "RTP değeri yüksek slotları neden seçmeliyim?",
+            description: "RTP değeri yüksek olan slotlar, oyunculara uzun vadede daha fazla kazanç şansı sunar. %96 ve üzeri RTP oranına sahip oyunları tercih etmeniz önerilir."
+          },
+          {
+            title: "Çevirim şartlarını nasıl analiz edebilirim?",
+            description: "Çevirim şartlarını analiz ederken oranlara ve geçerlilik sürelerine dikkat edin. Düşük çevrim oranları, kazancınızı daha hızlı çekebilmenizi sağlar."
+          },
+          {
+            title: "Bonusları birleştirme taktikleri nelerdir?",
+            description: "Bonusları birleştirirken, kampanya koşullarının uyumlu olup olmadığını kontrol edin. Çoğu platform hoş geldin bonusu ve freespin tekliflerini bir arada sunar."
+          }
         ]
       }
     },
@@ -193,9 +250,18 @@ export const siteConfig = {
           { question: "En avantajlı freespin türü hangisi?", answer: "Çevirimsiz freespin ve yatırım şartı olmayan bonuslar en avantajlı olanlardır." }
         ],
         highlights: [
-          "Çevirimsiz freespin en avantajlı",
-          "Kayıt sonrası freespin fırsatları",
-          "Sadakat programları ile ekstra bonus"
+          {
+            title: "Çevirimsiz freespin gerçekten en avantajlı mı?",
+            description: "Evet, çevirimsiz freespinler kazancınızı çevrim şartı olmadan çekmenizi sağlar. Bu nedenle en avantajlı promosyon türleri arasında yer alır."
+          },
+          {
+            title: "Kayıt sonrası freespin fırsatları mevcut mu?",
+            description: "Evet, birçok platform kayıt işlemini tamamlayan yeni üyelere freespin bonusu sunar. Güncel kampanyaları listemizden takip edebilirsiniz."
+          },
+          {
+            title: "Sadakat programları ile ekstra bonus kazanabilir miyim?",
+            description: "Evet, sadakat programları oyunculara ekstra bonus, özel kampanya ve kişisel avantajlar sağlar. Düzenli oyuncular için en iyi fırsatlardan biridir."
+          }
         ]
       }
     },
@@ -213,9 +279,18 @@ export const siteConfig = {
           { question: "Hangi lisans daha güvenilir?", answer: "MGA ve Curacao lisanslı siteler sektörde en güvenilir olarak kabul edilir." }
         ],
         highlights: [
-          "Curacao ve MGA lisanslı platformlar",
-          "SSL ile güvenli veri transferi",
-          "Kullanıcı yorumları ile doğrulama"
+          {
+            title: "Curacao ve MGA lisanslı platformlar güvenilir mi?",
+            description: "Evet, Curacao ve MGA lisansına sahip platformlar uluslararası denetimden geçmiş güvenilir sitelerdir. Bu lisanslar oyuncu haklarını korur."
+          },
+          {
+            title: "SSL ile güvenli veri transferi sağlanıyor mu?",
+            description: "Evet, SSL sertifikası sayesinde kişisel verileriniz ve ödeme bilgileri şifrelenerek güvenli bir şekilde iletilir."
+          },
+          {
+            title: "Kullanıcı yorumları ile doğrulama neden önemli?",
+            description: "Kullanıcı yorumları, platformların gerçek deneyimlerini gösterir. Bu sayede güvenilirliği ve ödeme hızı gibi unsurları önceden öğrenebilirsiniz."
+          }
         ]
       }
     },
@@ -233,9 +308,18 @@ export const siteConfig = {
           { question: "En avantajlı kombinasyonlar hangileri?", answer: "Düşük çevirimli para bonusu + çevirimsiz freespin kombinasyonu idealdir." }
         ],
         highlights: [
-          "Hoş geldin bonusu + freespin",
-          "Çevirimsiz fırsatlar ile maksimum kazanç",
-          "Yüksek RTP slotlarla birleşim"
+          {
+            title: "Hoş geldin bonusu ile freespin bir arada veriliyor mu?",
+            description: "Evet, birçok platform hoş geldin bonusu ile freespin tekliflerini bir arada sunar. Bu sayede başlangıçta daha fazla kazanç elde edebilirsiniz."
+          },
+          {
+            title: "Çevirimsiz fırsatlar maksimum kazanç sağlar mı?",
+            description: "Evet, çevirimsiz fırsatlar kazançlarınızı çevrim şartı olmadan çekmenize imkan tanır. Bu nedenle maksimum kazanç için en iyi tercihlerden biridir."
+          },
+          {
+            title: "Yüksek RTP slotlarla birleşim neden avantajlı?",
+            description: "Yüksek RTP oranına sahip slotlar daha fazla geri ödeme şansı sunar. Bu oyunları bonuslarla birleştirmek kazanç ihtimalinizi artırır."
+          }
         ]
       }
     },
