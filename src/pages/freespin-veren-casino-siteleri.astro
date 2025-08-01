@@ -12,13 +12,12 @@ import casinoBonuslariVeFreespinler from '../assets/kumaryeri/2025-casino-bonusl
 
 const page = siteConfig.pages.freespin;
 
-const { title, description, schemaType, extra, keywords } = Astro.props;
-
+const { title, description, schemaType, extra, canonical } = Astro.props;
 
 const isFAQ = schemaType === "FAQPage";
 const schemaJSON = {
   "@context": "https://schema.org",
-  "@type": schemaType || "Article",
+  "@type": isFAQ ? "FAQPage" : (schemaType || "Article"),
   ...(isFAQ
     ? {
         "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
@@ -32,7 +31,23 @@ const schemaJSON = {
       }
     : {
         "headline": title,
-        "description": description
+        "description": description,
+        "mainEntityOfPage": canonical,
+        "author": {
+          "@type": "Organization",
+          "name": siteConfig.siteMeta.name
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": siteConfig.siteMeta.name,
+          "logo": {
+            "@type": "ImageObject",
+            "url": siteConfig.siteMeta.og.image
+          }
+        },
+        "datePublished": "2025-08-01",
+        "dateModified": "2025-08-01",
+        "image": siteConfig.siteMeta.og.image
       }
   )
 };
