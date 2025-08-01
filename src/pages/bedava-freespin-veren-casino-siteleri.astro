@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import freespinVereSiteler2025 from '../assets/kumarpuan/bedava-freespin.jpg';
+
+const page = siteConfig.pages.bedavaFreespin;
+
+const { title, description, schemaType, extra, canonical } = Astro.props;
+
+const isFAQ = schemaType === "FAQPage";
+const schemaJSON = {
+  "@context": "https://schema.org",
+  "@type": isFAQ ? "FAQPage" : (schemaType || "Article"),
+  ...(isFAQ
+    ? {
+        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
+          "@type": "Question",
+          "name": f.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.answer
+          }
+        }))
+      }
+    : {
+        "headline": title,
+        "description": description,
+        "mainEntityOfPage": canonical,
+        "author": {
+          "@type": "Organization",
+          "name": siteConfig.siteMeta.name
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": siteConfig.siteMeta.name,
+          "logo": {
+            "@type": "ImageObject",
+            "url": siteConfig.siteMeta.og.image
+          }
+        },
+        "datePublished": "2025-08-01",
+        "dateModified": "2025-08-01",
+        "image": siteConfig.siteMeta.og.image
+      }
+  )
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra}>
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={freespinVereSiteler2025} alt="Bedava Freespin Veren Siteler" width={720} height={420} class="mb-10" />
+    <h1 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+      <a href={page.canonical}>{page.heading}</a>
+    </h1>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      <strong>Bedava freespin</strong>, oyuncuların en çok tercih ettiği promosyonlardan biridir. Hiç yatırım yapmadan ücretsiz dönüş hakkı kazanarak gerçek para ödülleri elde edebilirsiniz. Bu sayfada, 2025 yılında <a href="/freespin-veren-casino-siteleri-2025/" class="text-yellow-400 underline"> freespin veren casino siteleri</a> arasında en iyi bedava freespin fırsatlarını bulacaksınız.
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        Bedava Freespin Nedir?
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Bedava freespin, belirli slot oyunlarında ücretsiz dönüş yapmanıza imkan tanır. Çoğu zaman kayıt sonrası veya özel kampanyalar kapsamında verilir. Çevirimsiz bedava freespin fırsatlarını öğrenmek için <a href="/freespin-cevirim-sartlari/" class="text-yellow-400 underline">çevirim şartları sayfamızı</a> ziyaret edin.
+    </p>
+
+    <h2 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+        2025’in En İyi Bedava Freespin Kampanyaları
+    </h2>
+
+    <ul class="list-disc list-inside mt-10">
+        <li><strong>MrGamb</strong> – Yatırımsız freespin bonusu</li>
+        <li><strong>Stake</strong> – Kayıt sonrası 20 bedava freespin</li>
+        <li><strong>Mostbet</strong> – Yeni üyeler için çevirimsiz bedava freespin</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line mb-10">
+      Mobilde bedava freespin kullanmak için <a href="/mobil-freespin-siteleri/" class="text-yellow-400 underline"> mobil freespin sayfamıza</a> göz atın. Ayrıca <a href="/guvenilir-freespin-casino-siteleri/" class="text-yellow-400 underline"> güvenilir freespin siteleri</a> hakkında bilgi edinin.
+    </p>
+  </article>
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && (
+    <Highlights
+      items={page.extra.highlights.map((h: string) => ({
+        title: h,
+        description: h
+      }))}
+    />
+  )}
+</BaseLayout>

@@ -17,7 +17,7 @@ import { siteConfig } from "../config/siteConfig"
     <!-- Menu Items -->
     <nav id="menu" class="hidden sm:flex space-x-6 text-sm text-white font-medium">
       {siteConfig.nav.map((item) => (
-        <a href={item.href} class={`transition hover:${siteConfig.theme.text.highlight}`}>{item.label}</a>
+        <a href={item.href} class={`transition hover:${siteConfig.theme.text.highlight}`}>{item.text}</a>
       ))}
     </nav>
   </div>
@@ -25,7 +25,7 @@ import { siteConfig } from "../config/siteConfig"
   <!-- Mobile Menu (Dropdown) -->
   <nav id="mobile-menu" class="sm:hidden mt-2 hidden flex-col space-y-2 text-white text-sm font-medium px-1">
     {siteConfig.nav.map((item) => (
-      <a href={item.href} class="block px-2 py-1 rounded hover:bg-gray-700 transition">{item.label}</a>
+      <a href={item.href} class="block px-2 py-1 rounded hover:bg-gray-700 transition">{item.text}</a>
     ))}
   </nav>
 

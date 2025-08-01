@@ -13,7 +13,7 @@ const { disclaimer } = siteConfig;
 
 <BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical} >
   <section class="max-w-3xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-extrabold mb-6 text-yellow-400">{disclaimer.title}</h1>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">{disclaimer.content}</p>
+    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight}`}>{disclaimer.title}</h1>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line" set:html={disclaimer.content}></p>
   </section>
 </BaseLayout>

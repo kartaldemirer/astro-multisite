@@ -1,34 +1,33 @@
 export const siteConfig = {
   siteMeta: {
-    name: "Kumar Yeri",
-    url: "https://kumaryeri.com",
-    title: "2025’in En Güvenilir Oyun Siteleri ve Özel Üyelik Fırsatları",
-    description: "En güncel üyelik avantajlarını ve promosyon sunan lisanslı oyun platformlarını 2025 yılı için keşfedin. Tüm fırsatlar tek sayfada toplandı.",
-    keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
-    author: "KumarYeri.com",
-    publisher: "KumarYeri.com",
-    canonical: "https://kumaryeri.com",
-    email: "info@kumaryeri.com",
+    name: "Kumar Puan",
+    url: "https://kumarpuan.com",
+    email: "info@kumarpuan.com",
+    title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
+    description: "2025’in en güncel freespin veren casino siteleri listesi. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformları keşfedin.",
+    keywords: "freespin veren casino siteleri, bedava freespin, çevirimsiz freespin bonusu, casino bonusları 2025",
+    canonical: "https://kumarpuan.com",
     og: {
-      siteName: "KumarYeri.com",
-      title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
-      description: "En güvenilir casino siteleri ve en güncel yatırım bonusları, freespin kampanyaları burada!",
-      url: "https://kumaryeri.com",
-      image: "https://kumaryeri.com/social-banner.jpg"
+      title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
+      description: "En iyi freespin veren casino sitelerini keşfedin. Güncel bonuslar ve lisanslı platformlar bir arada.",
+      image: "/assets/kumarpuan/og-image.jpg", // OG için görsel eklenmeli
+      type: "website"
     },
     twitter: {
-      site: "@kumaryeri",
-      title: "2025'in En İyi Casino Bonusları",
-      description: "Bonusları kaçırma! 2025'in en güvenilir kumar siteleri ve promosyonları burada.",
-      image: "https://kumaryeri.com/social-banner.jpg"
-    }
+      card: "summary_large_image",
+      title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
+      description: "En güncel freespin veren casino siteleri listesi. Bonus fırsatları ve güvenilir platformlar.",
+      image: "/assets/kumarpuan/twitter-card.jpg"
+    },
+    author: "KumarPuan.com",
+    publisher: "Kumar Puan"
   },
 
   pages: {
     home: {
-      title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
-      description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
-      canonical: "https://kumaryeri.com",
+      title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
+      description: "2025’in en güncel freespin veren casino siteleri listesi. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformları keşfedin.",
+      canonical: "https://kumarpuan.com",
       schemaType: "WebPage"
     },
 
@@ -36,7 +35,7 @@ export const siteConfig = {
       title: "Hakkımızda | KumarYeri.com",
       description: "KumarYeri.com, güvenilir casino rehberleri ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
-      canonical: "https://kumaryeri.com/hakkimizda/",
+      canonical: "https://kumarpuan.com/hakkimizda/",
       heading: "Hakkımızda",
       schemaType: "AboutPage"
     },
@@ -45,7 +44,7 @@ export const siteConfig = {
       title: "İletişim | KumarYeri.com",
       description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
-      canonical: "https://kumaryeri.com/iletisim/",
+      canonical: "https://kumarpuan.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
       schemaType: "ContactPage"
     },
@@ -54,189 +53,190 @@ export const siteConfig = {
       title: "Gizlilik Politikası | KumarYeri.com",
       description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
-      canonical: "https://kumaryeri.com/gizlilik-politikasi/",
+      canonical: "https://kumarpuan.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
       schemaType: "WebPage"
     },
 
-    freespin: {
-      title: "Freespin Veren Casino Siteleri (2025) | KumarYeri.com",
-      description: "En iyi freespin fırsatlarını keşfedin! Yatırım gerektirmeyen bedava dönüş promosyonları burada.",
-      keywords: "freespin veren siteler 2025, çevrim şartsız freespin bonusu, bedava freespin veren casino siteleri, yatırımsız freespin bonusu 2025, en iyi freespin fırsatları, 2025 casino bonusları ve freespinler, güncel freespin promosyonları, mobil freespin veren siteler, freespin kazanma yöntemleri, ücretsiz slot dönüş bonusu",
-      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri/",
-      heading: "2025’te En Çok Freespin Veren Casino Siteleri",
-      extra: {
-        faq: [
-          { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan promosyon türüdür. Genellikle hoş geldin bonusları ile birlikte verilir." },
-          { question: "Çevrim şartsız freespin var mı?", answer: "Evet, çevrim şartsız freespin fırsatları bulunabilir ancak oldukça nadirdir. Genelde özel kampanya dönemlerinde sunulur." },
-          { question: "Yatırımsız freespin bonusu nasıl alınır?", answer: "Yatırımsız freespin bonusu, kayıt olduğunuzda veya belirli bir promosyon kodu ile aktif edilir. Her platformun şartları farklıdır." },
-          { question: "Mobilde freespin kullanabilir miyim?", answer: "Evet, listemizdeki tüm siteler mobil uyumludur. Freespinler hem iOS hem de Android cihazlarda kullanılabilir." },
-          { question: "Freespin ile hangi slot oyunlarını oynayabilirim?", answer: "En popüler oyunlar arasında Sweet Bonanza, Gates of Olympus ve Book of Dead bulunur. Kampanya detaylarında geçerli oyunlar belirtilir." },
-          { question: "Freespin kazançları nasıl çekilir?", answer: "Freespin ile kazandığınız tutarlar, çevrim şartını tamamladıktan sonra çekilebilir. Çevrim oranı genelde 20x-40x arası değişir." },
-          { question: "Freespin veren siteler güvenilir mi?", answer: "Bizim listemizde yer alan tüm siteler lisanslı ve bağımsız denetimden geçmiştir. MGA ve Curacao lisansına sahip platformlar tercih edilmelidir." },
-          { question: "En çok freespin veren siteler hangileri?", answer: "MrGamb 2025 yılında en çok freespin sunan siteler arasında yer alıyor." },
-          { question: "Freespin kampanyaları ne kadar sürer?", answer: "Çoğu freespin promosyonu belirli bir süreyle sınırlıdır, genellikle 7 gün. Süresi dolmadan kullanmak önemlidir." },
-          { question: "Freespinler sadece yeni üyeler için mi geçerli?", answer: "Hayır, bazı freespin kampanyaları mevcut üyelere de sunulur. VIP kullanıcılar daha fazla avantaj elde eder." }
-        ],
-
-        highlights: [
-          { 
-            title: "Freespin Veren Siteler 2025", 
-            description: "2025 yılında en çok freespin sunan ve güvenilir lisansa sahip online casino sitelerini inceledik." 
-          },
-          { 
-            title: "Çevrim Şartı Detayları", 
-            description: "Freespin kazançlarının çekilebilir olması için gereken çevrim oranlarını ve örnek hesaplamaları öğrenin." 
-          },
-          { 
-            title: "Yatırımsız Freespin Fırsatları", 
-            description: "Para yatırmadan alınabilen freespin bonuslarını ve bu kampanyaların avantajlarını keşfedin." 
-          },
-          { 
-            title: "Mobil Freespin Kullanımı", 
-            description: "iOS ve Android cihazlarda freespin bonuslarının nasıl kullanılabileceğini detaylıca anlattık." 
-          },
-          { 
-            title: "Çevrim Şartsız Freespin Bonusları", 
-            description: "Çevrim şartsız freespin promosyonlarının gerçek olup olmadığını ve nasıl bulunacağını açıklıyoruz." 
-          },
-          { 
-            title: "En Popüler Slot Oyunları", 
-            description: "Sweet Bonanza, Gates of Olympus ve Book of Dead gibi freespinle oynanabilecek en popüler oyunları keşfedin." 
-          },
-          { 
-            title: "VIP Oyuncular İçin Özel Freespinler", 
-            description: "VIP üyeler için sunulan ekstra freespin kampanyalarını listeledik." 
-          },
-          { 
-            title: "Freespin Kazançları ve Çekim Süreci", 
-            description: "Kazançlarınızı nasıl nakde çevirebileceğinizi ve hangi adımları izlemeniz gerektiğini öğrenin." 
-          }
-        ],
-      }
-    },
-
-    freespin2: {
-      title: "2025’te En Çok Freespin Veren Siteler | KumarYeri.com",
-      description: "2025 yılında en çok freespin fırsatı sunan güvenilir siteleri keşfedin! Çevrim şartsız bonuslar, yatırımsız freespin kampanyaları ve VIP avantajlar burada.",
-      keywords: "freespin veren siteler 2025, en çok freespin sunan casino siteleri, çevrim şartsız freespin bonusları, yatırımsız freespin kampanyaları, mobil freespin veren siteler, bedava spin bonusları 2025, Sweet Bonanza freespin fırsatları, VIP freespin avantajları, güvenilir freespin platformları, en iyi freespin promosyonları",
-      canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025/",
-      heading: "2025’te En Çok Freespin Veren Siteler",
+    freespinCasino2025: {
+      title: "Freespin Veren Casino Siteleri 2025 – Güncel Rehber",
+      description: "2025 yılında freespin veren en iyi casino siteleri ve bonus fırsatlarını keşfedin. Güvenilir ve lisanslı platformların listesi burada.",
+      canonical: "https://kumarpuan.com/freespin-veren-casino-siteleri-2025/",
+      heading: "Freespin Veren Casino Siteleri 2025 – En Güncel Liste",
       schemaType: "Article",
+      keywords: "freespin veren casino siteleri, freespin 2025, bedava freespin",
       extra: {
         faq: [
-          { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan bir promosyondur. Genellikle hoş geldin bonusları ile birlikte verilir." },
-          { question: "Çevrim şartsız freespin var mı?", answer: "Evet, çevrim şartsız freespin promosyonları bulunabilir ancak nadirdir ve genellikle kısa süreli kampanyalar şeklinde sunulur." },
-          { question: "Yatırımsız freespin nasıl alınır?", answer: "Bazı siteler kayıt işlemi sonrası yatırım gerektirmeden freespin sunar. Şartlar platforma göre değişiklik gösterebilir." },
-          { question: "Mobilde freespin kullanabilir miyim?", answer: "Evet, listemizdeki tüm siteler mobil uyumludur ve freespinleri hem iOS hem de Android cihazlarda kullanabilirsiniz." },
-          { question: "Freespin kazançları nasıl çekilir?", answer: "Kazançlarınızı çekmek için kampanyada belirtilen çevrim şartlarını yerine getirmeniz gerekir. Oranlar genellikle 20x-40x arasıdır." },
-          { question: "En çok freespin veren siteler hangileri?", answer: "2025 yılında MrGamb en yüksek freespin sunan platformlar arasında yer alıyor." },
-          { question: "Freespinler ne kadar süre geçerli?", answer: "Freespin promosyonları genelde 7 gün geçerlidir. Süresi dolmadan kullanmak önemlidir." },
-          { question: "Hangi oyunlarda freespin kullanılabilir?", answer: "En popüler oyunlar Sweet Bonanza, Gates of Olympus ve Book of Dead'dir. Kampanya detaylarında belirtilir." },
-          { question: "VIP kullanıcılar için özel freespin var mı?", answer: "Evet, bazı siteler VIP üyelerine ekstra freespin ve özel promosyonlar sunar." },
-          { question: "Freespin veren siteler güvenilir mi?", answer: "Listemizde yer alan tüm siteler lisanslı, denetimli ve güvenilir ödeme yöntemleri sunan platformlardır." }
+          { question: "Freespin veren casino siteleri güvenilir mi?", answer: "Güvenilir freespin casino siteleri genellikle Curacao, MGA veya Gibraltar gibi lisanslara sahiptir. SSL şifreleme ve hızlı ödeme yöntemleri sunar." },
+          { question: "2025 yılında hangi siteler en çok freespin veriyor?", answer: "2025’te popüler platformlar arasında Stake, Pin-Up ve Mostbet gibi lisanslı siteler öne çıkıyor." },
+          { question: "Freespin kullanarak para çekebilir miyim?", answer: "Evet, ancak kazançlar genellikle çevrim şartına tabidir. Çevirimsiz freespin bonusları ise anında çekim imkanı sağlar." }
         ],
         highlights: [
-          { title: "Freespin Veren Siteler 2025", description: "Bu rehberde, 2025 yılında en çok freespin sunan ve lisanslı platformları detaylıca inceledik." },
-          { title: "Çevrim Şartları ve Detaylar", description: "Kazançların çekilebilmesi için gerekli olan çevrim şartlarını ve hesaplama yöntemlerini açıklıyoruz." },
-          { title: "Yatırımsız Freespin Fırsatları", description: "Para yatırmadan elde edebileceğiniz freespin kampanyalarını listeledik." },
-          { title: "Mobil Uyumlu Freespin Promosyonları", description: "Freespin bonuslarını hem iOS hem Android cihazlarda sorunsuz kullanın." },
-          { title: "Çevrim Şartsız Freespin Bonusları", description: "Gerçekten çevrim şartsız freespin var mı? İşte detaylar." },
-          { title: "En Popüler Slot Oyunları", description: "Sweet Bonanza, Gates of Olympus ve Book of Dead gibi oyunlara özel freespin promosyonları bulunuyor." },
-          { title: "VIP Oyuncular İçin Özel Avantajlar", description: "VIP kullanıcılar için ekstra freespin ve özel bonuslar." },
-          { title: "Freespin Kazançlarının Çekim Süreci", description: "Kazançlarınızı çekebilmek için bilmeniz gereken her şey bu bölümde." }
+          "2025’in en iyi freespin veren siteleri listesi",
+          "Çevirimsiz freespin fırsatları",
+          "Lisanslı ve güvenilir platformlar",
+          "Mobil uyumlu ve hızlı ödeme garantisi"
         ]
       }
     },
 
-    guvenilirCasino2025: {
-      title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
-      description: "Lisanslı ve güvenilir casino sitelerini keşfedin. MGA ve Curacao onaylı, hızlı ödeme ve yüksek güvenlik sunan platformlar burada!",
-      keywords: "güvenilir casino siteleri 2025, lisanslı online casinolar, MGA lisanslı casino siteleri, Curacao lisanslı casinolar, en güvenli online bahis siteleri",
-      canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025/",
-      heading: "2025’in En Güvenilir Casino Siteleri",
+    bedavaFreespin: {
+      title: "Bedava Freespin Veren En İyi Casino Siteleri",
+      description: "Bedava freespin veren sitelerin listesi ve detaylı rehberi. Çevirimsiz ve avantajlı fırsatlar burada.",
+      canonical: "https://kumarpuan.com/bedava-freespin-veren-casino-siteleri/",
+      heading: "Bedava Freespin Veren En İyi Siteler",
       schemaType: "Article",
-      content: `
-        Online casino dünyasında güvenlik, oyuncular için en kritik unsurlardan biridir. 2025 yılında hangi casino siteleri gerçekten güvenilir? Bu sayfada, lisanslı, denetlenmiş ve kullanıcı deneyimiyle öne çıkan en iyi casino platformlarını sıralıyoruz.
-      `,
+      keywords: "bedava freespin, freespin veren siteler, casino freespin bonus",
       extra: {
         faq: [
-          {
-            question: "Güvenilir casino sitesi nasıl anlaşılır?",
-            answer: "Bir casino sitesinin güvenilir olup olmadığını anlamak için lisans bilgilerini kontrol edin (MGA, Curacao gibi), SSL sertifikasının aktif olduğundan emin olun ve bağımsız denetim raporlarını inceleyin."
-          },
-          {
-            question: "Türkiye’den güvenilir casino sitelerine giriş mümkün mü?",
-            answer: "Evet, Türkiye’den uluslararası lisanslı güvenilir casino sitelerine erişim mümkündür. Genellikle güncel giriş linkleri veya VPN yöntemleriyle sorunsuz erişebilirsiniz."
-          },
-          {
-            question: "Hangi lisanslar en güvenilir kabul edilir?",
-            answer: "MGA (Malta Gaming Authority), Curacao ve UKGC (United Kingdom Gambling Commission) lisansları dünya genelinde en güvenilir lisans sağlayıcıları olarak kabul edilir."
-          },
-          {
-            question: "2025’te güvenilir casino siteleri nasıl seçilmeli?",
-            answer: "2025 yılında güvenilir casino siteleri seçerken lisans, ödeme hızı, kullanıcı yorumları ve müşteri desteği gibi kriterleri göz önünde bulundurmalısınız."
-          },
-          {
-            question: "Mobilde güvenilir casino siteleri kullanılabilir mi?",
-            answer: "Evet, 2025’te listemizde yer alan tüm güvenilir casino siteleri mobil uyumludur ve hem iOS hem Android cihazlarda sorunsuz çalışır."
-          },
-          {
-            question: "Güvenilir casino siteleri hangi ödeme yöntemlerini destekler?",
-            answer: "Çoğu güvenilir casino sitesi kredi kartı, banka havalesi, e-cüzdan (Skrill, Neteller) ve kripto para ile ödeme imkanı sunar."
-          },
-          {
-            question: "Canlı destek hizmeti güvenilirlik için önemli mi?",
-            answer: "Evet, 7/24 canlı destek hizmeti sunan siteler, oyuncu memnuniyeti ve güvenilirlik açısından öne çıkar."
-          },
-          {
-            question: "2025 yılında en popüler güvenilir casino siteleri hangileri?",
-            answer: "MrGamb 2025 yılında en çok tercih edilen güvenilir casino siteleri arasında yer alıyor."
-          },
-          {
-            question: "Çevrim şartı güvenilirlik için bir ölçüt müdür?",
-            answer: "Çevrim şartı direkt olarak güvenilirliği göstermez, ancak şartların şeffaf bir şekilde sunulması siteye olan güveni artırır."
-          },
-          {
-            question: "Güvenilir casino sitelerinde oyunlar hileli olabilir mi?",
-            answer: "Lisanslı ve denetlenen sitelerde oyunlar bağımsız test laboratuvarları (eCOGRA gibi) tarafından denetlenir ve hile yapılması mümkün değildir."
-          }
+          { question: "Bedava freespin nasıl alınır?", answer: "Kayıt bonusları, promosyonlar veya sadakat programlarıyla bedava freespin kazanabilirsiniz." },
+          { question: "Çevirimsiz bedava freespin var mı?", answer: "Evet, bazı siteler çevirimsiz bedava freespin kampanyaları sunuyor. Bu fırsatlar genellikle sınırlı süreyle geçerli." }
         ],
-
         highlights: [
-          {
-            title: "Lisanslı ve Denetlenmiş Siteler",
-            description: "2025’in en güvenilir casino siteleri, MGA ve Curacao gibi uluslararası lisanslara sahiptir ve düzenli olarak bağımsız kuruluşlar tarafından denetlenir."
-          },
-          {
-            title: "Hızlı Ödeme Garantisi",
-            description: "Güvenilir casinolar, kazançlarınızı 24 saat içinde ödeyerek kullanıcı memnuniyetini ön planda tutar."
-          },
-          {
-            title: "Kullanıcı Yorumları ve Şeffaflık",
-            description: "Gerçek oyuncu yorumları ve detaylı incelemeler sayesinde 2025’te en güvenilir casino sitelerini seçmek artık çok kolay."
-          },
-          {
-            title: "Mobil Uyumluluk",
-            description: "Güvenilir casino siteleri, hem iOS hem Android cihazlarda sorunsuz oyun deneyimi sunar."
-          },
-          {
-            title: "Çeşitli Ödeme Seçenekleri",
-            description: "Kredi kartı, e-cüzdan ve kripto para destekleyen güvenilir sitelerle anında yatırım ve çekim yapabilirsiniz."
-          },
-          {
-            title: "24/7 Canlı Destek",
-            description: "Her an erişilebilir müşteri desteği ile güvenilir casino sitelerinde sorunlarınıza anında çözüm bulun."
-          },
-          {
-            title: "Çevrim Şartlarında Şeffaflık",
-            description: "Tüm bonus ve promosyonların çevrim şartları açıkça belirtilir, böylece kullanıcılar sürprizlerle karşılaşmaz."
-          },
-          {
-            title: "Popüler Oyun Sağlayıcıları",
-            description: "Pragmatic Play, NetEnt gibi sağlayıcıların oyunlarını sunan siteler güvenilirlik açısından öne çıkar."
-          }
+          "Bedava freespin listesi güncel",
+          "Çevirimsiz seçenekler mevcut",
+          "Kayıt sonrası anında bonus"
+        ]
+      }
+    },
+
+    freespinCevrim: {
+      title: "Freespin Çevirim Şartları Nelerdir? Avantajlı Şartlar",
+      description: "Freespin çevirim şartları hakkında bilmeniz gerekenler. En avantajlı şartları sunan casino siteleri için rehber.",
+      canonical: "https://kumarpuan.com/freespin-cevirim-sartlari/",
+      heading: "Freespin Çevirim Şartları ve Stratejiler",
+      schemaType: "Article",
+      keywords: "freespin çevirim şartları, bonus çevrimleri",
+      extra: {
+        faq: [
+          { question: "Çevirim şartı nedir?", answer: "Kazandığınız freespin kazançlarını çekebilmek için belirli kat sayıda çevrim yapmanız gerekir. Örneğin 30x." },
+          { question: "Çevirimsiz freespin nasıl bulunur?", answer: "Promosyon koşullarını dikkatle okuyun, ‘wagering requirement yok’ ibaresi varsa çevirimsizdir." }
         ],
+        highlights: [
+          "Çevirim şartı ortalama 20x-40x",
+          "Çevirimsiz bonuslar daha avantajlı",
+          "Slot oyunlarında geçerli freespin"
+        ]
+      }
+    },
+
+    yeniUyeFreespin: {
+      title: "Yeni Üyelere Freespin Veren Casino Platformları 2025",
+      description: "Yeni üyelere özel freespin veren siteleri keşfedin. Kayıt sonrası avantajlı freespin fırsatları sizi bekliyor.",
+      canonical: "https://kumarpuan.com/yeni-uyelere-freespin/",
+      heading: "Yeni Üyelere Özel Freespin Veren Siteler",
+      schemaType: "Article",
+      keywords: "yeni üye freespin, freespin bonus 2025",
+      extra: {
+        faq: [
+          { question: "Yeni üyelere özel freespin nasıl alınır?", answer: "Siteye kayıt olduktan sonra e-posta doğrulaması veya ilk yatırımla freespin kazanabilirsiniz." },
+          { question: "Yatırım yapmadan freespin veriliyor mu?", answer: "Bazı kampanyalar yatırım şartı olmadan freespin sunar. Bu tür bonuslar sınırlıdır." }
+        ],
+        highlights: [
+          "Kayıt sonrası anında freespin",
+          "Yatırımsız fırsatlar mevcut",
+          "Hoş geldin bonusu ile birleşir"
+        ]
+      }
+    },
+
+    mobilFreespin: {
+      title: "Mobil Freespin Veren Siteler – iOS & Android Uyumlu",
+      description: "Mobil cihazlarda freespin veren casino siteleri. iOS ve Android için optimize edilmiş platformlar.",
+      canonical: "https://kumarpuan.com/mobil-freespin-siteleri/",
+      heading: "Mobil Cihazlarda Freespin Veren Siteler",
+      schemaType: "Article",
+      keywords: "mobil freespin siteleri, mobil casino freespin",
+      extra: {
+        faq: [
+          { question: "Mobil freespin nasıl kullanılır?", answer: "Casino uygulaması veya mobil tarayıcı üzerinden giriş yaparak freespin bonuslarınızı kullanabilirsiniz." },
+          { question: "iOS ve Android uyumlu siteler var mı?", answer: "Evet, çoğu güvenilir casino hem iOS hem Android için optimize edilmiştir." }
+        ],
+        highlights: [
+          "Mobil uyumlu freespin kampanyaları",
+          "iOS & Android desteği",
+          "Hızlı ve güvenli ödeme"
+        ]
+      }
+    },
+
+    freespinTaktikleri: {
+      title: "Freespin ile Kazanma Taktikleri: Hangi Slotlar Daha Avantajlı?",
+      description: "Freespin ile kazanç sağlamak için en iyi slotlar ve stratejiler. Maksimum kazanç için ipuçları.",
+      canonical: "https://kumarpuan.com/freespin-ile-kazanma-taktikleri/",
+      heading: "Freespin ile Kazanma Taktikleri ve Slot Seçimi",
+      schemaType: "Article",
+      keywords: "freespin taktikleri, freespin slot stratejileri",
+      extra: {
+        faq: [
+          { question: "Freespin ile hangi oyunlar kazandırır?", answer: "RTP değeri yüksek slot oyunları tercih edilmelidir. Örneğin Book of Dead veya Sweet Bonanza." },
+          { question: "Freespin kullanımında strateji var mı?", answer: "Kazanç oranını artırmak için düşük riskli slotlar ve düşük bahis tutarlarıyla başlayın." }
+        ],
+        highlights: [
+          "RTP değeri yüksek slotları seçin",
+          "Çevirim şartlarını analiz edin",
+          "Bonusları birleştirme taktikleri"
+        ]
+      }
+    },
+
+    freespinBonusTurleri: {
+      title: "En Popüler Freespin Bonus Türleri 2025",
+      description: "Freespin bonus türlerini keşfedin: Çevirimsiz, kayıt sonrası ve promosyon bonusları hakkında bilgi alın.",
+      canonical: "https://kumarpuan.com/freespin-bonus-turleri/",
+      heading: "Freespin Bonus Türleri ve Avantajları",
+      schemaType: "Article",
+      keywords: "freespin bonus türleri, freespin promosyonları",
+      extra: {
+        faq: [
+          { question: "Kaç çeşit freespin bonusu var?", answer: "Kayıt bonusu, yatırımlı freespin ve promosyon bazlı freespin olmak üzere 3 temel tür vardır." },
+          { question: "En avantajlı freespin türü hangisi?", answer: "Çevirimsiz freespin ve yatırım şartı olmayan bonuslar en avantajlı olanlardır." }
+        ],
+        highlights: [
+          "Çevirimsiz freespin en avantajlı",
+          "Kayıt sonrası freespin fırsatları",
+          "Sadakat programları ile ekstra bonus"
+        ]
+      }
+    },
+
+    guvenilirFreespinSiteleri: {
+      title: "Freespin Veren Güvenilir Casino Siteleri Nasıl Anlaşılır?",
+      description: "Freespin veren güvenilir casino sitelerini nasıl seçersiniz? Lisans, SSL ve kullanıcı yorumlarına göre rehber.",
+      canonical: "https://kumarpuan.com/guvenilir-freespin-casino-siteleri/",
+      heading: "Güvenilir Freespin Casino Siteleri",
+      schemaType: "Article",
+      keywords: "güvenilir freespin siteleri, lisanslı freespin casino",
+      extra: {
+        faq: [
+          { question: "Güvenilir freespin siteleri nasıl seçilir?", answer: "Lisans, SSL güvenliği ve kullanıcı yorumları en önemli kriterlerdir." },
+          { question: "Hangi lisans daha güvenilir?", answer: "MGA ve Curacao lisanslı siteler sektörde en güvenilir olarak kabul edilir." }
+        ],
+        highlights: [
+          "Curacao ve MGA lisanslı platformlar",
+          "SSL ile güvenli veri transferi",
+          "Kullanıcı yorumları ile doğrulama"
+        ]
+      }
+    },
+
+    freespinBonusKombinasyonlari: {
+      title: "Freespin ve Bonus Kombinasyonları – Maksimum Kazanç İçin İpuçları",
+      description: "Freespin ve bonus kombinasyonları ile kazancınızı artırın. Hangi promosyonlar en avantajlı?",
+      canonical: "https://kumarpuan.com/freespin-bonus-kombinasyonlari/",
+      heading: "Freespin ve Bonus Kombinasyonları Rehberi",
+      schemaType: "Article",
+      keywords: "freespin bonus kombinasyonu, casino bonus stratejisi",
+      extra: {
+        faq: [
+          { question: "Freespin ve bonus kombini nasıl yapılır?", answer: "Hoş geldin bonusunu freespin ile birleştirebilir, toplam kazancınızı artırabilirsiniz." },
+          { question: "En avantajlı kombinasyonlar hangileri?", answer: "Düşük çevirimli para bonusu + çevirimsiz freespin kombinasyonu idealdir." }
+        ],
+        highlights: [
+          "Hoş geldin bonusu + freespin",
+          "Çevirimsiz fırsatlar ile maksimum kazanç",
+          "Yüksek RTP slotlarla birleşim"
+        ]
       }
     },
 
@@ -244,7 +244,7 @@ export const siteConfig = {
       title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
       description: "mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
       keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
-      canonical: "https://kumaryeri.com/mrgamb-giris/",
+      canonical: "https://kumarpuan.com/mrgamb-giris/",
       heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
       schemaType: "Article",
       extra: {
@@ -276,53 +276,53 @@ export const siteConfig = {
     text: {
       primary: "text-white",
       secondary: "text-gray-400",
-      highlight: "text-yellow-400",
-      bonus: "text-green-400",
-      tag: "text-blue-100",
+      highlight: "text-[#ffcc00]",   // Altın sarısı
+      bonus: "text-[#4ade80]",       // Yeşil ton
+      tag: "text-[#93c5fd]"          // Açık mavi
     },
     bg: {
-      card: "bg-neutral-900",         // örnek: bg-[#0c0f1a]
-      logo: "bg-neutral-800",         // örnek: bg-gray-800
-      tag: "bg-blue-900/40",
+      card: "bg-[#181d29]",          // Kart arka planı
+      logo: "bg-[#141822]",          // Logo/header arka plan
+      tag: "bg-[#22304a]/50"         // Etiket arka planı
     },
     border: {
       card: "border-gray-700",
-      tag: "border-blue-700",
+      tag: "border-blue-700"
     },
     advertise: {
-        border: "border-yellow-500",
-        background: "bg-neutral-800", // örnek: bg-[#1f1f1f]
-        iconBg: "bg-yellow-900/10",
-        iconColor: "text-yellow-400",
-        heading: "text-yellow-400",
-        link: "text-yellow-300 underline",
-        text: "text-gray-300",
+      border: "border-[#ffcc00]",
+      background: "bg-[#202636]",
+      iconBg: "bg-[#ffcc00]/10",
+      iconColor: "text-[#ffcc00]",
+      heading: "text-[#ffcc00]",
+      link: "text-[#ffdb58] underline",
+      text: "text-gray-300"
     },
     faq: {
       heading: "text-white",
-      border: "border-yellow-500",
-      box: "bg-[#121826] rounded-lg p-4 border border-gray-700",
-      question: "text-yellow-400 font-semibold text-lg",
-      answer: "text-gray-300 text-sm leading-relaxed",
+      border: "border-[#ffcc00]",
+      box: "bg-[#181d29] rounded-lg p-4 border border-gray-700",
+      question: "text-[#ffcc00] font-semibold text-lg",
+      answer: "text-gray-300 text-sm leading-relaxed"
     },
     highlight: {
-      section: "mt-12 space-y-8 text-site-text text-sm leading-relaxed",
-      title: "text-lg font-semibold mb-1 text-site-highlight text-yellow-400",
-      description: "text-site-text",
-    },
+      section: "mt-12 space-y-8 text-sm leading-relaxed",
+      title: "text-lg font-semibold mb-1 text-[#ffcc00]",
+      description: "text-gray-300"
+    }
   },
 
   layout: {
-    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans"
+    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-[#0b0f19] via-[#101522] to-[#171c28] text-white font-sans"
   },
 
   header: {
-    logoText: "KumarYeri",
+    logoText: "Kumar Puan",
     nav: [
-      { name: "Ana Sayfa", href: "/" },
-      { name: "Bonuslar", href: "/#bonuslar" },
-      { name: "Hakkımızda", href: "/hakkimizda" },
-      { name: "İletişim", href: "/iletisim" }
+      { text: "Ana Sayfa", href: "/" },
+      { text: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
+      { text: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
+      { text: "İletişim", href: "/iletisim/" }
     ],
     classes: {
       wrapper: "bg-black/90 backdrop-blur border-b border-gray-800",
@@ -334,7 +334,7 @@ export const siteConfig = {
   },
 
   footer: {
-    text: "Kumar Yeri — En iyi promosyonlar burada!",
+    text: "© 2025 Kumar Puan. Tüm hakları saklıdır.",
     classes: {
       wrapper: "border-t border-gray-800 mt-12",
       container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
@@ -342,118 +342,102 @@ export const siteConfig = {
   },
 
   nav: [
-    { label: "Ana Sayfa", href: "/" },
-    { label: "Hakkımızda", href: "/hakkimizda/" },
-    { label: "İletişim", href: "/iletisim/" },
-    { label: "Bonuslar", href: "/#bonuslar" },
-    { label: "S.S.S.", href: "/#faq" },
+      { text: "Ana Sayfa", href: "/" },
+      { text: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
+      { text: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
+      { text: "İletişim", href: "/iletisim/" }
   ],
 
   hero: {
-    title: "2025’in En Avantajlı Casino Bonusları",
+    title: "Freespin Veren Casino Siteleri 2025",
     description:
-      "En iyi siteleri ve en yüksek oranlı promosyonları senin için analiz ettik. KumarPuan ile kazançlı başla.",
-    ctaText: "Bonusları İncele",
+      "2025’in en iyi freespin veren casino sitelerini keşfedin. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformlar tek listede.",
+    ctaText: "Freespin Listesini Gör",
     ctaLink: "#bonuslar",
-    sectionClass: "py-16 px-6 text-center bg-yellow-50 text-black rounded-3xl shadow-2xl fade-in-up",
-    titleClass: "text-4xl sm:text-5xl font-extrabold mb-4",
-    descClass: "text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-800",
-    ctaClass: "inline-block bg-black text-yellow-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
+    sectionClass: "relative text-center py-20 px-6 rounded-3xl shadow-lg bg-gradient-to-br from-[#0b0f19] via-[#101522] to-[#171c28] border border-yellow-500",
+    titleClass: "text-4xl sm:text-5xl font-extrabold mb-6 text-[#ffcc00]",
+    descClass: "text-lg sm:text-xl mb-8 max-w-3xl mx-auto text-gray-300",
+    ctaClass: "inline-block bg-[#ffcc00] text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg"
   },
 
   promoIntro: {
-    title: "2025’in En İyi Casino Promosyonları",
-    titleClass: "text-yellow-400",
-    descriptionClass: "text-gray-300",
-    brand: "KumarYeri.com",
-    brandClass: "text-yellow-500",
-    highlightClass: "text-yellow-400 font-bold",
+    title: "Freespin Veren Casino Siteleri 2025",
+    titleClass: "text-3xl sm:text-4xl font-extrabold text-[#ffcc00] mb-4",
+    descriptionClass: "text-lg sm:text-xl text-gray-300 mb-6 max-w-3xl mx-auto",
+    brand: "KumarPuan.com",
+    brandClass: "text-[#ffdb58] font-semibold",
+    highlightClass: "text-[#ffcc00] font-bold",
     features: [
-      { icon: "🎯", text: "%200’e varan hoş geldin promosyonları" },
-      { icon: "🎁", text: "Yatırım & kayıp iade promosyonları" },
-      { icon: "🧲", text: "Slot makinelerine özel ekstra çevrimler" },
-      { icon: "🏆", text: "Sadece güvenilir lisanslı siteler" }
+      { icon: "🎯", text: "En iyi freespin veren casino siteleri listesi" },
+      { icon: "🎁", text: "Çevirimsiz freespin ve bedava dönüş fırsatları" },
+      { icon: "🧲", text: "Yeni üyelere özel freespin bonusları" },
+      { icon: "🏆", text: "Lisanslı ve güvenilir platformlar" }
     ],
-    ctaText: "Bonusları Keşfet",
+    ctaText: "Freespin Listesini Gör",
     ctaLink: "#bonuslar",
-    ctaTitle: "Bonusları Keşfet",
-    ctaClass: "inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg"
+    ctaTitle: "Freespin Veren Siteleri Görüntüle",
+    ctaClass: "inline-flex items-center gap-3 bg-[#ffcc00] hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl shadow-xl transition-transform transform hover:scale-105 text-lg",
+    sectionClass: "relative text-center py-20 px-6 rounded-3xl shadow-lg bg-gradient-to-br from-[#0b0f19] via-[#101522] to-[#171c28] border border-yellow-500",
   },
 
   bonusSites: {
-    title: "Casino Listesi",
-    titleColor: "text-white",
-    borderColor: "border-yellow-500"
+    title: "Freespin Veren Casino Siteleri 2025",
+    titleColor: "text-[#ffcc00]",      // Altın sarısı başlık
+    borderColor: "border-[#ffcc00]"    // Altın sarısı border
   },
 
   faq: [
     {
-        question: "Online casino promosyonu nedir?",
-        answer: "Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin promosyonudur.",
+      question: "Freespin veren casino siteleri güvenilir mi?",
+      answer: "Güvenilir freespin veren casino siteleri lisanslı, SSL sertifikalı ve kullanıcı yorumlarıyla doğrulanmış platformlardır. Malta Gaming Authority veya Curacao lisansı en çok tercih edilenlerdir."
     },
     {
-        question: "Bonuslar hemen kullanılabilir mi?",
-        answer: "Bazı bonuslar otomatik olarak tanımlanır, bazıları manuel olarak talep edilir.",
+      question: "Bedava freespin nasıl alınır?",
+      answer: "Yeni üyelik bonusları, yatırım promosyonları veya özel kampanyalar aracılığıyla bedava freespin kazanabilirsiniz. Çoğu site, ilk kayıt sonrası freespin fırsatı sunar."
     },
     {
-        question: "En iyi promosyon nasıl seçilir?",
-        answer: "Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu promosyonlar tercih edilmelidir.",
+      question: "Çevirimsiz freespin nedir?",
+      answer: "Çevirimsiz freespin, kazancınızı ekstra şartlar olmadan çekebileceğiniz freespin türüdür. Bu bonuslar oyuncular için en avantajlı promosyonlardır."
     },
     {
-        question: "Promosyonların çevrim şartı ne demektir?",
-        answer: "Kazanılan promosyonun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ promosyon için 2000₺ bahis yapılması gerektiği anlamına gelir.",
+      question: "Freespin bonusları hangi oyunlarda geçerli?",
+      answer: "Genellikle popüler slot oyunlarında geçerlidir. Örneğin, Sweet Bonanza, Book of Dead veya Gates of Olympus gibi yüksek RTP’li slotlar tercih edilir."
     },
     {
-        question: "Promosyonlar hemen kullanılabilir mi?",
-        answer: "Çoğu promosyon, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı siteler promosyonu manuel olarak talep etmenizi ister.",
-    },
-    {
-        question: "Her oyuncu aynı promosyonu alabilir mi?",
-        answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır.",
-    },
+      question: "En iyi freespin veren casino siteleri hangileri?",
+      answer: "2025 yılında en iyi freespin fırsatlarını sunan siteler arasında lisanslı ve hızlı ödeme yapan platformlar öne çıkıyor. Detaylı listeyi sayfamızda bulabilirsiniz."
+    }
   ],
 
   highlights: [
     {
-      title: "Türkiye’de En Popüler Online Casino Siteleri",
-      description: "Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır. <a href='/guvenilir-casino-siteleri-2025'><strong>En Güvenilir Casino Siteleri 2025</strong></a> listemize sayfamızdan ulaşabilirsiniz."
+      title: "Freespin Veren Casino Siteleri Neden Tercih Edilmeli?",
+      description: "Freespin bonusları, yatırım yapmadan oyun deneyimi sunar. Bu fırsatlar sayesinde riske girmeden kazanç elde edebilirsiniz. <a href='/freespin-veren-casino-siteleri-2025/'><strong>Freespin Veren Siteler</strong></a> listemizi inceleyin."
     },
     {
-      title: "Hoş Geldin Promosyonu Nedir, Nasıl Alınır?",
-      description: "Hoş geldin promosyonu, yeni üye olan kullanıcılara özel verilen bir promosyondur. Genellikle ilk para yatırma işlemine %100 promosyon ya da freespin şeklinde sunulur. Promosyonun geçerli olması için bazı çevrim şartları vardır. Promosyon almadan önce kullanım koşullarını dikkatlice incelemek gerekir."
+      title: "Çevirimsiz Freespin Fırsatları",
+      description: "Çevirimsiz freespin, kazandığınız tutarı ek şartlar olmadan çekebilmenizi sağlar. Bu nedenle 2025 yılında en çok tercih edilen promosyonlar arasındadır. <a href='/freespin-cevirim-sartlari/'><strong>Çevirim Şartları</strong></a> rehberimizi okuyun."
     },
     {
-      title: "En İyi Casino Sitelerini Nasıl Seçiyoruz?",
-      description: "KumarYeri.com olarak, her siteyi detaylı kriterlere göre değerlendiriyoruz: lisans durumu, promosyon miktarı, ödeme hızı, kullanıcı yorumları ve müşteri desteği başlıca kriterlerimizdir. Sadece güvenilirliği kanıtlanmış platformlara sitemizde yer veriyoruz."
+      title: "En Güvenilir Lisanslı Casino Siteleri",
+      description: "Curacao veya Malta lisansına sahip siteler, düzenli denetimlerden geçer ve güvenlik standartlarını uygular. <a href='/guvenilir-freespin-casino-siteleri/'><strong>Güvenilir Casino Siteleri</strong></a> listemizi kontrol edin."
     },
     {
-      title: "%100 Bonus Veren Siteler Gerçek mi?",
-      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
-    },
-    {
-      title: "Freespin ile Oynanabilecek Popüler Slot Oyunları",
-      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/en-cok-freespin-veren-siteler-2025'><strong>En Çok Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
-    },
-    {
-      title: "Çevrim Şartsız Bonus Nedir, Gerçekten Var mı?",
-      description: "Çevrim şartsız promosyonlar, kazandığınız tutarı doğrudan çekebileceğiniz anlamına gelir. Ancak bu tür kampanyalar oldukça nadirdir. Bazı siteler “çevrim şartsız” ifadesini pazarlama amacıyla kullansa da, detaylara inildiğinde belirli şartların olduğu görülür. KumarYeri.com olarak bu konudaki tüm detayı şeffaf şekilde sunarız."
-    },
-    {
-      title: "Mobil Uyumlu Casino Siteleri ve Avantajları",
-      description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
-    },
+      title: "Mobil Freespin ile Kazanç Fırsatı",
+      description: "Mobil uyumlu casino siteleri sayesinde istediğiniz yerden freespin bonuslarını kullanabilirsiniz. <a href='/mobil-freespin-siteleri/'><strong>Mobil Freespin Siteleri</strong></a> sayfamızdan detaylara ulaşın."
+    }
   ],
 
   disclaimer: {
     title: "Sorumluluk Reddi",
     content: `
-  KumarYeri.com, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.
+    KumarPuan.com, yalnızca bilgilendirme amacıyla <strong>freespin veren casino siteleri</strong> ve diğer online oyun platformları hakkında içerikler sunar. Sitemizde yer alan bilgiler, kullanıcıyı yasal olmayan oyunlara teşvik etmek amacı taşımaz.
 
-  Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.
+    Sayfalarımızda sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği, güvenliği veya yasal uygunluğu konusunda herhangi bir sorumluluk kabul edilmez. Kullanıcı, yönlendirilen siteleri kendi sorumluluğunda ziyaret eder.
 
-  Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.
+    Tüm bilgiler editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, karar verirken bulunduğu ülkenin yasal düzenlemelerini dikkate almalıdır.
 
-  18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
-  `
-  },
+    18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
+    `
+  }
 };

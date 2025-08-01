@@ -4,7 +4,7 @@ import { siteConfig } from "../config/siteConfig";
 const { promoIntro } = siteConfig;
 ---
 
-<section class="text-center mt-16 px-4 sm:px-6 lg:px-8">
+<section class={`mt-10 ${siteConfig.hero.sectionClass}`}>
   <!-- Başlık -->
   <h2 class:list={[
     "text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mb-6",

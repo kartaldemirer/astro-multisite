@@ -13,11 +13,33 @@ const page = siteConfig.pages.contact;
   keywords={page.keywords}
 >
   <article class="prose prose-invert max-w-4xl mx-auto">
-    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
+    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>
+      {page.heading}
+    </h1>
 
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">KumarYeri ekibi olarak her zaman kullanıcılarımızın görüşlerine ve sorularına açığız. İşbirliği teklifleri, teknik destek veya önerileriniz için aşağıdaki kanallardan bize ulaşabilirsiniz.</p>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      KumarPuan.com ekibi olarak kullanıcılarımızın görüş ve sorularına her zaman açığız. 
+      <strong>Freespin veren casino siteleri</strong> ile ilgili merak ettikleriniz, işbirliği teklifleri 
+      veya önerileriniz için aşağıdaki iletişim yöntemlerini kullanabilirsiniz.
+    </p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>E-posta</h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Daha fazla bilgi için bize ulaşabilirsiniz: <a href=`mailto:${siteConfig.siteMeta.email}` class="text-yellow-300 underline">{siteConfig.siteMeta.email}</a></p>
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+      E-posta
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+      Bizimle iletişime geçmek için: 
+      <a href={`mailto:${siteConfig.siteMeta.email}`} class="text-yellow-300 underline">
+        {siteConfig.siteMeta.email}
+      </a>
+    </p>
+
+    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+      Daha Fazla Bilgi
+    </h2>
+    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+      Casino rehberlerimiz ve <a href="/freespin-veren-casino-siteleri-2025/" class="text-yellow-400 underline">
+      freespin veren siteler listemiz</a> için sayfamızı ziyaret edebilirsiniz.
+    </p>
   </article>
+
 </BaseLayout>
