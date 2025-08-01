@@ -9,12 +9,13 @@ export interface Props {
 }
 
 const { items } = Astro.props;
+import { siteConfig } from "../config/siteConfig";
 ---
 
 <section class="mt-12 space-y-8 text-gray-200 text-sm leading-relaxed">
   {items.map((item, index) => (
     <div>
-      <h3 class="text-lg font-semibold mb-1 text-yellow-400">{item.title}</h3>
+      <h3 class={`${siteConfig.theme.highlight.title}`}>{item.title}</h3>
       <p set:html={item.description}></p>
     </div>
   ))}

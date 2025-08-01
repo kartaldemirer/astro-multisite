@@ -26,11 +26,11 @@ export const siteConfig = {
 
   pages: {
     home: {
-    title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
-    description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
-    canonical: "https://kumaryeri.com",
-    schemaType: "WebPage"
-  },
+      title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
+      description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
+      canonical: "https://kumaryeri.com",
+      schemaType: "WebPage"
+    },
 
     about: {
       title: "Hakkımızda | KumarYeri.com",
@@ -40,6 +40,7 @@ export const siteConfig = {
       heading: "Hakkımızda",
       schemaType: "AboutPage"
     },
+
     contact: {
       title: "İletişim | KumarYeri.com",
       description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
@@ -48,6 +49,7 @@ export const siteConfig = {
       heading: "Bizimle İletişime Geçin",
       schemaType: "ContactPage"
     },
+
     privacy: {
       title: "Gizlilik Politikası | KumarYeri.com",
       description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
@@ -56,6 +58,7 @@ export const siteConfig = {
       heading: "Gizlilik Politikası",
       schemaType: "WebPage"
     },
+
     freespin: {
       title: "Freespin Veren Casino Siteleri (2025) | KumarYeri.com",
       description: "En iyi freespin fırsatlarını keşfedin! Yatırım gerektirmeyen bedava dönüş promosyonları burada.",
@@ -112,6 +115,7 @@ export const siteConfig = {
         ],
       }
     },
+
     freespin2: {
       title: "2025’te En Çok Freespin Veren Siteler | KumarYeri.com",
       description: "2025 yılında en çok freespin fırsatı sunan güvenilir siteleri keşfedin! Çevrim şartsız bonuslar, yatırımsız freespin kampanyaları ve VIP avantajlar burada.",
@@ -144,6 +148,7 @@ export const siteConfig = {
         ]
       }
     },
+
     guvenilirCasino2025: {
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
       description: "Lisanslı ve güvenilir casino sitelerini keşfedin. MGA ve Curacao onaylı, hızlı ödeme ve yüksek güvenlik sunan platformlar burada!",
@@ -234,6 +239,7 @@ export const siteConfig = {
         ],
       }
     },
+
     mrgambGiris: {
       title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
       description: "mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
@@ -301,7 +307,7 @@ export const siteConfig = {
     },
     highlight: {
       section: "mt-12 space-y-8 text-site-text text-sm leading-relaxed",
-      title: "text-lg font-semibold mb-1 text-site-highlight",
+      title: "text-lg font-semibold mb-1 text-site-highlight text-yellow-400",
       description: "text-site-text",
     },
   },

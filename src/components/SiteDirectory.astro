@@ -20,7 +20,7 @@ try {
       return { ...site, order };
     })
     .filter(Boolean)
-    .sort((a, b) => a.order - b.order);
+    .sort((a: any, b: any) => a.order - b.order);
 } catch (err) {
   console.error("❌ JSON yüklenemedi:", err);
 }
@@ -66,7 +66,6 @@ try {
         <div class="flex flex-wrap gap-2">
           {site.features.map((feature: string, i: number) => (
             <span
-              key={i}
               class={`text-xs sm:text-sm ${siteConfig.theme.bg.tag} ${siteConfig.theme.text.tag} px-3 py-1 rounded-full border ${siteConfig.theme.border.tag}`}
             >
               {feature}
