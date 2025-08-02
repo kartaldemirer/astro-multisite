@@ -12,65 +12,25 @@ import casinoBonuslariVeFreespinler from '../assets/kumaryeri/2025-casino-bonusl
 
 const page = siteConfig.pages.freespin;
 
-const { title, description, schemaType, extra, canonical } = Astro.props;
-
-const isFAQ = schemaType === "FAQPage";
-const schemaJSON = {
-  "@context": "https://schema.org",
-  "@type": isFAQ ? "FAQPage" : (schemaType || "Article"),
-  ...(isFAQ
-    ? {
-        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
-          "@type": "Question",
-          "name": f.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": f.answer
-          }
-        }))
-      }
-    : {
-        "headline": title,
-        "description": description,
-        "mainEntityOfPage": canonical,
-        "author": {
-          "@type": "Organization",
-          "name": siteConfig.siteMeta.name
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": siteConfig.siteMeta.name,
-          "logo": {
-            "@type": "ImageObject",
-            "url": siteConfig.siteMeta.og.image
-          }
-        },
-        "datePublished": "2025-08-01",
-        "dateModified": "2025-08-01",
-        "image": siteConfig.siteMeta.og.image
-      }
-  )
-};
 ---
-<script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
-<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra}>
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="freespin">
   <article class="prose prose-invert max-w-4xl mx-auto">
     <Image src={freespinVereSiteler2025} alt="En Çok Freespin Veren Casino Siteleri" width={720} height={420} class="mb-10" />
-    <h1 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h1 class={`text-2xl font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
       <a href="/freespin-veren-casino-siteleri/">{page.heading}</a>
     </h1>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
-      <a href="/freespin-veren-casino-siteleri/" title="freespin veren siteler"><strong>Freespin veren siteler 2025</strong></a> yılı için oyuncular arasında en çok aranan avantajlardan biridir. Freespin, kullanıcıların yatırım yapmadan veya minimum yatırımla slot oyunlarında bedava dönüşler yapmasını sağlar. Bu yazıda, <strong>çevrim şartsız freespin bonusu</strong>, <strong>yatırımsız freespin kampanyaları</strong> ve en güvenilir <strong>casino siteleri</strong> hakkında kapsamlı bilgiler bulacaksınız.
+    <p class={`${siteConfig.theme.text.p} mt-10`}>
+      <a href="https://kumarpuan.com/freespin-veren-casino-siteleri-2025/" title="freespin veren casinno siteleri"><strong>Freespin veren siteler 2025</strong></a> yılı için oyuncular arasında en çok aranan avantajlardan biridir. Freespin, kullanıcıların yatırım yapmadan veya minimum yatırımla slot oyunlarında bedava dönüşler yapmasını sağlar. Bu yazıda, <strong>çevrim şartsız freespin bonusu</strong>, <strong>yatırımsız freespin kampanyaları</strong> ve en güvenilir <strong>casino siteleri</strong> hakkında kapsamlı bilgiler bulacaksınız.
     </p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         Freespin Nedir ve Neden Önemlidir?
     </h2>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       Freespin, slot oyunlarında ücretsiz çevrim hakkıdır. <strong>Bedava freespin veren casino siteleri</strong>, oyunculara riski minimuma indirerek gerçek kazanç elde etme fırsatı sunar. Özellikle 2025 yılında, oyuncular arasında <strong>yatırımsız freespin bonusu</strong> ve <strong>çevrim şartsız freespin fırsatları</strong> yoğun talep görmektedir.
     </p>
 
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p} -mt-10`}>
       Freespin promosyonları genellikle şu amaçlarla verilir:
       <ul class="list-disc list-inside">
         <li>Yeni üye olan oyuncuları çekmek</li>
@@ -80,48 +40,49 @@ const schemaJSON = {
     </p>
 
     <Image src={bedavaFreespinVerenCasinoSiteleri} alt="bedava freespin veren casino siteleri" width={720} height={420} class="my-10" />
-    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2 mt-10 `}>
+    <h3 class={`text-lg font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         Çevrim Şartı Nedir?
     </h3>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       Çoğu <strong>kazanma yöntemi</strong>, kazancın çekilebilmesi için çevrim şartına bağlıdır. Örneğin, 100₺ değerinde freespin kazancı elde ettiyseniz ve çevrim şartı 20x ise, çekim yapabilmek için toplam 2000₺ değerinde bahis yapmanız gerekir.
     </p>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p} -mt-10`}>
       Ancak bazı siteler <strong>çevrim şartsız freespin</strong> fırsatı sunarak kullanıcıları cezbetmektedir. Bu tür kampanyalar nadirdir ve genellikle kısa süreli olur.
     </p>
 
-    <h2 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         Mobil Freespin Veren Siteler
     </h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       2025 yılında mobil uyumluluk bir zorunluluktur. <strong>Mobil freespin veren siteler</strong>, kullanıcıların slot oyunlarına her yerden erişmesini sağlar. KumarYeri.com ekibi olarak, mobil platformda sorunsuz çalışan ve güvenilir altyapıya sahip siteleri listelemeye özen gösteriyoruz.
     </p>
 
     <Image src={enIyiFreespinFirsatlari} alt="en iyi freespin fırsatları" width={720} height={420} class="my-10" />
-    <h3 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h3 class={`text-lg font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         Freespin Kazanma Yöntemleri
     </h3>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       Freespin kazanmanın en yaygın yolları şunlardır:
-      <ul class="list-disc list-inside">
-        <li><strong>Hoş geldin bonusları</strong>: Yeni üye olan kullanıcılara verilir.</li>
-        <li><strong>Yatırımsız kampanyalar</strong>: Belirli görevleri tamamlayarak elde edilir.</li>
-        <li><strong>Turnuva ödülleri</strong>: Slot turnuvalarında başarılı olan oyunculara dağıtılır.</li>
-      </ul>
     </p>
 
-    <h4 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b mt-10 ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <ul class="list-disc list-inside">
+      <li><strong>Hoş geldin bonusları</strong>: Yeni üye olan kullanıcılara verilir.</li>
+      <li><strong>Yatırımsız kampanyalar</strong>: Belirli görevleri tamamlayarak elde edilir.</li>
+      <li><strong>Turnuva ödülleri</strong>: Slot turnuvalarında başarılı olan oyunculara dağıtılır.</li>
+    </ul>
+
+    <h4 class={`text-lg font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2 mt-10`}>
         Güvenlik ve Lisans Kontrolü
     </h4>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       Her zaman lisanslı ve denetlenen siteleri tercih edin. KumarYeri.com olarak önerdiğimiz tüm platformlar, <strong>MGA</strong> veya <strong>Curacao</strong> gibi uluslararası lisanslara sahiptir.
     </p>
 
     <Image src={casinoBonuslariVeFreespinler} alt="2025 casino bonusları ve freespinler" width={720} height={420} class="my-10" />
-    <h5 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b mt-10 ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h5 class={`text-lg font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         Sonuç
     </h5>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       2025’te <strong>freespin veren siteler</strong> arasında en güvenilir, lisanslı ve kullanıcı dostu platformları tercih etmek kazancınızı artırır. KumarYeri.com ekibi olarak, en iyi fırsatları ve <strong>bedava freespin bonuslarını</strong> sizler için güncel tutuyoruz.
     </p>
   </article>
