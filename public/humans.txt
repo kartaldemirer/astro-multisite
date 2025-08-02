@@ -1,0 +1,6 @@
+# humans.txt for kumaryeri.com
+Site: https://kumaryeri.com/
+Owner: KumarYeri.com Team
+Author: KumarYeri Editorial
+Contact: info@kumaryeri.com
+AI Policy: https://kumaryeri.com/llm.txt

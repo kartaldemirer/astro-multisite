@@ -1,5 +1,5 @@
 ---
-import { siteConfig } from "../config/siteConfig";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
 import BaseLayout from "../layouts/BaseLayout.astro"
 import Hero from "../components/Hero.astro"
 import Highlights from "../components/Highlights.astro"
@@ -8,17 +8,9 @@ import SiteDirectory from "../components/SiteDirectory.astro"
 import FAQ from "../components/Faq.astro"
 
 const page = siteConfig.pages.home;
-
-
 ---
 
-<BaseLayout 
-  title={page.title} 
-  description={page.description} 
-  canonical={page.canonical} 
-  keywords={siteConfig.siteMeta.keywords}
-  schemaType="WebPage"
->
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="home">
   <Hero />
   <PromoIntro />
   <SiteDirectory />

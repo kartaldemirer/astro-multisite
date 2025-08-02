@@ -8,6 +8,7 @@ export const siteConfig = {
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
     canonical: "https://kumaryeri.com",
+    logo: "https://kumaryeri.com/logo.png",
     email: "info@kumaryeri.com",
     og: {
       siteName: "KumarYeri.com",
@@ -21,15 +22,61 @@ export const siteConfig = {
       title: "2025'in En İyi Casino Bonusları",
       description: "Bonusları kaçırma! 2025'in en güvenilir kumar siteleri ve promosyonları burada.",
       image: "https://kumaryeri.com/social-banner.jpg"
-    }
+    },
+    recommendedSites: [
+    {
+      position: 1,
+      name: "MrGamb",
+      url: "https://mrgamb.com/",
+      image: "https://sitesconfig.pages.dev/logolar/mrgamb.png",
+      ratingValue: "4.9",
+      bestRating: "5"
+    },
+  ]
   },
 
   pages: {
     home: {
       title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
       description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
+      keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
       canonical: "https://kumaryeri.com",
-      schemaType: "WebPage"
+      schemaType: "Article",
+      extra: {
+        faq: [
+          {
+              question: "Online casino promosyonu nedir?",
+              answer: "Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin promosyonudur.",
+          },
+          {
+              question: "Bonuslar hemen kullanılabilir mi?",
+              answer: "Bazı bonuslar otomatik olarak tanımlanır, bazıları manuel olarak talep edilir.",
+          },
+          {
+              question: "En iyi promosyon nasıl seçilir?",
+              answer: "Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu promosyonlar tercih edilmelidir.",
+          },
+          {
+              question: "Promosyonların çevrim şartı ne demektir?",
+              answer: "Kazanılan promosyonun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ promosyon için 2000₺ bahis yapılması gerektiği anlamına gelir.",
+          },
+          {
+              question: "Promosyonlar hemen kullanılabilir mi?",
+              answer: "Çoğu promosyon, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı siteler promosyonu manuel olarak talep etmenizi ister.",
+          },
+          {
+              question: "Her oyuncu aynı promosyonu alabilir mi?",
+              answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır.",
+          },
+        ],
+        highlights: [
+          { title: "Güncel mrgamb Giriş Linki", description: "Kesintisiz erişim için en son bağlantıları burada bulabilirsiniz." },
+          { title: "Mobil Uyumlu Giriş", description: "iOS ve Android için optimize edilmiş mrgamb deneyimi." },
+          { title: "Lisans ve Güvenlik", description: "Curacao lisansı ve SSL sertifikası ile güvenli oyun ortamı." },
+          { title: "Bonus Fırsatları", description: "Hoş geldin bonusu ve özel promosyonlarla kazancınızı artırın." },
+          { title: "7/24 Canlı Destek", description: "Her zaman yanınızda olan profesyonel destek ekibi." }
+        ]
+      }
     },
 
     about: {
@@ -38,7 +85,11 @@ export const siteConfig = {
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
       canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
-      schemaType: "AboutPage"
+      schemaType: "AboutPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
 
     contact: {
@@ -47,7 +98,11 @@ export const siteConfig = {
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
       canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
-      schemaType: "ContactPage"
+      schemaType: "ContactPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
 
     privacy: {
@@ -56,7 +111,11 @@ export const siteConfig = {
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
       canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
-      schemaType: "WebPage"
+      schemaType: "WebPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
 
     freespin: {
@@ -146,6 +205,19 @@ export const siteConfig = {
           { title: "VIP Oyuncular İçin Özel Avantajlar", description: "VIP kullanıcılar için ekstra freespin ve özel bonuslar." },
           { title: "Freespin Kazançlarının Çekim Süreci", description: "Kazançlarınızı çekebilmek için bilmeniz gereken her şey bu bölümde." }
         ]
+      }
+    },
+
+    disclaimer: {
+      title: "Sorumluluk Reddi | KumarYeri.com",
+      description: "KumarYeri.com'daki tüm içerikler bilgilendirme amaçlıdır. Üçüncü taraf sitelerle ilgili sorumluluk reddi ve yasal uyarılar bu sayfada yer almaktadır.",
+      keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri",
+      canonical: "https://kumaryeri.com/sorumluluk-reddi/",
+      heading: "Sorumluluk Reddi",
+      schemaType: "WebPage",
+      extra: {
+        faq: [],
+        highlights: []
       }
     },
 
@@ -273,117 +345,112 @@ export const siteConfig = {
   },
 
   theme: {
+    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans",
+
+    header: "w-full px-6 py-4 border-b border-gray-800",
+
     text: {
       primary: "text-white",
       secondary: "text-gray-400",
       highlight: "text-yellow-400",
       bonus: "text-green-400",
       tag: "text-blue-100",
+      borderColor: "border-yellow-500",
+      p: "text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line",
     },
+
     bg: {
-      card: "bg-neutral-900",         // örnek: bg-[#0c0f1a]
-      logo: "bg-neutral-800",         // örnek: bg-gray-800
+      card: "bg-neutral-900",
+      logo: "bg-neutral-800",
       tag: "bg-blue-900/40",
     },
+
     border: {
       card: "border-gray-700",
       tag: "border-blue-700",
     },
+
     advertise: {
         border: "border-yellow-500",
-        background: "bg-neutral-800", // örnek: bg-[#1f1f1f]
+        background: "bg-neutral-800",
         iconBg: "bg-yellow-900/10",
         iconColor: "text-yellow-400",
         heading: "text-yellow-400",
         link: "text-yellow-300 underline",
         text: "text-gray-300",
     },
+
     faq: {
-      heading: "text-white",
+      heading: "text-3xl font-extrabold text-white mb-8 border-b-2 border-yellow-500 pb-3 text-center",
       border: "border-yellow-500",
       box: "bg-[#121826] rounded-lg p-4 border border-gray-700",
       question: "text-yellow-400 font-semibold text-lg",
       answer: "text-gray-300 text-sm leading-relaxed",
     },
+
     highlight: {
       section: "mt-12 space-y-8 text-site-text text-sm leading-relaxed",
       title: "text-lg font-semibold mb-1 text-site-highlight text-yellow-400",
       description: "text-site-text",
     },
-  },
 
-  layout: {
-    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans"
+    footer: {
+      wrapper: "border-t border-gray-800 mt-12",
+      container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
+    },
+
+    hero: {
+      sectionClass: "py-16 px-6 text-center bg-yellow-50 text-black rounded-3xl shadow-2xl fade-in-up",
+      titleClass: "text-4xl sm:text-5xl font-extrabold mb-4",
+      descClass: "text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-800",
+      ctaClass: "inline-block bg-black text-yellow-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
+    },
+
+    promoIntro: {
+      titleClass: "text-yellow-400",
+      descriptionClass: "text-gray-300",
+      brandClass: "text-yellow-500",
+      highlightClass: "text-yellow-400 font-bold",
+      ctaClass: "inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg",
+    },
   },
 
   header: {
-    logoText: "KumarYeri",
     nav: [
       { name: "Ana Sayfa", href: "/" },
       { name: "Bonuslar", href: "/#bonuslar" },
       { name: "Hakkımızda", href: "/hakkimizda" },
       { name: "İletişim", href: "/iletisim" }
     ],
-    classes: {
-      wrapper: "bg-black/90 backdrop-blur border-b border-gray-800",
-      container: "max-w-7xl mx-auto px-4 py-4 flex items-center justify-between",
-      logo: "text-yellow-400 text-2xl font-extrabold",
-      navList: "flex gap-6 text-sm sm:text-base text-white",
-      navLink: "hover:text-yellow-400 transition"
-    }
   },
 
   footer: {
     text: "Kumar Yeri — En iyi promosyonlar burada!",
-    classes: {
-      wrapper: "border-t border-gray-800 mt-12",
-      container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
-    }
   },
-
-  nav: [
-    { label: "Ana Sayfa", href: "/" },
-    { label: "Hakkımızda", href: "/hakkimizda/" },
-    { label: "İletişim", href: "/iletisim/" },
-    { label: "Bonuslar", href: "/#bonuslar" },
-    { label: "S.S.S.", href: "/#faq" },
-  ],
 
   hero: {
     title: "2025’in En Avantajlı Casino Bonusları",
-    description:
-      "En iyi siteleri ve en yüksek oranlı promosyonları senin için analiz ettik. KumarPuan ile kazançlı başla.",
+    description: "En iyi siteleri ve en yüksek oranlı promosyonları senin için analiz ettik. KumarPuan ile kazançlı başla.",
     ctaText: "Bonusları İncele",
     ctaLink: "#bonuslar",
-    sectionClass: "py-16 px-6 text-center bg-yellow-50 text-black rounded-3xl shadow-2xl fade-in-up",
-    titleClass: "text-4xl sm:text-5xl font-extrabold mb-4",
-    descClass: "text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-800",
-    ctaClass: "inline-block bg-black text-yellow-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
   },
 
   promoIntro: {
     title: "2025’in En İyi Casino Promosyonları",
-    titleClass: "text-yellow-400",
-    descriptionClass: "text-gray-300",
     brand: "KumarYeri.com",
-    brandClass: "text-yellow-500",
-    highlightClass: "text-yellow-400 font-bold",
     features: [
       { icon: "🎯", text: "%200’e varan hoş geldin promosyonları" },
       { icon: "🎁", text: "Yatırım & kayıp iade promosyonları" },
       { icon: "🧲", text: "Slot makinelerine özel ekstra çevrimler" },
       { icon: "🏆", text: "Sadece güvenilir lisanslı siteler" }
     ],
-    ctaText: "Bonusları Keşfet",
+    ctaText: "🎰 Bonusları Keşfet",
     ctaLink: "#bonuslar",
     ctaTitle: "Bonusları Keşfet",
-    ctaClass: "inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg"
   },
 
   bonusSites: {
     title: "Casino Listesi",
-    titleColor: "text-white",
-    borderColor: "border-yellow-500"
   },
 
   faq: [
@@ -443,17 +510,4 @@ export const siteConfig = {
       description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
     },
   ],
-
-  disclaimer: {
-    title: "Sorumluluk Reddi",
-    content: `
-  KumarYeri.com, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.
-
-  Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.
-
-  Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.
-
-  18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
-  `
-  },
 };

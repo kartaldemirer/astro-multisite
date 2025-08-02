@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://kumaryeri.com', // Mutlaka eklenmeli!
-  trailingSlash: 'always', 
+  trailingSlash: 'ignore', 
   output: 'static', 
   integrations: [sitemap({
       filter: (page) => !page.includes('/admin'), // örnek filtre
