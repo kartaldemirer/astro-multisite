@@ -1,121 +1,45 @@
 ---
 // src/components/PromoIntro.astro
 import { siteConfig } from "../config/kumaryeri_siteConfig";
-const hostname = typeof window !== "undefined"
-  ? window.location.hostname.replace("www.", "")
-  : "kumaryeri.com";
-
-let sites = [];
-const url = "https://sitesconfig.pages.dev/";
-
-try {
-  const response = await fetch(url + "sites.json");
-  const data = await response.json();
-
-  sites = data
-    .map((site: any) => {
-      const order = site.visibilityMap?.[hostname] ?? site.visibilityMap?.default;
-      if (order === undefined || order === false) return null;
-      return { ...site, order };
-    })
-    .filter(Boolean)
-    .sort((a: any, b: any) => a.order - b.order);
-} catch (err) {
-  console.error("❌ JSON yüklenemedi:", err);
-}
 ---
 
-<section id="bonuslar" class={`flex flex-col gap-6 scroll-mt-20 mt-16`}>
-  <h2 class={`text-2xl font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
-    {siteConfig.bonusSites.title}
+<section class="text-center mt-16 px-4 sm:px-6 lg:px-8">
+  <!-- Başlık -->
+  <h2 class:list={[
+    "text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mb-6",
+    siteConfig.theme.promoIntro.titleClass
+  ]}>
+    <a href='/' title={siteConfig.promoIntro.title}>{siteConfig.promoIntro.title}</a>
   </h2>
 
-  {sites.map((site: any) => (
-    <article
-      itemscope
-      itemtype="https://schema.org/Offer"
-      class={`flex flex-col sm:flex-row items-center gap-4 border ${siteConfig.theme.border.card} ${siteConfig.theme.bg.card} rounded-2xl p-5 hover:shadow-xl transition-all duration-300`}
-    >
-      <!-- Logo -->
-      <div class={`w-48 h-48 flex-shrink-0 flex items-center justify-center ${siteConfig.theme.bg.logo} rounded-lg p-2`}>
-        <img
-          src={"https://sitesconfig.pages.dev" + site.icon || "https://via.placeholder.com/64"}
-          alt={site.name}
-          class="w-full h-full object-contain"
-          itemprop="image"
-        />
+  <!-- Açıklama -->
+  <p class:list={[
+    "text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-10",
+    siteConfig.theme.promoIntro.descriptionClass
+  ]}>
+    <strong class={siteConfig.theme.promoIntro.brandClass}>{siteConfig.promoIntro.brand}</strong>,
+    en güncel <span class="font-semibold">promosyonları</span> ve
+    <span class="font-semibold">fırsatları</span> sunan
+    <span class={siteConfig.theme.promoIntro.highlightClass}> premium casino platformlarını</span> sizin için listeliyor.
+    Onlarca site arasında kaybolmayın, en güvenilir ve yüksek kazandıran siteler burada!
+  </p>
+
+  <!-- Özellikler -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-left max-w-xl mx-auto mb-12">
+    {siteConfig.promoIntro.features.map((item) => (
+      <div class="flex items-start gap-2">
+        <span class="text-xl">{item.icon}</span>
+        <p>{item.text}</p>
       </div>
-
-      <!-- İçerik -->
-      <div class="flex flex-col justify-between w-full gap-2">
-        <!-- Başlık ve Oy -->
-        <div class="flex justify-between items-center gap-2 flex-wrap">
-          <h3 class={`text-xl sm:text-2xl font-bold ${siteConfig.theme.text.primary}`} itemprop="name">{site.name}</h3>
-          <span class={`text-sm sm:text-base flex items-center gap-1 ${siteConfig.theme.text.highlight}`}>
-            ⭐ {site.rating} <span class={siteConfig.theme.text.secondary}>({site.votes} oy)</span>
-          </span>
-        </div>
-
-        <!-- Bonus -->
-        <p class={`text-sm sm:text-base font-semibold ${siteConfig.theme.text.bonus}`} itemprop="description">
-          {site.bonus}
-        </p>
-
-        <!-- Etiketler -->
-        <div class="flex flex-wrap gap-2">
-          {site.features.map((feature: string, i: number) => (
-            <span
-              class={`text-xs sm:text-sm ${siteConfig.theme.bg.tag} ${siteConfig.theme.text.tag} px-3 py-1 rounded-full border ${siteConfig.theme.border.tag}`}
-            >
-              {feature}
-            </span>
-          ))}
-        </div>
-
-        <!-- Buton -->
-        <div class="mt-2">
-          <a
-            href={site.ref}
-            target="_blank"
-            rel="noopener noreferrer"
-            itemprop="url"
-            title={`${site.name} sitesine git`}
-            class={`inline-block text-sm sm:text-base font-medium hover:underline ${siteConfig.theme.text.highlight}`}
-          >
-            Detayları Gör
-          </a>
-        </div>
-
-        <!-- SEO meta -->
-        <meta itemprop="priceCurrency" content="TRY" />
-        <meta itemprop="price" content="0.00" />
-      </div>
-    </article>
-  ))}
-
-  <article
-  class={`flex flex-col sm:flex-row items-center gap-4 border-2 border-dashed ${siteConfig.theme.advertise.border} ${siteConfig.theme.advertise.background} rounded-2xl p-5 text-center hover:shadow-xl transition-all duration-300`}
-  aria-hidden="true"
->
-  <!-- Simge -->
-  <div class={`w-20 h-20 flex-shrink-0 flex items-center justify-center ${siteConfig.theme.advertise.iconBg} rounded-lg p-2`}>
-    <svg class={`w-10 h-10 ${siteConfig.theme.advertise.iconColor}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 13V6a1 1 0 00-1-1h-5.586a1 1 0 00-.707.293l-5.414 5.414a1 1 0 00-.293.707V18a1 1 0 001 1h11a1 1 0 001-1v-5z" />
-    </svg>
+    ))}
   </div>
 
-  <!-- İçerik -->
-  <div class="flex flex-col items-start sm:items-start justify-center w-full gap-2">
-    <h3 class={`text-xl sm:text-2xl font-bold ${siteConfig.theme.advertise.heading}`}>
-      Bu alana reklam verebilirsiniz
-    </h3>
-    <p class={`text-sm sm:text-base ${siteConfig.theme.advertise.text}`}>
-      Casinonuzu tanıtın, görünürlüğünüzü artırın. İletişim: 
-      <a href={`mailto:${siteConfig.siteMeta.email}`} rel="noreferrer" class={siteConfig.theme.advertise.link}>
-        {siteConfig.siteMeta.email}
-      </a>
-    </p>
-  </div>
-</article>
-
+  <!-- CTA Butonu -->
+  <a 
+    href={siteConfig.promoIntro.ctaLink}
+    title={siteConfig.promoIntro.ctaTitle}
+    class={siteConfig.theme.promoIntro.ctaClass}
+  >
+    {siteConfig.promoIntro.ctaText}
+  </a>
 </section>
