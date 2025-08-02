@@ -416,7 +416,7 @@ export const siteConfig = {
   highlights: [
     {
       title: "Türkiye’de En Popüler Online Casino Siteleri",
-      description: "Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır. <a href='/guvenilir-casino-siteleri-2025'><strong>En Güvenilir Casino Siteleri 2025</strong></a> listemize sayfamızdan ulaşabilirsiniz."
+      description: "Türkiye’de yasal olarak hizmet veren casino siteleri bulunmasa da, yurt dışı merkezli birçok güvenilir platform Türk kullanıcıları hedef alarak özel kampanyalar sunmaktadır. Bu siteler arasında lisanslı ve denetlenebilir olanları tercih etmek, kullanıcı güvenliği açısından büyük önem taşır. <a href='/guvenilir-casino-siteleri-2025/'><strong>En Güvenilir Casino Siteleri 2025</strong></a> listemize sayfamızdan ulaşabilirsiniz."
     },
     {
       title: "Hoş Geldin Promosyonu Nedir, Nasıl Alınır?",
@@ -428,11 +428,11 @@ export const siteConfig = {
     },
     {
       title: "%100 Bonus Veren Siteler Gerçek mi?",
-      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
+      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri/'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
     },
     {
       title: "Freespin ile Oynanabilecek Popüler Slot Oyunları",
-      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/en-cok-freespin-veren-siteler-2025'><strong>En Çok Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
+      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/en-cok-freespin-veren-siteler-2025/'><strong>En Çok Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
     },
     {
       title: "Çevrim Şartsız Bonus Nedir, Gerçekten Var mı?",
