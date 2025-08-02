@@ -15,24 +15,24 @@ const page = siteConfig.pages.about;
   <article class="prose prose-invert max-w-4xl mx-auto">
     <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
 
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line"><a href="https://kumaryeri.com">KumarYeri.com</a> 2025 yılında kurulmuş bağımsız bir casino rehberi platformudur. Amacımız, oyuncuların bilinçli ve güvenli şekilde oyun oynamalarını sağlamak için tarafsız ve güncel bilgiler sunmaktır.</p>
+    <p class={`${siteConfig.theme.text.p}`}><a href="https://kumaryeri.com">KumarYeri.com</a> 2025 yılında kurulmuş bağımsız bir casino rehberi platformudur. Amacımız, oyuncuların bilinçli ve güvenli şekilde oyun oynamalarını sağlamak için tarafsız ve güncel bilgiler sunmaktır.</p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} mt-10 border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Vizyonumuz</h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Kullanıcıların güvenilir siteleri kolayca bulmasını sağlamak ve sektörde şeffaflığı artırmak.</p>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>Vizyonumuz</h2>
+    <p class={`${siteConfig.theme.text.p}`}>Kullanıcıların güvenilir siteleri kolayca bulmasını sağlamak ve sektörde şeffaflığı artırmak.</p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Misyonumuz</h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Lisanslı ve güvenilir platformları inceleyerek, en avantajlı bonusları ve promosyonları karşılaştırmalı olarak sunmak.</p>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>Misyonumuz</h2>
+    <p class={`${siteConfig.theme.text.p}`}>Lisanslı ve güvenilir platformları inceleyerek, en avantajlı bonusları ve promosyonları karşılaştırmalı olarak sunmak.</p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Neden Bizi Tercih Etmelisiniz?</h2>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>Neden Bizi Tercih Etmelisiniz?</h2>
     <ul class="list-disc list-inside">
       <li>%100 bağımsız ve tarafsız incelemeler</li>
       <li>Güncel ve doğrulanmış içerikler</li>
       <li>Kullanıcı güvenliğini ön planda tutan öneriler</li>
     </ul>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor}  mt-10 border-b ${siteConfig.bonusSites.borderColor} pb-2`}>Ekibimiz</h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Sektörde uzun yıllar deneyimi olan uzman editörlerden oluşan bir ekiple çalışıyoruz. İçeriklerimiz düzenli olarak güncellenir ve doğruluk kontrolünden geçirilir.</p>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>Ekibimiz</h2>
+    <p class={`${siteConfig.theme.text.p}`}>Sektörde uzun yıllar deneyimi olan uzman editörlerden oluşan bir ekiple çalışıyoruz. İçeriklerimiz düzenli olarak güncellenir ve doğruluk kontrolünden geçirilir.</p>
 
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">Daha fazla bilgi için bize ulaşabilirsiniz: <a href=`mailto:${siteConfig.siteMeta.email}` class="text-yellow-300 underline">{siteConfig.siteMeta.email}</a></p>
+    <p class={`${siteConfig.theme.text.p}`}>Daha fazla bilgi için bize ulaşabilirsiniz: <a href=`mailto:${siteConfig.siteMeta.email}` class={`${siteConfig.theme.text.highlight} underline`}>{siteConfig.siteMeta.email}</a></p>
   </article>
 </BaseLayout>

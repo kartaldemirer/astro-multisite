@@ -13,18 +13,18 @@ import { siteConfig } from "../config/siteConfig";
 ---
 
 <section id="faq" class="mt-24 max-w-3xl mx-auto">
-  <h2 class="text-3xl font-extrabold text-white mb-8 border-b-2 border-yellow-500 pb-3 text-center">
+  <h2 class={`${siteConfig.theme.faq.heading}`}>
     Sıkça Sorulan Sorular
   </h2>
 
   <div class="space-y-4">
     {items.map((faq, index) => (
-      <details class="group bg-[#121826] rounded-lg p-4 border border-gray-700">
+      <details class={`${siteConfig.theme.faq.box}`}>
         <summary class={`flex justify-between items-center cursor-pointer ${siteConfig.theme.faq.question}`}>
           {faq.question}
           <span class="transform group-open:rotate-180 transition-transform duration-200">▼</span>
         </summary>
-        <p class="mt-2 text-gray-300 text-sm leading-relaxed">
+        <p class={`${siteConfig.theme.faq.answer}`}>
           {faq.answer}
         </p>
       </details>

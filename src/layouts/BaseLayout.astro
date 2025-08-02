@@ -1,34 +1,60 @@
 ---
+
+import { generateSchemas } from "../lib/generateSchemas";
 import { siteConfig } from "../config/siteConfig";
 import "../styles/global.css";
 const { siteMeta } = siteConfig;
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+
 // Sayfa bazlı meta değerleri
 const { title, description, canonical, schemaType, extra, keywords } = Astro.props;
 
-const isFAQ = schemaType === "FAQPage";
-const schemaJSON = {
-  "@context": "https://schema.org",
-  "@type": schemaType || "Article",
-  ...(isFAQ
-    ? {
-        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
-          "@type": "Question",
-          "name": f.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": f.answer
-          }
-        }))
-      }
-    : {
-        "headline": title,
-        "description": description
-      }
-  )
-};
+// Sayfa için config değerini al
+const { pageKey } = Astro.props;
+const pageData = siteConfig.pages[pageKey] || siteConfig.pages.home;
+
+// FAQ varsa çek
+const faq = pageData.extra?.faq || [];
+
+// Breadcrumb örneği (dinamik istersen router’dan alabilirsin)
+const breadcrumbs = [
+  { name: "Anasayfa", item: siteConfig.siteMeta.url },
+  ...(pageKey !== "home" ? [{ name: pageData.heading, item: pageData.canonical }] : [])
+];
+
+const itemList = siteConfig.siteMeta.recommendedSites.map(site => ({
+  position: site.position,
+  url: site.url,
+  name: site.name,
+  image: site.image
+}));
+
+const reviews = siteConfig.siteMeta.recommendedSites.map(site => ({
+  name: site.name,
+  ratingValue: site.ratingValue,
+  bestRating: site.bestRating
+}));
+
+// Şemaları üret
+const schemas = generateSchemas({
+  schemaType: pageData.schemaType || "Article",
+  title: pageData.title,
+  description: pageData.description,
+  url: pageData.canonical,
+  logoUrl: "https://kumaryeri.com/logo.png",
+  organizationName: siteConfig.siteMeta.name,
+  organizationUrl: siteConfig.siteMeta.url,
+  sameAs: [
+    "https://twitter.com/kumaryericom",
+    "https://www.linkedin.com/company/kumaryericom"
+  ],
+  faq,
+  breadcrumbs,
+  itemList,
+  reviews
+});
 ---
 
 <!DOCTYPE html>
@@ -62,6 +88,8 @@ const schemaJSON = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image" content={siteMeta.og.image} />
 
     <!-- Twitter -->
@@ -71,10 +99,11 @@ const schemaJSON = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={siteMeta.twitter.image} />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
+    {schemas.map(schema => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    ))}
   </head>
-  <body class={siteConfig.layout.bodyClass}>
+  <body class={siteConfig.theme.bodyClass}>
     <Header />
     <main class="max-w-3xl mx-auto px-6 py-10 flex-grow">
       <slot />
