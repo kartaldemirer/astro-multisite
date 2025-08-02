@@ -1,17 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { siteConfig } from "../config/siteConfig";
+import { siteConfig } from "../config/main_siteConfig";
 
 const page = siteConfig.pages.privacy;
 ---
 
-<BaseLayout 
-  title={page.title} 
-  description={page.description} 
-  canonical={page.canonical} 
-  schemaType={page.schemaType}
-  keywords={page.keywords}
->
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="privacy">
   <article class="prose prose-invert max-w-4xl mx-auto">
     <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>
       {page.heading}

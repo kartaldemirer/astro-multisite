@@ -38,6 +38,7 @@ export const siteConfig = {
     home: {
       title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
       description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
+      keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
       canonical: "https://kumaryeri.com",
       schemaType: "Article",
       extra: {
@@ -83,7 +84,11 @@ export const siteConfig = {
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
       canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
-      schemaType: "AboutPage"
+      schemaType: "AboutPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
 
     contact: {
@@ -92,7 +97,11 @@ export const siteConfig = {
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
       canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
-      schemaType: "ContactPage"
+      schemaType: "ContactPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
 
     privacy: {
@@ -101,8 +110,25 @@ export const siteConfig = {
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
       canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
-      schemaType: "WebPage"
+      schemaType: "WebPage",
+      extra : {
+        faq : [],
+        highlights: [],
+      },
     },
+
+    disclaimer: {
+      title: "Sorumluluk Reddi | KumarYeri.com",
+      description: "KumarYeri.com'daki tüm içerikler bilgilendirme amaçlıdır. Üçüncü taraf sitelerle ilgili sorumluluk reddi ve yasal uyarılar bu sayfada yer almaktadır.",
+      keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri",
+      canonical: "https://kumaryeri.com/sorumluluk-reddi/",
+      heading: "Sorumluluk Reddi",
+      schemaType: "WebPage",
+      extra: {
+        faq: [],
+        highlights: []
+      }
+  },
 
     mrgambGiris: {
       title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
@@ -301,17 +327,4 @@ export const siteConfig = {
       description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
     },
   ],
-
-  disclaimer: {
-    title: "Sorumluluk Reddi",
-    content: `
-  KumarYeri.com, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.
-
-  Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.
-
-  Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.
-
-  18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
-  `
-  },
 };
