@@ -8,6 +8,7 @@ export const siteConfig = {
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
     canonical: "https://kumaryeri.com",
+    logo: "https://kumaryeri.com/logo.png",
     email: "info@kumaryeri.com",
     og: {
       siteName: "KumarYeri.com",

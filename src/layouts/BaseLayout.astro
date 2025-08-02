@@ -42,13 +42,9 @@ const schemas = generateSchemas({
   title: pageData.title,
   description: pageData.description,
   url: pageData.canonical,
-  logoUrl: "https://kumaryeri.com/logo.png",
+  logoUrl: pageData.logo,
   organizationName: siteConfig.siteMeta.name,
   organizationUrl: siteConfig.siteMeta.url,
-  sameAs: [
-    "https://twitter.com/kumaryericom",
-    "https://www.linkedin.com/company/kumaryericom"
-  ],
   faq,
   breadcrumbs,
   itemList,
