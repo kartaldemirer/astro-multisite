@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { siteConfig } from "../config/siteConfig";
+import { siteConfig } from "../config/kumarpuan_siteConfig";
 import FAQ from "../components/Faq.astro";
 import Highlights from "../components/Highlights.astro";
 import { Image } from 'astro:assets';
@@ -9,76 +9,36 @@ import freespinVereSiteler2025 from '../assets/kumarpuan/freespin-bonus-kombinas
 
 const page = siteConfig.pages.freespinBonusKombinasyonlari;
 
-const { title, description, schemaType, extra, canonical } = Astro.props;
-
-const isFAQ = schemaType === "FAQPage";
-const schemaJSON = {
-  "@context": "https://schema.org",
-  "@type": isFAQ ? "FAQPage" : (schemaType || "Article"),
-  ...(isFAQ
-    ? {
-        "mainEntity": extra?.faq?.map((f: { question: any; answer: any; }) => ({
-          "@type": "Question",
-          "name": f.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": f.answer
-          }
-        }))
-      }
-    : {
-        "headline": title,
-        "description": description,
-        "mainEntityOfPage": canonical,
-        "author": {
-          "@type": "Organization",
-          "name": siteConfig.siteMeta.name
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": siteConfig.siteMeta.name,
-          "logo": {
-            "@type": "ImageObject",
-            "url": siteConfig.siteMeta.og.image
-          }
-        },
-        "datePublished": "2025-08-01",
-        "dateModified": "2025-08-01",
-        "image": siteConfig.siteMeta.og.image
-      }
-  )
-};
 ---
-<script type="application/ld+json" set:html={JSON.stringify(schemaJSON)}></script>
-<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra}>
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="freespinBonusKombinasyonlari">
   <article class="prose prose-invert max-w-4xl mx-auto">
     <Image src={freespinVereSiteler2025} alt="Freespin ve Bonus Kombinasyonları" width={720} height={420} class="mb-10" />
-    <h1 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h1 class={`text-2xl font-bold ${siteConfig.theme.text.highlight} border-b ${siteConfig.theme.text.borderColor} pb-2`}>
       <a href={page.canonical}>{page.heading}</a>
     </h1>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       <strong>Freespin ve bonus kombinasyonları</strong>, casino oyuncularının kazançlarını en üst düzeye çıkarması için uyguladığı en etkili yöntemlerden biridir. Doğru kombinasyonlarla hem daha fazla oyun oynayabilir hem de ekstra kazanç fırsatları yakalayabilirsiniz.
     </p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>
       Bonus Kombinasyonu Nedir?
     </h2>
-    <p class="text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line">
+    <p class={`${siteConfig.theme.text.p}`}>
       Bonus kombinasyonu, aynı anda birden fazla promosyonu kullanma yöntemidir. Örneğin, hoş geldin bonusunu freespin kampanyaları ile birleştirerek daha fazla kazanç elde edebilirsiniz.
     </p>
 
-    <h2 class={`text-lg font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} mt-10 border-b ${siteConfig.theme.text.borderColor} pb-2`}>
         En Avantajlı Kombinasyonlar
     </h2>
 
-    <ul class="list-disc list-inside mb-10">
+    <ul class="list-disc list-inside my-10">
       <li><strong>Çevirimsiz Freespin + Yatırım Bonusu</strong> – Ek şart olmadan kazanç çekebilme</li>
       <li><strong>Hoş Geldin Bonusu + Sadakat Programı</strong> – Uzun vadeli kazanç için ideal</li>
       <li><strong>Mobil Özel Freespin + Cashback Bonusu</strong> – Mobil oyuncular için ekstra avantaj</li>
     </ul>
 
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line mb-10">
-      Daha fazla avantajlı teklif için <a href="/freespin-veren-casino-siteleri-2025/" class="text-yellow-400 underline">freespin veren siteler rehberimizi</a> ziyaret edin. Ayrıca <a href="/freespin-cevirim-sartlari/" class="text-yellow-400 underline">çevirim şartlarını</a> öğrenerek riskinizi azaltabilirsiniz.
+    <p class={`${siteConfig.theme.text.p} mb-10`}>
+      Daha fazla avantajlı teklif için <a href="/freespin-veren-casino-siteleri-2025/" class={`${siteConfig.theme.text.highlight} underline`}>freespin veren siteler rehberimizi</a> ziyaret edin. Ayrıca <a href="/freespin-cevirim-sartlari/" class={`${siteConfig.theme.text.highlight} underline`}>çevirim şartlarını</a> öğrenerek riskinizi azaltabilirsiniz.
     </p>
   </article>
 

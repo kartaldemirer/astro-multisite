@@ -1,33 +1,32 @@
 ---
 // src/components/PromoIntro.astro
-import { siteConfig } from "../config/siteConfig";
-const { promoIntro } = siteConfig;
+import { siteConfig } from "../config/kumarpuan_siteConfig";
 ---
 
-<section class={`mt-10 ${siteConfig.hero.sectionClass}`}>
+<section class="text-center mt-16 px-4 sm:px-6 lg:px-8">
   <!-- Başlık -->
   <h2 class:list={[
     "text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg leading-tight mb-6",
-    promoIntro.titleClass
+    siteConfig.theme.promoIntro.titleClass
   ]}>
-    <a href='/' title='2025’in En İyi Casino Promosyonları'>{promoIntro.title}</a>
+    <a href='/' title={siteConfig.promoIntro.title}>{siteConfig.promoIntro.title}</a>
   </h2>
 
   <!-- Açıklama -->
   <p class:list={[
     "text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-10",
-    promoIntro.descriptionClass
+    siteConfig.theme.promoIntro.descriptionClass
   ]}>
-    <strong class={promoIntro.brandClass}>{promoIntro.brand}</strong>,
+    <strong class={siteConfig.theme.promoIntro.brandClass}>{siteConfig.promoIntro.brand}</strong>,
     en güncel <span class="font-semibold">promosyonları</span> ve
     <span class="font-semibold">fırsatları</span> sunan
-    <span class={promoIntro.highlightClass}> premium casino platformlarını</span> sizin için listeliyor.
+    <span class={siteConfig.theme.promoIntro.highlightClass}> premium casino platformlarını</span> sizin için listeliyor.
     Onlarca site arasında kaybolmayın, en güvenilir ve yüksek kazandıran siteler burada!
   </p>
 
   <!-- Özellikler -->
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base text-left max-w-xl mx-auto mb-12">
-    {promoIntro.features.map((item) => (
+    {siteConfig.promoIntro.features.map((item) => (
       <div class="flex items-start gap-2">
         <span class="text-xl">{item.icon}</span>
         <p>{item.text}</p>
@@ -37,10 +36,10 @@ const { promoIntro } = siteConfig;
 
   <!-- CTA Butonu -->
   <a 
-    href={promoIntro.ctaLink}
-    title={promoIntro.ctaTitle}
-    class={promoIntro.ctaClass}
+    href={siteConfig.promoIntro.ctaLink}
+    title={siteConfig.promoIntro.ctaTitle}
+    class={siteConfig.theme.promoIntro.ctaClass}
   >
-    🎰 {promoIntro.ctaText}
+    {siteConfig.promoIntro.ctaText}
   </a>
 </section>

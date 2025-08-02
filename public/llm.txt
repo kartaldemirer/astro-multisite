@@ -1,13 +1,19 @@
-# 2025'in En İyi Online Casino Bonusları | KumarYeri.com
+# llm.txt for kumarpuan.com
+# Policy for AI agents and LLMs
 
-2025 yılının en yüksek bonus veren online kumarhanelerini tek bir platformda keşfedin. Üyelik bonusları, yatırım promosyonları ve en güncel kampanyalar burada!
+# Access Policy
+User-agent: *
+Allow: /
 
-## Bonuslar
+# License
+License: CC BY-NC 4.0
+Note: Content on this site can be used for research and non-commercial purposes only, with proper attribution.
 
-[Bonusları Keşfet](https://kumaryeri.com/#bonuslar): Bu bölümde, 2025 yılı için en iyi online kumarhanelerin sunduğu bonusları detaylı bir şekilde keşfedebilirsiniz. Üyelik bonusları ve yatırım promosyonları hakkında bilgi alarak en avantajlı fırsatları değerlendirin.
+# Attribution Requirement
+Attribution: Link back to https://kumarpuan.com when using any content.
 
-[Detayları Gör](http://mrgamb.com/?modal=register&ref=mrseo): Burada, mevcut bonusların ve kampanyaların detaylarını görebilir, hangi kumarhanelerin en iyi fırsatları sunduğunu öğrenebilirsiniz.
+# Commercial Use
+Commercial Use: Not allowed without explicit permission.
 
-## İletişim
-
-[info@kumaryeri.com](mailto:info@kumaryeri.com): Herhangi bir sorunuz veya destek talebiniz için bu e-posta adresi üzerinden KumarYeri.com ile iletişime geçebilirsiniz.
+# Contact
+Contact: info@kumarpuan.com

@@ -1,0 +1,6 @@
+# humans.txt for kumarpuan.com
+Site: https://kumarpuan.com
+Owner: KumarPuan.com Team
+Author: KumarPuan Editorial
+Contact: info@kumarpuan.com
+AI Policy: https://kumarpuan.com/llm.txt

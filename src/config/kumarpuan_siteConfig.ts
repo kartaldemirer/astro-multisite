@@ -7,55 +7,170 @@ export const siteConfig = {
     description: "2025’in en güncel freespin veren casino siteleri listesi. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformları keşfedin.",
     keywords: "freespin veren casino siteleri, bedava freespin, çevirimsiz freespin bonusu, casino bonusları 2025",
     canonical: "https://kumarpuan.com",
+    logo: "https://kumarpuan.com/logo.png", // Ekledik
     og: {
+      siteName: "KumarPuan.com",
       title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
       description: "En iyi freespin veren casino sitelerini keşfedin. Güncel bonuslar ve lisanslı platformlar bir arada.",
-      image: "/assets/kumarpuan/og-image.jpg", // OG için görsel eklenmeli
+      url: "https://kumarpuan.com",
+      image: "https://kumarpuan.com/assets/kumarpuan/og-image.jpg", // Tam URL yaptık
       type: "website"
     },
     twitter: {
       card: "summary_large_image",
       title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
       description: "En güncel freespin veren casino siteleri listesi. Bonus fırsatları ve güvenilir platformlar.",
-      image: "/assets/kumarpuan/twitter-card.jpg"
+      image: "https://kumarpuan.com/assets/kumarpuan/twitter-card.jpg" // Tam URL yaptık
     },
     author: "KumarPuan.com",
-    publisher: "Kumar Puan"
+    publisher: "Kumar Puan",
+    recommendedSites: [
+      {
+        position: 1,
+        name: "MrGamb",
+        url: "https://mrgamb.com/",
+        image: "https://sitesconfig.pages.dev/logolar/mrgamb.png",
+        ratingValue: "4.9",
+        bestRating: "5"
+      }
+    ]
   },
+
 
   pages: {
     home: {
       title: "Freespin Veren Casino Siteleri 2025 | Kumar Puan",
-      description: "2025’in en güncel freespin veren casino siteleri listesi. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformları keşfedin.",
-      canonical: "https://kumarpuan.com",
-      schemaType: "WebPage"
+      description: "Freespin veren casino siteleri 2025 listesi burada! Çevirimsiz freespin bonusları, bedava freespin kampanyaları ve güvenilir lisanslı platformlar bir arada.",
+      canonical: "https://kumarpuan.com/",
+      keywords: "freespin veren casino siteleri 2025, bedava freespin, çevirimsiz freespin, online casino bonusları, en iyi casino siteleri",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          {
+            question: "Freespin veren casino siteleri 2025 listesi nedir?",
+            answer: "2025 yılında en güncel bedava freespin ve çevirimsiz bonus fırsatlarını sunan casino sitelerinin listesi kumarpuan.com'da yer alır."
+          },
+          {
+            question: "Çevirimsiz freespin bonusu nedir?",
+            answer: "Çevirimsiz freespin bonusu, kazancınızı doğrudan çekebileceğiniz bir bonus türüdür. Çoğu oyuncu için en avantajlı promosyon tipidir."
+          },
+          {
+            question: "En iyi freespin bonusu nasıl bulunur?",
+            answer: "Lisanslı, güvenilir platformlarda ve çevrim şartı düşük freespin bonuslarını tercih etmek en iyi yöntemdir."
+          },
+          {
+            question: "Freespin bonusu almak için yatırım gerekir mi?",
+            answer: "Bazı siteler kayıt sonrası yatırım şartı olmadan bedava freespin verirken, bazıları yatırım şartı koyar. Kampanya koşullarını kontrol edin."
+          },
+          {
+            question: "2025’te hangi casino siteleri freespin veriyor?",
+            answer: "MrGamb, BetArena ve LuckySpin gibi popüler siteler düzenli olarak freespin kampanyaları sunmaktadır."
+          }
+        ],
+        highlights: [
+          { title: "En Güncel Freespin Kampanyaları", description: "2025'in en avantajlı freespin fırsatlarını keşfedin." },
+          { title: "Çevirimsiz Bonuslar", description: "Kazancınızı anında çekebileceğiniz promosyonlar burada." },
+          { title: "Lisanslı ve Güvenilir Siteler", description: "Curacao ve MGA lisanslı platformlarda güvenli oyun." },
+          { title: "Mobil Uyumlu Deneyim", description: "iOS ve Android için optimize edilmiş tasarım." },
+          { title: "24/7 Destek", description: "Tüm sorularınız için anında canlı destek." }
+        ]
+      }
     },
 
     about: {
-      title: "Hakkımızda | KumarYeri.com",
-      description: "KumarYeri.com, güvenilir casino rehberleri ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
-      keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
+      title: "Hakkımızda | KumarPuan.com",
+      description: "KumarPuan.com, freespin ve bonus arayan oyuncular için güvenilir ve güncel bilgiler sunar.",
+      keywords: "hakkımızda, KumarPuan ekibi, freespin bonusları, casino rehberi",
       canonical: "https://kumarpuan.com/hakkimizda/",
       heading: "Hakkımızda",
-      schemaType: "AboutPage"
+      schemaType: "AboutPage",
+      extra: {
+        faq: [
+          {
+            question: "KumarPuan.com'un amacı nedir?",
+            answer: "Oyunculara en güncel freespin bonusları ve promosyon bilgilerini tarafsız şekilde sunmak."
+          },
+          {
+            question: "KumarPuan verileri nasıl hazırlanıyor?",
+            answer: "Platform incelemeleri editör ekibimiz tarafından yapılır ve şeffaflık ilkesiyle paylaşılır."
+          }
+        ],
+        highlights: []
+      }
     },
 
     contact: {
-      title: "İletişim | KumarYeri.com",
-      description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
-      keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
+      title: "İletişim | KumarPuan.com",
+      description: "KumarPuan ekibiyle iletişime geçin. Görüş, öneri veya iş birliği için bizimle hemen bağlantı kurun.",
+      keywords: "iletişim, KumarPuan iletişim bilgileri, freespin rehberi iletişim",
       canonical: "https://kumarpuan.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
-      schemaType: "ContactPage"
+      schemaType: "ContactPage",
+      extra: {
+        faq: [
+          {
+            question: "KumarPuan ekibine nasıl ulaşabilirim?",
+            answer: "info@kumarpuan.com e-posta adresi üzerinden bizimle iletişime geçebilirsiniz."
+          },
+          {
+            question: "İş birliği teklifleri kabul ediyor musunuz?",
+            answer: "Evet, detaylı bilgi için lütfen e-posta yoluyla bize ulaşın."
+          }
+        ],
+        highlights: []
+      }
     },
 
     privacy: {
-      title: "Gizlilik Politikası | KumarYeri.com",
-      description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
-      keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
+      title: "Gizlilik Politikası | KumarPuan.com",
+      description: "KumarPuan.com, kullanıcı gizliliğini ön planda tutar. Toplanan veriler, çerez kullanımı ve güvenlik önlemleri hakkında detaylı bilgiyi burada bulabilirsiniz.",
+      keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarPuan.com gizlilik",
       canonical: "https://kumarpuan.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
-      schemaType: "WebPage"
+      schemaType: "PrivacyPolicyPage",
+      extra: {
+        faq: [
+          {
+            question: "KumarPuan hangi verileri topluyor?",
+            answer: "Ziyaretçi analitiği ve kullanıcı deneyimini iyileştirmek için anonim veriler toplanır."
+          },
+          {
+            question: "Çerezler nasıl kullanılıyor?",
+            answer: "Çerezler, site performansını ve kullanıcı tercihlerini hatırlamak için kullanılmaktadır."
+          },
+          {
+            question: "Verilerim güvende mi?",
+            answer: "Evet, veriler SSL şifreleme ile korunur ve üçüncü taraflarla paylaşılmaz."
+          }
+        ],
+        highlights: []
+      }
+    },
+
+    disclaimer: {
+      title: "Sorumluluk Reddi | KumarPuan.com",
+      description: "KumarPuan.com üzerindeki tüm içerikler yalnızca bilgilendirme amaçlıdır. Üçüncü taraf sitelere yönlendirmelerden doğacak sorumluluk kabul edilmez. Detaylı yasal uyarılar bu sayfada.",
+      keywords: "sorumluluk reddi, yasal uyarı, KumarPuan.com, casino içerikleri",
+      canonical: "https://kumarpuan.com/sorumluluk-reddi/",
+      heading: "Sorumluluk Reddi",
+      schemaType: "DisclaimerPage",
+      extra: {
+        faq: [
+          {
+            question: "KumarPuan içeriği yasal bir tavsiye midir?",
+            answer: "Hayır. Tüm içerikler yalnızca bilgilendirme amacı taşır."
+          },
+          {
+            question: "Üçüncü taraf linklerinden kim sorumludur?",
+            answer: "Yönlendirilen sitelerin içeriği ve güvenliği tamamen ilgili siteye aittir."
+          },
+          {
+            question: "KumarPuan kullanıcıları için yaş sınırı var mı?",
+            answer: "Evet, 18 yaş altındaki kişilerin siteyi kullanması yasaktır."
+          }
+        ],
+        highlights: []
+      }
     },
 
     freespinCasino2025: {
@@ -357,80 +472,89 @@ export const siteConfig = {
   },
 
   theme: {
+    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans",
+
+    header: "w-full px-6 py-4 border-b border-gray-800",
+
     text: {
       primary: "text-white",
       secondary: "text-gray-400",
-      highlight: "text-[#ffcc00]",   // Altın sarısı
-      bonus: "text-[#4ade80]",       // Yeşil ton
-      tag: "text-[#93c5fd]"          // Açık mavi
+      highlight: "text-yellow-400",
+      bonus: "text-green-400",
+      tag: "text-blue-100",
+      borderColor: "border-yellow-500",
+      p: "text-lg leading-relaxed text-gray-300 mb-10 whitespace-pre-line",
     },
+
     bg: {
-      card: "bg-[#181d29]",          // Kart arka planı
-      logo: "bg-[#141822]",          // Logo/header arka plan
-      tag: "bg-[#22304a]/50"         // Etiket arka planı
+      card: "bg-neutral-900",
+      logo: "bg-neutral-800",
+      tag: "bg-blue-900/40",
     },
+
     border: {
       card: "border-gray-700",
-      tag: "border-blue-700"
+      tag: "border-blue-700",
     },
-    advertise: {
-      border: "border-[#ffcc00]",
-      background: "bg-[#202636]",
-      iconBg: "bg-[#ffcc00]/10",
-      iconColor: "text-[#ffcc00]",
-      heading: "text-[#ffcc00]",
-      link: "text-[#ffdb58] underline",
-      text: "text-gray-300"
-    },
-    faq: {
-      heading: "text-white",
-      border: "border-[#ffcc00]",
-      box: "bg-[#181d29] rounded-lg p-4 border border-gray-700",
-      question: "text-[#ffcc00] font-semibold text-lg",
-      answer: "text-gray-300 text-sm leading-relaxed"
-    },
-    highlight: {
-      section: "mt-12 space-y-8 text-sm leading-relaxed",
-      title: "text-lg font-semibold mb-1 text-[#ffcc00]",
-      description: "text-gray-300"
-    }
-  },
 
-  layout: {
-    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-[#0b0f19] via-[#101522] to-[#171c28] text-white font-sans"
+    advertise: {
+        border: "border-yellow-500",
+        background: "bg-neutral-800",
+        iconBg: "bg-yellow-900/10",
+        iconColor: "text-yellow-400",
+        heading: "text-yellow-400",
+        link: "text-yellow-300 underline",
+        text: "text-gray-300",
+    },
+
+    faq: {
+      heading: "text-3xl font-extrabold text-white mb-8 border-b-2 border-yellow-500 pb-3 text-center",
+      border: "border-yellow-500",
+      box: "bg-[#121826] rounded-lg p-4 border border-gray-700",
+      question: "text-yellow-400 font-semibold text-lg",
+      answer: "text-gray-300 text-sm leading-relaxed",
+    },
+
+    highlight: {
+      section: "mt-12 space-y-8 text-site-text text-sm leading-relaxed",
+      title: "text-lg font-semibold mb-1 text-site-highlight text-yellow-400",
+      description: "text-site-text",
+    },
+
+    footer: {
+      wrapper: "border-t border-gray-800 mt-12",
+      container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
+    },
+
+    hero: {
+      sectionClass: "py-16 px-6 text-center bg-yellow-50 text-black rounded-3xl shadow-2xl fade-in-up",
+      titleClass: "text-4xl sm:text-5xl font-extrabold mb-4",
+      descClass: "text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-gray-800",
+      ctaClass: "inline-block bg-black text-yellow-400 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
+    },
+
+    promoIntro: {
+      titleClass: "text-yellow-400",
+      descriptionClass: "text-gray-300",
+      brandClass: "text-yellow-500",
+      highlightClass: "text-yellow-400 font-bold",
+      ctaClass: "inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg",
+    },
   },
 
   header: {
-    logoText: "Kumar Puan",
     nav: [
-      { text: "Ana Sayfa", href: "/" },
-      { text: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
-      { text: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
-      { text: "İletişim", href: "/iletisim/" }
+      { name: "Ana Sayfa", href: "/" },
+      { name: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
+      { name: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
+      { name: "İletişim", href: "/iletisim/" }
     ],
-    classes: {
-      wrapper: "bg-black/90 backdrop-blur border-b border-gray-800",
-      container: "max-w-7xl mx-auto px-4 py-4 flex items-center justify-between",
-      logo: "text-yellow-400 text-2xl font-extrabold",
-      navList: "flex gap-6 text-sm sm:text-base text-white",
-      navLink: "hover:text-yellow-400 transition"
-    }
   },
 
   footer: {
-    text: "© 2025 Kumar Puan. Tüm hakları saklıdır.",
-    classes: {
-      wrapper: "border-t border-gray-800 mt-12",
-      container: "max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400"
-    }
+    text: "Kumar Puan — En iyi promosyonlar burada!",
   },
 
-  nav: [
-      { text: "Ana Sayfa", href: "/" },
-      { text: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
-      { text: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
-      { text: "İletişim", href: "/iletisim/" }
-  ],
 
   hero: {
     title: "Freespin Veren Casino Siteleri 2025",
@@ -438,19 +562,11 @@ export const siteConfig = {
       "2025’in en iyi freespin veren casino sitelerini keşfedin. Bedava freespin, çevirimsiz bonuslar ve güvenilir platformlar tek listede.",
     ctaText: "Freespin Listesini Gör",
     ctaLink: "#bonuslar",
-    sectionClass: "relative text-center py-20 px-6 rounded-3xl shadow-lg bg-gradient-to-br from-[#0b0f19] via-[#101522] to-[#171c28] border border-yellow-500",
-    titleClass: "text-4xl sm:text-5xl font-extrabold mb-6 text-[#ffcc00]",
-    descClass: "text-lg sm:text-xl mb-8 max-w-3xl mx-auto text-gray-300",
-    ctaClass: "inline-block bg-[#ffcc00] text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-400 transition shadow-lg"
   },
 
   promoIntro: {
     title: "Freespin Veren Casino Siteleri 2025",
-    titleClass: "text-3xl sm:text-4xl font-extrabold text-[#ffcc00] mb-4",
-    descriptionClass: "text-lg sm:text-xl text-gray-300 mb-6 max-w-3xl mx-auto",
     brand: "KumarPuan.com",
-    brandClass: "text-[#ffdb58] font-semibold",
-    highlightClass: "text-[#ffcc00] font-bold",
     features: [
       { icon: "🎯", text: "En iyi freespin veren casino siteleri listesi" },
       { icon: "🎁", text: "Çevirimsiz freespin ve bedava dönüş fırsatları" },
@@ -460,14 +576,10 @@ export const siteConfig = {
     ctaText: "Freespin Listesini Gör",
     ctaLink: "#bonuslar",
     ctaTitle: "Freespin Veren Siteleri Görüntüle",
-    ctaClass: "inline-flex items-center gap-3 bg-[#ffcc00] hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded-xl shadow-xl transition-transform transform hover:scale-105 text-lg",
-    sectionClass: "relative text-center py-20 px-6 rounded-3xl shadow-lg bg-gradient-to-br from-[#0b0f19] via-[#101522] to-[#171c28] border border-yellow-500",
   },
 
   bonusSites: {
     title: "Freespin Veren Casino Siteleri 2025",
-    titleColor: "text-[#ffcc00]",      // Altın sarısı başlık
-    borderColor: "border-[#ffcc00]"    // Altın sarısı border
   },
 
   faq: [
@@ -511,17 +623,4 @@ export const siteConfig = {
       description: "Mobil uyumlu casino siteleri sayesinde istediğiniz yerden freespin bonuslarını kullanabilirsiniz. <a href='/mobil-freespin-siteleri/'><strong>Mobil Freespin Siteleri</strong></a> sayfamızdan detaylara ulaşın."
     }
   ],
-
-  disclaimer: {
-    title: "Sorumluluk Reddi",
-    content: `
-    KumarPuan.com, yalnızca bilgilendirme amacıyla <strong>freespin veren casino siteleri</strong> ve diğer online oyun platformları hakkında içerikler sunar. Sitemizde yer alan bilgiler, kullanıcıyı yasal olmayan oyunlara teşvik etmek amacı taşımaz.
-
-    Sayfalarımızda sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği, güvenliği veya yasal uygunluğu konusunda herhangi bir sorumluluk kabul edilmez. Kullanıcı, yönlendirilen siteleri kendi sorumluluğunda ziyaret eder.
-
-    Tüm bilgiler editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, karar verirken bulunduğu ülkenin yasal düzenlemelerini dikkate almalıdır.
-
-    18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.
-    `
-  }
 };

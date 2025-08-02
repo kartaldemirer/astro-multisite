@@ -1,18 +1,17 @@
 ---
 // components/Footer.astro
-import {siteConfig} from "../config/siteConfig";
+import {siteConfig} from "../config/kumarpuan_siteConfig";
 ---
 
-<footer class={siteConfig.footer.classes.wrapper}>
-  <div class={siteConfig.footer.classes.container}>
+<footer class={siteConfig.theme.footer.wrapper}>
+  <div class={siteConfig.theme.footer.container}>
     {siteConfig.footer.text}
     <div>
       <a href="/" title="Anasayfa">Ana Sayfa</a> • 
       <a href="/hakkimizda/" title="Hakkımızda">Hakkımızda</a> • 
       <a href="/iletisim/" title="İletişim">İletişim</a> • 
       <a href="/gizlilik-politikasi/" title="Gizlilik Politikası">Gizlilik Politikası</a> • 
-      <a href="/sorumluluk-reddi/" title="Sorumluluk Reddi">Sorumluluk Reddi</a> • 
-      <a href="/mrgamb-giris/" title="mrgamb Giriş">mrgamb Giriş</a>
+      <a href="/sorumluluk-reddi/" title="Sorumluluk Reddi">Sorumluluk Reddi</a>
     </div>
     <p class="mt-4 text-xs text-gray-500">&copy; {new Date().getFullYear()} {siteConfig.siteMeta.name} — Tüm hakları saklıdır.</p>
   </div>

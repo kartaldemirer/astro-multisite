@@ -1,19 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { siteConfig } from "../config/siteConfig";
+import { siteConfig } from "../config/kumarpuan_siteConfig";
 
-const meta = {
-  title: siteConfig.disclaimer.title + " | KumarYeri.com",
-  description: "KumarYeri.com sorumluluk reddi metni. Site kullanım koşulları ve yasal uyarılar hakkında bilgi edinin.",
-  canonical: "https://kumaryeri.com/sorumluluk-reddi/"
-};
-
-const { disclaimer } = siteConfig;
+const page = siteConfig.pages.disclaimer;
 ---
 
-<BaseLayout title={meta.title} description={meta.description} canonical={meta.canonical} >
-  <section class="max-w-3xl mx-auto px-4 py-20">
-    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight}`}>{disclaimer.title}</h1>
-    <p class="text-lg leading-relaxed text-gray-300 whitespace-pre-line" set:html={disclaimer.content}></p>
-  </section>
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="disclaimer">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
+
+    <p class={`${siteConfig.theme.text.p}`}>{siteConfig.siteMeta.publisher}, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.</p>
+
+    <p class={`${siteConfig.theme.text.p}`}>Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.</p>
+
+    <p class={`${siteConfig.theme.text.p}`}>Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.</p>
+
+    <p class={`${siteConfig.theme.text.p}`}>18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.</p>
+  </article>
 </BaseLayout>
