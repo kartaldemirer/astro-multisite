@@ -419,8 +419,8 @@ export const siteConfig = {
     nav: [
       { name: "Ana Sayfa", href: "/" },
       { name: "Bonuslar", href: "/#bonuslar" },
-      { name: "Hakkımızda", href: "/hakkimizda" },
-      { name: "İletişim", href: "/iletisim" }
+      { name: "Hakkımızda", href: "/hakkimizda/" },
+      { name: "İletişim", href: "/iletisim/" }
     ],
   },
 
