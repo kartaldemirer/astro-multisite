@@ -19,9 +19,18 @@ const faq = pageData.extra?.faq || [];
 
 // Breadcrumb örneği (dinamik istersen router’dan alabilirsin)
 const breadcrumbs = [
-  { name: "Anasayfa", item: siteConfig.siteMeta.url },
-  ...(pageKey !== "home" ? [{ name: pageData.heading, item: pageData.canonical }] : [])
+  { name: "Anasayfa", item: siteConfig.siteMeta.url }
 ];
+
+// Eğer kategori varsa ekle
+if (pageData?.category) {
+  breadcrumbs.push({ name: pageData.category.name, item: pageData.category.url });
+}
+
+// Mevcut sayfa
+if (pageKey !== "home" && pageData?.heading) {
+  breadcrumbs.push({ name: pageData.heading, item: pageData.canonical });
+}
 
 const itemList = siteConfig.siteMeta.recommendedSites.map(site => ({
   position: site.position,
