@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import enGuvenilirCasinoSiteleri from '../assets/kumaryeri/2025-en-guvenilir-casino-siteleri.jpg';
+import bedavaFreespinVerenCasinoSiteleri from '../assets/kumaryeri/en-guvenilir-lisans-turleri.jpg';
+import enIyiFreespinFirsatlari from '../assets/kumaryeri/hizli-odeme-sunan-siteler.jpg';
+import casinoBonuslariVeFreespinler from '../assets/kumaryeri/mobil-uyum-ve-ssl-sertifikasi.jpg';
+
+const page = siteConfig.pages.hosGeldinBonusSiteleri;
+---
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="hosGeldinBonusSiteleri">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={casinoBonuslariVeFreespinler} alt="2025’in En Güvenilir Casino Siteleri" width={720} height={420} class="mb-10" />
+  <h1 class="text-3xl font-bold mb-4">Hoş Geldin Bonusu Veren En Güvenilir Casino Siteleri 2025</h1>
+
+  <p>
+    Online casino dünyasında yeni başlayan oyuncular için en cazip fırsatlardan biri <strong>hoş geldin bonusları</strong>dır.
+    Bu promosyonlar, ilk yatırım yapan veya sadece üye olan kullanıcılara sunulur ve ekstra bakiye ya da freespin imkanı sağlar.
+    2025 yılında en yüksek hoş geldin bonuslarını sunan siteler, güvenilirlik ve kullanıcı dostu yapısıyla öne çıkıyor.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Hoş Geldin Bonusu Nedir?</h2>
+  <p>
+    Hoş geldin bonusu, yeni kullanıcıların ilk üyeliklerinde verilen bir promosyon türüdür.
+    Genellikle ilk yatırımda geçerli olur ve oyunculara %100 veya daha yüksek oranda ek bakiye kazandırır.
+    Bazı siteler bu bonusa ek olarak freespin promosyonları da sunar.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Hoş Geldin Bonusu Nasıl Alınır?</h2>
+  <ul class="list-disc list-inside">
+    <li>Siteye üye olun ve hesabınızı doğrulayın.</li>
+    <li>İlk yatırımınızı yapın ve promosyonu seçin.</li>
+    <li>Bazı durumlarda promosyon kodu girmeniz gerekebilir.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">2025’te En Yüksek Hoş Geldin Bonusu Sunan Siteler</h2>
+  <ol class="list-decimal list-inside">
+    <li><strong>Mrgamb:</strong> İlk yatırımda %200’e kadar hoş geldin bonusu + freespin paketi.</li>
+    <li><strong>Betivo:</strong> %150 hoş geldin bonusu ve haftalık ek promosyonlar.</li>
+    <li><strong>Librabet:</strong> Yüksek hoş geldin bonusu ve VIP kullanıcı avantajları.</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Hoş Geldin Bonusu Kullanırken Nelere Dikkat Etmeli?</h2>
+  <ul class="list-disc list-inside">
+    <li>Çevrim şartlarını inceleyin; daha düşük çevrimli bonusları tercih edin.</li>
+    <li>Bonus süresi sınırlı olabilir, zamanında kullanın.</li>
+    <li>Lisanslı ve güvenilir platformları seçin.</li>
+  </ul>
+
+  <p>
+    Hoş geldin bonusları, yeni oyuncular için mükemmel bir başlangıç fırsatı sunar.
+    Ancak unutmayın, kumar sorumluluk gerektirir; lütfen bilinçli oynayın ve 18 yaşından küçükseniz bu platformlara erişmeyin.
+  </p>
+
+  <p class="mt-6">
+    👉 Daha fazla bilgi için diğer rehberlerimize göz atın: 
+    <a href="/casino-bonuslari-2025/" class="underline text-blue-400">2025’in En İyi Bonusları</a>, 
+    <a href="/cevrimsiz-bonus-sunan-siteler/" class="underline text-blue-400">Çevrim Şartsız Bonuslar</a>.
+  </p>
+</article>
+
+
+
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>

@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import freespinVereSiteler2025 from '../assets/kumaryeri/en-cok-freespin-veren-siteler.jpg';
+import cevirimSartsizFreespinBonuslari from '../assets/kumaryeri/cevrim-sartsiz-freespin-bonuslari.jpg';
+import mobilFreespinVerenSiteler from '../assets/kumaryeri/mobil-freespin-veren-siteler.jpg';
+import bedavaSpinBonuslari from '../assets/kumaryeri/bedava-spin-bonusları-2025.jpg';
+import vipKullanicilaraOzelAvantajlar from '../assets/kumaryeri/vip-kullanicilara-ozel-avantajlar.jpg';
+
+const page = siteConfig.pages.freespinVerenSiteler2025;
+---
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="freespinVerenSiteler2025">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+  <Image src={freespinVereSiteler2025} alt="En Çok Freespin Veren Casino Siteleri" width={720} height={420} class="mb-10" />
+  <h1 class="text-3xl font-bold mb-4">Freespin Veren Casino Siteleri 2025</h1>
+
+  <p>
+    Online casinoların en popüler promosyonlarından biri freespin kampanyalarıdır.
+    2025 yılında <strong>freespin veren casino siteleri</strong> daha fazla çeşitlilik ve cazip koşullarla oyunculara avantaj sağlıyor.
+    Bu rehberde, freespin nedir, hangi siteler en iyi fırsatları sunuyor ve bu promosyonlardan en iyi nasıl yararlanabilirsiniz öğreneceksiniz.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Freespin Nedir?</h2>
+  <p>
+    Freespin, slot oyunlarında ücretsiz dönüş hakkı sunan bir promosyon türüdür.
+    Genellikle hoş geldin bonusu kapsamında veya özel etkinliklerde verilir.
+    Oyuncular, belirlenen oyunlarda freespin haklarını kullanarak ekstra kazanç sağlayabilir.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Freespin Veren Sitelerden Beklentiler</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Lisanslı Olması:</strong> MGA veya Curacao lisansı ile güvence altına alınmış platformlar.</li>
+    <li><strong>Çevrim Koşulları:</strong> Daha düşük veya sıfır çevrim şartı sunan kampanyalar.</li>
+    <li><strong>Oyun Çeşitliliği:</strong> Starburst, Sweet Bonanza gibi popüler slotlarda geçerli fırsatlar.</li>
+    <li><strong>Mobil Uyum:</strong> Freespin kampanyalarının mobil cihazlarda da kullanılabilmesi.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">2025’in En İyi Freespin Veren Casino Siteleri</h2>
+  <ol class="list-decimal list-inside">
+    <li><strong>Mrgamb:</strong> Yeni üyelere 100 freespin hoş geldin promosyonu.</li>
+    <li><strong>Betivo:</strong> Hafta içi düzenli freespin etkinlikleri.</li>
+    <li><strong>Librabet:</strong> Slot oyunlarına özel büyük freespin paketleri.</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Freespin Promosyonlarından En İyi Şekilde Yararlanma İpuçları</h2>
+  <ul class="list-disc list-inside">
+    <li>Kampanya şartlarını mutlaka okuyun, özellikle çevrim koşullarını.</li>
+    <li>Popüler slot oyunlarında geçerli promosyonları tercih edin.</li>
+    <li>Mobil uyumlu siteleri seçerek her yerden kazanç sağlayın.</li>
+  </ul>
+
+  <p>
+    Freespin fırsatları hem yeni başlayanlar hem de deneyimli oyuncular için ek kazanç sağlar.
+    Ancak unutmayın, kumar sorumluluk gerektirir ve 18 yaş altı bireylerin erişimi yasaktır.
+  </p>
+
+  <p class="mt-6">
+    👉 Daha fazla fırsat için diğer rehberlerimize göz atın: 
+    <a href="/casino-bonuslari-2025/" class="underline text-blue-400">2025’in En İyi Casino Bonusları</a>, 
+    <a href="/cevrimsiz-bonus-sunan-siteler/" class="underline text-blue-400">Çevrim Şartsız Bonus Veren Siteler</a>.
+  </p>
+</article>
+
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>

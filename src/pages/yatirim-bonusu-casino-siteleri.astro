@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import enGuvenilirCasinoSiteleri from '../assets/kumaryeri/2025-en-guvenilir-casino-siteleri.jpg';
+import bedavaFreespinVerenCasinoSiteleri from '../assets/kumaryeri/en-guvenilir-lisans-turleri.jpg';
+import enIyiFreespinFirsatlari from '../assets/kumaryeri/hizli-odeme-sunan-siteler.jpg';
+import casinoBonuslariVeFreespinler from '../assets/kumaryeri/mobil-uyum-ve-ssl-sertifikasi.jpg';
+
+const page = siteConfig.pages.yatirimBonusuSiteleri;
+---
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="yatirimBonusuSiteleri">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={enGuvenilirCasinoSiteleri} alt="2025’in En Güvenilir Casino Siteleri" width={720} height={420} class="mb-10" />
+  <h1 class="text-3xl font-bold mb-4">Yatırım Bonusu Nedir ve En Çok Kazandıran Siteler Hangileri?</h1>
+
+  <p>
+    Online casinoların sunduğu en cazip promosyon türlerinden biri <strong>yatırım bonusları</strong>dır.
+    Bu bonuslar, belirli bir yatırım miktarı yapıldığında ek bakiye veya freespin kazandırır.
+    2025 yılında yatırım bonusları daha esnek şartlarla sunuluyor ve kazanç fırsatlarını artırıyor.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Yatırım Bonusu Nedir?</h2>
+  <p>
+    Yatırım bonusu, kullanıcıların yatırdıkları tutara göre belirli bir oranda ekstra bakiye kazandıkları bir promosyon türüdür.
+    Örneğin, %50 yatırım bonusu sunan bir sitede 1000₺ yatıran kullanıcıya 500₺ ek bakiye verilir.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Avantajları Nelerdir?</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Daha Fazla Oyun Fırsatı:</strong> Ek bakiye sayesinde uzun süreli oyun deneyimi.</li>
+    <li><strong>Kayıpları Telafi Etme:</strong> Bonus ile risk daha kontrollü hale gelir.</li>
+    <li><strong>Sık Kampanyalar:</strong> Çoğu site yatırım bonuslarını haftalık veya günlük olarak sunar.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">2025’te En Yüksek Yatırım Bonuslarını Sunan Siteler</h2>
+  <ol class="list-decimal list-inside">
+    <li><strong>Mrgamb:</strong> %75 yatırım bonusu + ek freespin fırsatları.</li>
+    <li><strong>Librabet:</strong> %50’ye varan yatırım promosyonları.</li>
+    <li><strong>Betivo:</strong> Düzenli yatırım bonusları ve VIP avantajları.</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Yatırım Bonusu Kullanırken Dikkat Edilmesi Gerekenler</h2>
+  <ul class="list-disc list-inside">
+    <li>Çevrim şartlarını mutlaka kontrol edin; genellikle 20x veya üzeri olabilir.</li>
+    <li>Kampanya süresini kaçırmayın, süre sınırlı olabilir.</li>
+    <li>Güvenilir ve lisanslı platformları seçin.</li>
+  </ul>
+
+  <p>
+    Yatırım bonusları, daha fazla oyun şansı ve ek kazanç fırsatı sunar.
+    Ancak kumar sorumluluk gerektirir. 18 yaş altı kullanıcılar bu platformlara erişmemelidir.
+  </p>
+
+  <p class="mt-6">
+    👉 İlgili rehberlere göz atın: 
+    <a href="/casino-bonuslari-2025/" class="underline text-blue-400">2025’in En İyi Bonusları</a>, 
+    <a href="/freespin-veren-casino-siteleri-2025/" class="underline text-blue-400">Freespin Veren Siteler</a>.
+  </p>
+</article>
+
+
+
+
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>

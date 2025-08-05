@@ -1,38 +1,57 @@
 export const siteConfig = {
-  siteMeta: {
+  siteMeta: { 
     name: "Kumar Yeri",
-    url: "https://kumaryeri.com",
+    url: "https://kumaryeri.com/",
     title: "2025’in En Güvenilir Oyun Siteleri ve Özel Üyelik Fırsatları",
     description: "En güncel üyelik avantajlarını ve promosyon sunan lisanslı oyun platformlarını 2025 yılı için keşfedin. Tüm fırsatlar tek sayfada toplandı.",
     keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
+    canonical: "https://kumaryeri.com/",
     author: "KumarYeri.com",
     publisher: "KumarYeri.com",
-    canonical: "https://kumaryeri.com",
-    logo: "https://kumaryeri.com/logo.png",
     email: "info@kumaryeri.com",
+    logo: "https://kumaryeri.com/logo.png",
+    
     og: {
       siteName: "KumarYeri.com",
       title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
       description: "En güvenilir casino siteleri ve en güncel yatırım bonusları, freespin kampanyaları burada!",
-      url: "https://kumaryeri.com",
+      url: "https://kumaryeri.com/",
       image: "https://kumaryeri.com/social-banner.jpg"
     },
+
     twitter: {
       site: "@kumaryeri",
       title: "2025'in En İyi Casino Bonusları",
       description: "Bonusları kaçırma! 2025'in en güvenilir kumar siteleri ve promosyonları burada.",
       image: "https://kumaryeri.com/social-banner.jpg"
     },
+
     recommendedSites: [
-    {
-      position: 1,
-      name: "MrGamb",
-      url: "https://mrgamb.com/",
-      image: "https://sitesconfig.pages.dev/logolar/mrgamb.png",
-      ratingValue: "4.9",
-      bestRating: "5"
-    },
-  ]
+      {
+        position: 1,
+        name: "MrGamb",
+        url: "https://mrgamb.com/",
+        image: "https://sitesconfig.pages.dev/logolar/mrgamb.png",
+        ratingValue: "4.9",
+        bestRating: "5"
+      },
+      {
+        position: 2,
+        name: "Betivo",
+        url: "https://betivo.com/",
+        image: "https://sitesconfig.pages.dev/logolar/betivo.png",
+        ratingValue: "4.8",
+        bestRating: "5"
+      },
+      {
+        position: 3,
+        name: "Librabet",
+        url: "https://librabet.com/",
+        image: "https://sitesconfig.pages.dev/logolar/librabet.png",
+        ratingValue: "4.7",
+        bestRating: "5"
+      }
+    ]
   },
 
   pages: {
@@ -40,34 +59,128 @@ export const siteConfig = {
       title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
       description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
       keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
-      canonical: "https://kumaryeri.com",
+      canonical: "https://kumaryeri.com/",
       schemaType: "Article",
+      heading: "2025’in En Güvenilir Casino ve Bahis Siteleri",
       extra: {
         faq: [
           {
-              question: "Online casino promosyonu nedir?",
-              answer: "Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin promosyonudur.",
+            question: "Online casino promosyonu nedir?",
+            answer: "Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin promosyonudur."
           },
           {
-              question: "Bonuslar hemen kullanılabilir mi?",
-              answer: "Bazı bonuslar otomatik olarak tanımlanır, bazıları manuel olarak talep edilir.",
+            question: "Bonuslar hemen kullanılabilir mi?",
+            answer: "Bazı bonuslar otomatik olarak tanımlanır, bazıları manuel olarak talep edilir."
           },
           {
-              question: "En iyi promosyon nasıl seçilir?",
-              answer: "Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu promosyonlar tercih edilmelidir.",
+            question: "En iyi promosyon nasıl seçilir?",
+            answer: "Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu promosyonlar tercih edilmelidir."
           },
           {
-              question: "Promosyonların çevrim şartı ne demektir?",
-              answer: "Kazanılan promosyonun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ promosyon için 2000₺ bahis yapılması gerektiği anlamına gelir.",
+            question: "Promosyonların çevrim şartı ne demektir?",
+            answer: "Kazanılan promosyonun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ promosyon için 2000₺ bahis yapılması gerektiği anlamına gelir."
           },
           {
-              question: "Promosyonlar hemen kullanılabilir mi?",
-              answer: "Çoğu promosyon, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı siteler promosyonu manuel olarak talep etmenizi ister.",
+            question: "Her oyuncu aynı promosyonu alabilir mi?",
+            answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır."
+          }
+        ],
+        highlights: [
+          {
+            title: "Güncel Mrgamb Giriş Linki",
+            description: "Kesintisiz erişim için en son bağlantıları burada bulabilirsiniz."
           },
           {
-              question: "Her oyuncu aynı promosyonu alabilir mi?",
-              answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır.",
+            title: "Mobil Uyumlu Giriş",
+            description: "iOS ve Android için optimize edilmiş Mrgamb deneyimi."
           },
+          {
+            title: "Lisans ve Güvenlik",
+            description: "Curacao lisansı ve SSL sertifikası ile güvenli oyun ortamı."
+          },
+          {
+            title: "Bonus Fırsatları",
+            description: "Hoş geldin bonusu ve özel promosyonlarla kazancınızı artırın."
+          },
+          {
+            title: "7/24 Canlı Destek",
+            description: "Her zaman yanınızda olan profesyonel destek ekibi."
+          }
+        ]
+      }
+    },
+
+    about: {
+      title: "Hakkımızda | KumarYeri.com",
+      description: "KumarYeri.com, güvenilir casino rehberleri, detaylı incelemeler ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
+      keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri, 2025 casino siteleri",
+      canonical: "https://kumaryeri.com/hakkimizda/",
+      heading: "Hakkımızda",
+      schemaType: "AboutPage",
+      extra: {
+        faq: [],
+        highlights: []
+      }
+    },
+
+    contact: {
+      title: "İletişim | KumarYeri.com",
+      description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda ve sorularınızı yanıtlamaya hazır.",
+      keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim, müşteri desteği",
+      canonical: "https://kumaryeri.com/iletisim/",
+      heading: "Bizimle İletişime Geçin",
+      schemaType: "ContactPage",
+      extra: {
+        faq: [],
+        highlights: []
+      }
+    },
+
+    privacy: {
+      title: "Gizlilik Politikası | KumarYeri.com",
+      description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Toplanan veriler, çerez kullanımı ve veri koruma politikamız hakkında detaylı bilgi edinin.",
+      keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik, KVKK, GDPR",
+      canonical: "https://kumaryeri.com/gizlilik-politikasi/",
+      heading: "Gizlilik Politikası",
+      schemaType: "WebPage",
+      extra: {
+        faq: [],
+        highlights: []
+      }
+    },
+
+    disclaimer: {
+      title: "Sorumluluk Reddi | KumarYeri.com",
+      description: "KumarYeri.com'daki tüm içerikler bilgilendirme amaçlıdır. Üçüncü taraf sitelerle ilgili sorumluluk reddi ve yasal uyarılar bu sayfada yer almaktadır.",
+      keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri, bilgilendirme metni",
+      canonical: "https://kumaryeri.com/sorumluluk-reddi/",
+      heading: "Sorumluluk Reddi",
+      schemaType: "WebPage",
+      extra: {
+        faq: [],
+        highlights: []
+      }
+    },
+
+    mrgambGiris: {
+      title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
+      description: "mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
+      keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
+      canonical: "https://kumaryeri.com/mrgamb-giris/",
+      heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "mrgamb giriş adresi neden değişiyor?", answer: "BTK erişim engelleri nedeniyle adresler güncellenir. Güncel linkleri her zaman resmi kaynaklardan takip edin." },
+          { question: "mrgamb güvenilir mi?", answer: "Evet, mrgamb Curacao lisansı ile hizmet verir ve SSL koruması sağlar." },
+          { question: "Mobil mrgamb giriş nasıl yapılır?", answer: "Tarayıcıdan giriş yapabilir veya resmi uygulamayı indirerek giriş sağlayabilirsiniz." },
+          { question: "VPN kullanmak güvenli mi?", answer: "Evet, güvenilir VPN servisleri ile bağlantınızı koruyabilirsiniz." },
+          { question: "mrgamb bonusları nasıl alınır?", answer: "Kayıt olduktan sonra hesabınıza giriş yaparak promosyonlar bölümünden bonusları talep edebilirsiniz." },
+          { question: "mrgamb giriş sorunlarını nasıl çözerim?", answer: "DNS veya VPN kullanabilir ya da bu sayfadan güncel bağlantıyı takip edebilirsiniz." },
+          { question: "mrgamb canlı destek var mı?", answer: "Evet, 7/24 canlı destek hizmeti sunuluyor." },
+          { question: "mrgamb ödeme yöntemleri nelerdir?", answer: "Banka transferi, kredi kartı, e-cüzdan ve kripto para yöntemleri kullanılabilir." },
+          { question: "Hesabım kapatıldı, ne yapmalıyım?", answer: "Hemen canlı destek ile iletişime geçin ve hesabınızın neden kapatıldığını öğrenin." },
+          { question: "mrgamb girişte IP engeli alırsam ne yapabilirim?", answer: "VPN veya alternatif DNS çözümleri kullanabilirsiniz." }
         ],
         highlights: [
           { title: "Güncel mrgamb Giriş Linki", description: "Kesintisiz erişim için en son bağlantıları burada bulabilirsiniz." },
@@ -79,44 +192,6 @@ export const siteConfig = {
       }
     },
 
-    about: {
-      title: "Hakkımızda | KumarYeri.com",
-      description: "KumarYeri.com, güvenilir casino rehberleri ve güncel promosyon bilgileriyle oyunculara tarafsız içerik sunar.",
-      keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
-      canonical: "https://kumaryeri.com/hakkimizda/",
-      heading: "Hakkımızda",
-      schemaType: "AboutPage",
-      extra : {
-        faq : [],
-        highlights: [],
-      },
-    },
-
-    contact: {
-      title: "İletişim | KumarYeri.com",
-      description: "Görüş, öneri veya iş birliği için bize ulaşın. KumarYeri ekibi her zaman yanınızda.",
-      keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
-      canonical: "https://kumaryeri.com/iletisim/",
-      heading: "Bizimle İletişime Geçin",
-      schemaType: "ContactPage",
-      extra : {
-        faq : [],
-        highlights: [],
-      },
-    },
-
-    privacy: {
-      title: "Gizlilik Politikası | KumarYeri.com",
-      description: "KumarYeri.com olarak kullanıcı gizliliğini önemsiyoruz. Hangi verileri topluyoruz ve nasıl koruyoruz? Detaylar burada.",
-      keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
-      canonical: "https://kumaryeri.com/gizlilik-politikasi/",
-      heading: "Gizlilik Politikası",
-      schemaType: "WebPage",
-      extra : {
-        faq : [],
-        highlights: [],
-      },
-    },
 
     freespin: {
       title: "Freespin Veren Casino Siteleri (2025) | KumarYeri.com",
@@ -208,140 +283,183 @@ export const siteConfig = {
       }
     },
 
-    disclaimer: {
-      title: "Sorumluluk Reddi | KumarYeri.com",
-      description: "KumarYeri.com'daki tüm içerikler bilgilendirme amaçlıdır. Üçüncü taraf sitelerle ilgili sorumluluk reddi ve yasal uyarılar bu sayfada yer almaktadır.",
-      keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri",
-      canonical: "https://kumaryeri.com/sorumluluk-reddi/",
-      heading: "Sorumluluk Reddi",
-      schemaType: "WebPage",
-      extra: {
-        faq: [],
-        highlights: []
-      }
-    },
-
-    guvenilirCasino2025: {
-      title: "2025’in En Güvenilir Casino Siteleri | KumarYeri.com",
-      description: "Lisanslı ve güvenilir casino sitelerini keşfedin. MGA ve Curacao onaylı, hızlı ödeme ve yüksek güvenlik sunan platformlar burada!",
-      keywords: "güvenilir casino siteleri 2025, lisanslı online casinolar, MGA lisanslı casino siteleri, Curacao lisanslı casinolar, en güvenli online bahis siteleri",
+    guvenilirCasinoSiteleri2025: {
+      title: "Güvenilir Casino Siteleri 2025 | Lisanslı ve Güvenli Platformlar",
+      description: "2025’in en güvenilir casino sitelerini keşfedin. Lisanslı, hızlı ödeme yapan ve yüksek bonus veren güvenilir platformların tam listesi burada.",
+      keywords: "güvenilir casino siteleri 2025, lisanslı casino siteleri, en güvenli bahis siteleri, 2025 online casino",
       canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025/",
-      heading: "2025’in En Güvenilir Casino Siteleri",
+      heading: "Güvenilir Casino Siteleri 2025",
       schemaType: "Article",
-      content: `
-        Online casino dünyasında güvenlik, oyuncular için en kritik unsurlardan biridir. 2025 yılında hangi casino siteleri gerçekten güvenilir? Bu sayfada, lisanslı, denetlenmiş ve kullanıcı deneyimiyle öne çıkan en iyi casino platformlarını sıralıyoruz.
-      `,
       extra: {
         faq: [
-          {
-            question: "Güvenilir casino sitesi nasıl anlaşılır?",
-            answer: "Bir casino sitesinin güvenilir olup olmadığını anlamak için lisans bilgilerini kontrol edin (MGA, Curacao gibi), SSL sertifikasının aktif olduğundan emin olun ve bağımsız denetim raporlarını inceleyin."
-          },
-          {
-            question: "Türkiye’den güvenilir casino sitelerine giriş mümkün mü?",
-            answer: "Evet, Türkiye’den uluslararası lisanslı güvenilir casino sitelerine erişim mümkündür. Genellikle güncel giriş linkleri veya VPN yöntemleriyle sorunsuz erişebilirsiniz."
-          },
-          {
-            question: "Hangi lisanslar en güvenilir kabul edilir?",
-            answer: "MGA (Malta Gaming Authority), Curacao ve UKGC (United Kingdom Gambling Commission) lisansları dünya genelinde en güvenilir lisans sağlayıcıları olarak kabul edilir."
-          },
-          {
-            question: "2025’te güvenilir casino siteleri nasıl seçilmeli?",
-            answer: "2025 yılında güvenilir casino siteleri seçerken lisans, ödeme hızı, kullanıcı yorumları ve müşteri desteği gibi kriterleri göz önünde bulundurmalısınız."
-          },
-          {
-            question: "Mobilde güvenilir casino siteleri kullanılabilir mi?",
-            answer: "Evet, 2025’te listemizde yer alan tüm güvenilir casino siteleri mobil uyumludur ve hem iOS hem Android cihazlarda sorunsuz çalışır."
-          },
-          {
-            question: "Güvenilir casino siteleri hangi ödeme yöntemlerini destekler?",
-            answer: "Çoğu güvenilir casino sitesi kredi kartı, banka havalesi, e-cüzdan (Skrill, Neteller) ve kripto para ile ödeme imkanı sunar."
-          },
-          {
-            question: "Canlı destek hizmeti güvenilirlik için önemli mi?",
-            answer: "Evet, 7/24 canlı destek hizmeti sunan siteler, oyuncu memnuniyeti ve güvenilirlik açısından öne çıkar."
-          },
-          {
-            question: "2025 yılında en popüler güvenilir casino siteleri hangileri?",
-            answer: "MrGamb 2025 yılında en çok tercih edilen güvenilir casino siteleri arasında yer alıyor."
-          },
-          {
-            question: "Çevrim şartı güvenilirlik için bir ölçüt müdür?",
-            answer: "Çevrim şartı direkt olarak güvenilirliği göstermez, ancak şartların şeffaf bir şekilde sunulması siteye olan güveni artırır."
-          },
-          {
-            question: "Güvenilir casino sitelerinde oyunlar hileli olabilir mi?",
-            answer: "Lisanslı ve denetlenen sitelerde oyunlar bağımsız test laboratuvarları (eCOGRA gibi) tarafından denetlenir ve hile yapılması mümkün değildir."
-          }
+          { question: "Güvenilir casino sitesi nasıl anlaşılır?", answer: "Lisanslı olması, SSL sertifikası ve ödeme hızları güvenilirliğin en önemli göstergeleridir." },
+          { question: "2025’in en güvenilir casino siteleri hangileridir?", answer: "Mrgamb, Betivo ve Librabet, 2025 için öne çıkan güvenilir platformlardır." }
         ],
-
         highlights: [
           {
             title: "Lisanslı ve Denetlenmiş Siteler",
             description: "2025’in en güvenilir casino siteleri, MGA ve Curacao gibi uluslararası lisanslara sahiptir ve düzenli olarak bağımsız kuruluşlar tarafından denetlenir."
           },
           {
-            title: "Hızlı Ödeme Garantisi",
-            description: "Güvenilir casinolar, kazançlarınızı 24 saat içinde ödeyerek kullanıcı memnuniyetini ön planda tutar."
+            title: "Hızlı Para Çekme Yöntemleri",
+            description: "Bank transferi, kripto para ve e-cüzdanlar ile 10 dakikada para çekme imkanı."
           },
           {
-            title: "Kullanıcı Yorumları ve Şeffaflık",
-            description: "Gerçek oyuncu yorumları ve detaylı incelemeler sayesinde 2025’te en güvenilir casino sitelerini seçmek artık çok kolay."
+            title: "Çevrim Şartsız Bonuslar",
+            description: "Bazı platformlarda bonus kazançlarınızı çevrim gerektirmeden çekebilirsiniz."
           },
           {
-            title: "Mobil Uyumluluk",
-            description: "Güvenilir casino siteleri, hem iOS hem Android cihazlarda sorunsuz oyun deneyimi sunar."
-          },
-          {
-            title: "Çeşitli Ödeme Seçenekleri",
-            description: "Kredi kartı, e-cüzdan ve kripto para destekleyen güvenilir sitelerle anında yatırım ve çekim yapabilirsiniz."
-          },
-          {
-            title: "24/7 Canlı Destek",
-            description: "Her an erişilebilir müşteri desteği ile güvenilir casino sitelerinde sorunlarınıza anında çözüm bulun."
-          },
-          {
-            title: "Çevrim Şartlarında Şeffaflık",
-            description: "Tüm bonus ve promosyonların çevrim şartları açıkça belirtilir, böylece kullanıcılar sürprizlerle karşılaşmaz."
-          },
-          {
-            title: "Popüler Oyun Sağlayıcıları",
-            description: "Pragmatic Play, NetEnt gibi sağlayıcıların oyunlarını sunan siteler güvenilirlik açısından öne çıkar."
+            title: "Mobil Uyumlu Oyun Deneyimi",
+            description: "Tüm siteler iOS ve Android cihazlarda sorunsuz çalışır."
           }
-        ],
-      }
-    },
-
-    mrgambGiris: {
-      title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
-      description: "mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
-      keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
-      canonical: "https://kumaryeri.com/mrgamb-giris/",
-      heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
-      schemaType: "Article",
-      extra: {
-        faq: [
-          { question: "mrgamb giriş adresi neden değişiyor?", answer: "BTK erişim engelleri nedeniyle adresler güncellenir. Güncel linkleri her zaman resmi kaynaklardan takip edin." },
-          { question: "mrgamb güvenilir mi?", answer: "Evet, mrgamb Curacao lisansı ile hizmet verir ve SSL koruması sağlar." },
-          { question: "Mobil mrgamb giriş nasıl yapılır?", answer: "Tarayıcıdan giriş yapabilir veya resmi uygulamayı indirerek giriş sağlayabilirsiniz." },
-          { question: "VPN kullanmak güvenli mi?", answer: "Evet, güvenilir VPN servisleri ile bağlantınızı koruyabilirsiniz." },
-          { question: "mrgamb bonusları nasıl alınır?", answer: "Kayıt olduktan sonra hesabınıza giriş yaparak promosyonlar bölümünden bonusları talep edebilirsiniz." },
-          { question: "mrgamb giriş sorunlarını nasıl çözerim?", answer: "DNS veya VPN kullanabilir ya da bu sayfadan güncel bağlantıyı takip edebilirsiniz." },
-          { question: "mrgamb canlı destek var mı?", answer: "Evet, 7/24 canlı destek hizmeti sunuluyor." },
-          { question: "mrgamb ödeme yöntemleri nelerdir?", answer: "Banka transferi, kredi kartı, e-cüzdan ve kripto para yöntemleri kullanılabilir." },
-          { question: "Hesabım kapatıldı, ne yapmalıyım?", answer: "Hemen canlı destek ile iletişime geçin ve hesabınızın neden kapatıldığını öğrenin." },
-          { question: "mrgamb girişte IP engeli alırsam ne yapabilirim?", answer: "VPN veya alternatif DNS çözümleri kullanabilirsiniz." }
-        ],
-        highlights: [
-          { title: "Güncel mrgamb Giriş Linki", description: "Kesintisiz erişim için en son bağlantıları burada bulabilirsiniz." },
-          { title: "Mobil Uyumlu Giriş", description: "iOS ve Android için optimize edilmiş mrgamb deneyimi." },
-          { title: "Lisans ve Güvenlik", description: "Curacao lisansı ve SSL sertifikası ile güvenli oyun ortamı." },
-          { title: "Bonus Fırsatları", description: "Hoş geldin bonusu ve özel promosyonlarla kazancınızı artırın." },
-          { title: "7/24 Canlı Destek", description: "Her zaman yanınızda olan profesyonel destek ekibi." }
         ]
       }
     },
 
+    casinoBonuslari2025: {
+      title: "2025’in En İyi Casino Bonusları ve Promosyonları | Güncel Liste",
+      description: "En yüksek hoş geldin bonusu, freespin ve yatırım promosyonlarını 2025 için burada bulabilirsiniz. Tüm kampanyalar tek sayfada.",
+      keywords: "casino bonusları 2025, promosyonlar, freespin bonusları, hoş geldin bonusu, yatırım promosyonu",
+      canonical: "https://kumaryeri.com/casino-bonuslari-2025/",
+      heading: "2025’in En İyi Casino Bonusları ve Promosyonları",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Hangi bonuslar daha avantajlıdır?", answer: "Çevrim şartı düşük ve süresi uzun bonuslar daha avantajlıdır." },
+          { question: "2025’te hangi siteler en yüksek hoş geldin bonusu veriyor?", answer: "Mrgamb ve Betivo şu anda en yüksek hoş geldin bonuslarını sunuyor." }
+        ],
+        highlights: [
+          {
+            title: "Hoş Geldin Bonusları",
+            description: "Yeni üyeler için %100 ve üzeri bonus fırsatları."
+          },
+          {
+            title: "Yatırım Promosyonları",
+            description: "Her yatırımda ekstra bakiye kazanma imkanı."
+          },
+          {
+            title: "Çevrim Şartsız Fırsatlar",
+            description: "Bazı siteler, çevrim gerektirmeyen özel bonuslar sunar."
+          }
+        ]
+      }
+    },
+
+    freespinVerenSiteler2025: {
+      title: "Freespin Veren Casino Siteleri 2025 | Güncel ve Lisanslı",
+      description: "2025 yılında freespin veren en güvenilir casino sitelerini keşfedin. Hoş geldin kampanyaları ve ücretsiz spin fırsatları burada.",
+      keywords: "freespin veren casino siteleri 2025, ücretsiz spin, casino freespin promosyonu",
+      canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri-2025/",
+      heading: "Freespin Veren Casino Siteleri 2025",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Freespin nedir?", answer: "Freespin, belirli slot oyunlarında ücretsiz dönüş hakkı tanıyan bir bonus türüdür." },
+          { question: "Freespin kazanmak için ne yapılmalı?", answer: "Genellikle kayıt bonusu veya yatırım promosyonları kapsamında freespin verilir." }
+        ],
+        highlights: [
+          {
+            title: "Hoş Geldin Freespin Fırsatları",
+            description: "Yeni üyelere özel olarak verilen freespin promosyonları."
+          },
+          {
+            title: "Popüler Slot Oyunlarında Geçerli",
+            description: "Starburst, Sweet Bonanza gibi ünlü slotlarda freespin kullanabilirsiniz."
+          },
+          {
+            title: "Mobil Uyumlu Platformlar",
+            description: "Freespin fırsatlarından mobil cihazlarınızda da yararlanabilirsiniz."
+          }
+        ]
+      }
+    },
+
+    cevrimsizBonusSiteleri: {
+      title: "Çevrim Şartsız Bonus Sunan Siteler 2025 | Anında Kazanç",
+      description: "Çevrim şartsız bonus veren en güvenilir casino siteleri 2025 listesi. Anında çekilebilir promosyon fırsatlarını keşfedin.",
+      keywords: "çevrim şartsız bonus, casino bonusu 2025, çekilebilir bonus",
+      canonical: "https://kumaryeri.com/cevrimsiz-bonus-sunan-siteler/",
+      heading: "Çevrim Şartsız Bonus Sunan Siteler",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Çevrim şartsız bonus nedir?", answer: "Bu tür bonuslar, kazançların anında çekilmesine olanak tanır, çevrim gerektirmez." },
+          { question: "Çevrim şartsız bonus hangi sitelerde var?", answer: "Mrgamb ve Librabet çevrim şartsız bonus kampanyaları sunmaktadır." }
+        ],
+        highlights: [
+          {
+            title: "Anında Çekim İmkanı",
+            description: "Kazandığınız bonusları beklemeden çekebilirsiniz."
+          },
+          {
+            title: "Çevrim Gerektirmeyen Promosyonlar",
+            description: "Şartsız bonus fırsatlarıyla kolay kazanç sağlayın."
+          },
+          {
+            title: "Hızlı Ödeme Yöntemleri",
+            description: "Bank transferi ve kripto para ile hızlı çekim imkanı."
+          }
+        ]
+      }
+    },
+
+    hosGeldinBonusSiteleri: {
+      title: "Hoş Geldin Bonusu Veren En Güvenilir Casino Siteleri 2025",
+      description: "2025 yılında en yüksek hoş geldin bonusu sunan güvenilir casino sitelerini keşfedin. Lisanslı ve hızlı ödeme yapan platformlar listesi burada.",
+      keywords: "hoş geldin bonusu, casino bonusu 2025, ilk yatırım bonusu",
+      canonical: "https://kumaryeri.com/hos-geldin-bonusu-casino-siteleri/",
+      heading: "Hoş Geldin Bonusu Veren En Güvenilir Casino Siteleri",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Hoş geldin bonusu nedir?", answer: "Yeni üyelik açan kullanıcılara verilen, genellikle ilk yatırımda geçerli olan bonus türüdür." },
+          { question: "Hoş geldin bonusu nasıl alınır?", answer: "Kayıt işlemi tamamlandıktan sonra yatırım yaparak veya promosyon kodu girerek alınabilir." }
+        ],
+        highlights: [
+          {
+            title: "En Yüksek Hoş Geldin Bonusları",
+            description: "Yeni üyelere %200’e kadar bonus fırsatı."
+          },
+          {
+            title: "Lisanslı Platformlar",
+            description: "Tüm siteler uluslararası lisanslara sahiptir."
+          },
+          {
+            title: "Anında Aktivasyon",
+            description: "Bonuslar yatırımla birlikte otomatik olarak tanımlanır."
+          }
+        ]
+      }
+    },
+
+    yatirimBonusuSiteleri: {
+      title: "Yatırım Bonusu Nedir? 2025'in En Çok Kazandıran Casino Siteleri",
+      description: "Yatırım bonusu detayları ve 2025 yılında en iyi yatırım promosyonlarını sunan güvenilir casino siteleri.",
+      keywords: "yatırım bonusu, casino promosyonları, yatırım promosyonu 2025",
+      canonical: "https://kumaryeri.com/yatirim-bonusu-casino-siteleri/",
+      heading: "Yatırım Bonusu Nedir ve En Çok Kazandıran Siteler Hangileri?",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Yatırım bonusu nedir?", answer: "Belirli bir yatırım miktarı karşılığında ek bakiye kazandıran promosyonlardır." },
+          { question: "Hangi siteler en yüksek yatırım bonusu veriyor?", answer: "Mrgamb ve Librabet şu anda en yüksek yatırım bonuslarını sunuyor." }
+        ],
+        highlights: [
+          {
+            title: "Her Yatırımda Ekstra Kazanç",
+            description: "Yatırımlarınıza %50’ye kadar ek bakiye fırsatı."
+          },
+          {
+            title: "Düşük Çevrim Şartları",
+            description: "Çoğu yatırım bonusu kolay çevrim koşullarına sahiptir."
+          },
+          {
+            title: "Mobil Uyumluluk",
+            description: "Yatırım promosyonları mobil kullanıcılar için de geçerli."
+          }
+        ]
+      }
+    },
   },
 
   theme: {
@@ -430,13 +548,13 @@ export const siteConfig = {
 
   hero: {
     title: "2025’in En Avantajlı Casino Bonusları",
-    description: "En iyi siteleri ve en yüksek oranlı promosyonları senin için analiz ettik. KumarPuan ile kazançlı başla.",
+    description: "MrGamb ve diğer güvenilir sitelerden freespin almak için en güncel liste burada.",
     ctaText: "Bonusları İncele",
     ctaLink: "#bonuslar",
   },
 
   promoIntro: {
-    title: "2025’in En İyi Casino Promosyonları",
+    title: "2025’te En Çok Freespin Veren Siteler | %100 Güncel Liste",
     brand: "KumarYeri.com",
     features: [
       { icon: "🎯", text: "%200’e varan hoş geldin promosyonları" },

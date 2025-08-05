@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import freespinVereSiteler2025 from '../assets/kumaryeri/freespin-veren-siteler-2025.jpg';
+import bedavaFreespinVerenCasinoSiteleri from '../assets/kumaryeri/bedava-freespin-veren-casino-siteleri.jpg';
+import enIyiFreespinFirsatlari from '../assets/kumaryeri/en-iyi-freespin-fırsatları.jpg';
+import casinoBonuslariVeFreespinler from '../assets/kumaryeri/2025-casino-bonusları-ve-freespinler.jpg';
+
+const page = siteConfig.pages.cevrimsizBonusSiteleri;
+
+---
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="cevrimsizBonusSiteleri">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+    <Image src={freespinVereSiteler2025} alt="En Çok Freespin Veren Casino Siteleri" width={720} height={420} class="mb-10" />
+  <h1 class="text-3xl font-bold mb-4">Çevrim Şartsız Bonus Sunan Siteler 2025</h1>
+
+  <p>
+    Online casino oyuncuları için en cazip fırsatlardan biri, <strong>çevrim şartsız bonus</strong> promosyonlarıdır.
+    Bu tür bonuslar, kazanılan tutarın çevrim gerektirmeden doğrudan çekilmesine olanak tanır.
+    2025 yılında çevrim şartsız bonus veren siteler, kullanıcı dostu politikalarıyla daha da popüler hale geldi.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Çevrim Şartsız Bonus Nedir?</h2>
+  <p>
+    Çevrim şartsız bonus, kazançların çekilebilir hale gelmesi için herhangi bir bahis miktarı yapma zorunluluğu bulunmayan promosyonlardır.
+    Bu promosyonlar genellikle kayıt olurken veya belirli etkinliklerde verilir ve oyuncuların kazanımlarını hemen çekmesine imkan tanır.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Avantajları Nelerdir?</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Anında Kazanç:</strong> Çekim için bekleme süresi yoktur.</li>
+    <li><strong>Düşük Risk:</strong> Yatırım yapmadan kazanç sağlama şansı.</li>
+    <li><strong>Kullanıcı Dostu:</strong> Çevrim koşulları olmadığından oyuncular için çok daha basit.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">2025’te Çevrim Şartsız Bonus Sunan Güvenilir Siteler</h2>
+  <ol class="list-decimal list-inside">
+    <li><strong>Mrgamb:</strong> Kayıt sonrası çevrim şartsız deneme bonusu.</li>
+    <li><strong>Librabet:</strong> Yatırım sonrası çevrim gerektirmeyen özel promosyonlar.</li>
+    <li><strong>Betivo:</strong> VIP kullanıcılar için özel çevrim şartsız teklifler.</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Çevrim Şartsız Bonuslardan Yararlanma İpuçları</h2>
+  <ul class="list-disc list-inside">
+    <li>Promosyonların geçerlilik süresine dikkat edin.</li>
+    <li>Kampanya koşullarını mutlaka okuyun.</li>
+    <li>Lisanslı ve güvenilir platformları tercih edin.</li>
+  </ul>
+
+  <p>
+    Çevrim şartsız bonuslar, oyunculara risksiz kazanç fırsatı sunar. Ancak unutmayın, bu fırsatlar genellikle sınırlı süreli ve belirli şartlara bağlıdır.
+    Kumar sorumluluk gerektirir; 18 yaş altı kullanıcılar için erişim yasaktır.
+  </p>
+
+  <p class="mt-6">
+    👉 İlgili rehberlerimize göz atın: 
+    <a href="/casino-bonuslari-2025/" class="underline text-blue-400">2025’in En İyi Bonusları</a>, 
+    <a href="/freespin-veren-casino-siteleri-2025/" class="underline text-blue-400">Freespin Veren Siteler</a>.
+  </p>
+</article>
+
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>

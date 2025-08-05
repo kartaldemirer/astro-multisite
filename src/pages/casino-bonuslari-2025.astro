@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../config/kumaryeri_siteConfig";
+import FAQ from "../components/Faq.astro";
+import Highlights from "../components/Highlights.astro";
+import { Image } from 'astro:assets';
+
+import enGuvenilirCasinoSiteleri from '../assets/kumaryeri/2025-en-guvenilir-casino-siteleri.jpg';
+import bedavaFreespinVerenCasinoSiteleri from '../assets/kumaryeri/en-guvenilir-lisans-turleri.jpg';
+import enIyiFreespinFirsatlari from '../assets/kumaryeri/hizli-odeme-sunan-siteler.jpg';
+import casinoBonuslariVeFreespinler from '../assets/kumaryeri/mobil-uyum-ve-ssl-sertifikasi.jpg';
+
+const page = siteConfig.pages.casinoBonuslari2025;
+---
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} faq={page.extra.faq} canonical={page.canonical} extra={page.extra} pageKey="casinoBonuslari2025">
+  <article class="prose prose-invert max-w-4xl mx-auto">
+  <Image src={bedavaFreespinVerenCasinoSiteleri} alt="2025’in En Güvenilir Casino Siteleri" width={720} height={420} class="mb-10" />
+  <h1 class="text-3xl font-bold mb-4">2025’in En İyi Casino Bonusları ve Promosyonları</h1>
+
+  <p>
+    Online casino oyuncuları için en cazip fırsatlardan biri, bonus ve promosyon kampanyalarıdır.
+    2025 yılında <strong>casino bonusları</strong> daha esnek koşullar ve yüksek oranlarla dikkat çekiyor.
+    Bu rehberde, en avantajlı bonus türlerini, çevrim şartlarını ve hangi sitelerin en iyi teklifleri sunduğunu öğreneceksiniz.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Casino Bonusları Neden Önemli?</h2>
+  <p>
+    Bonuslar, oyunculara daha fazla oyun oynama fırsatı ve ekstra kazanç imkanı sunar.
+    Doğru promosyonlar, yatırımınızı daha verimli kullanmanızı sağlar.
+    Ancak her bonusun bir şartı vardır ve bunları bilmek, kayıpları önlemek için kritiktir.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">2025’in En Popüler Bonus Türleri</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Hoş Geldin Bonusu:</strong> Yeni üyeler için genellikle ilk yatırımda %100 ve üzeri ek bakiye fırsatı.</li>
+    <li><strong>Freespin Kampanyaları:</strong> Popüler slot oyunlarında ücretsiz dönüş hakları.</li>
+    <li><strong>Çevrim Şartsız Bonuslar:</strong> Kazançların doğrudan çekilebildiği özel promosyonlar.</li>
+    <li><strong>Yatırım Bonusu:</strong> Her yatırımda belirli bir oranda ekstra bakiye kazanma imkanı.</li>
+    <li><strong>Kayıp Bonusu:</strong> Belirli oranda kayıpların iadesi.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">En Avantajlı Casino Siteleri</h2>
+  <p>
+    2025 yılında en iyi bonusları sunan bazı güvenilir siteler şunlardır:
+  </p>
+  <ol class="list-decimal list-inside">
+    <li><strong>Mrgamb:</strong> %200’e varan hoş geldin bonusu ve haftalık freespin kampanyaları.</li>
+    <li><strong>Betivo:</strong> Çevrim şartsız promosyonlar ve VIP avantajları.</li>
+    <li><strong>Librabet:</strong> Düzenli yatırım bonusları ve yüksek cashback oranları.</li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Çevrim Şartlarına Dikkat</h2>
+  <p>
+    Bonusların en kritik kısmı, <strong>çevrim şartları</strong>dır. Örneğin 20x çevrim, 100₺ bonus için 2.000₺ değerinde bahis yapılması gerektiği anlamına gelir.
+    Daha düşük çevrimli promosyonlar oyuncular için daha avantajlıdır.
+  </p>
+
+  <h2 class="text-2xl font-semibold mt-8 mb-4">Bonusları Maksimum Kullanma İpuçları</h2>
+  <ul class="list-disc list-inside">
+    <li>Süresi uzun ve çevrim şartı düşük bonusları tercih edin.</li>
+    <li>Promosyon şartlarını okumadan yatırım yapmayın.</li>
+    <li>VIP programlarına katılarak ekstra avantajlar kazanın.</li>
+  </ul>
+
+  <p class="mt-6">
+    👉 Diğer rehberlerimize göz atın: 
+    <a href="/freespin-veren-casino-siteleri-2025/" class="underline text-blue-400">Freespin Veren Casino Siteleri</a>, 
+    <a href="/cevrimsiz-bonus-sunan-siteler/" class="underline text-blue-400">Çevrim Şartsız Bonuslar</a>.
+  </p>
+</article>
+
+
+
+  {page.extra?.faq && <FAQ items={page.extra.faq} />}
+  {page.extra?.highlights && <Highlights items={page.extra.highlights} />}
+</BaseLayout>
