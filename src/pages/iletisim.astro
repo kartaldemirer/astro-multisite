@@ -7,11 +7,29 @@ const page = siteConfig.pages.contact;
 
 <BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="contact">
   <article class="prose prose-invert max-w-4xl mx-auto">
-    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
+  <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
 
-    <p class={`${siteConfig.theme.text.p}`}><strong>{siteConfig.siteMeta.name}</strong> ekibi olarak her zaman kullanıcılarımızın görüşlerine ve sorularına açığız. İşbirliği teklifleri, teknik destek veya önerileriniz için aşağıdaki kanallardan bize ulaşabilirsiniz.</p>
+  <p class={`${siteConfig.theme.text.p}`}>
+    <strong>{siteConfig.siteMeta.name}</strong> ekibi olarak kullanıcılarımızın görüşlerine, sorularına ve işbirliği taleplerine her zaman açığız. Amacımız, ziyaretçilerimize en iyi deneyimi sunmak ve ihtiyaç duydukları desteği en hızlı şekilde sağlamaktır. İster teknik bir konuda yardıma ihtiyacınız olsun, ister içeriklerimiz hakkında geri bildirim vermek isteyin, bizimle iletişime geçmekten çekinmeyin.
+  </p>
 
-    <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} border-b ${siteConfig.theme.text.borderColor} pb-2`}>E-posta</h2>
-    <p class={`${siteConfig.theme.text.p}`}>Daha fazla bilgi için bize ulaşabilirsiniz: <a href=`mailto:${siteConfig.siteMeta.email}` class={`${siteConfig.theme.text.highlight} underline`}>{siteConfig.siteMeta.email}</a></p>
-  </article>
+  <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} border-b ${siteConfig.theme.text.borderColor} pb-2`}>E-posta ile İletişim</h2>
+  <p class={`${siteConfig.theme.text.p}`}>
+    Tüm sorularınız ve talepleriniz için bize şu e-posta adresinden ulaşabilirsiniz: 
+    <a href={`mailto:${siteConfig.siteMeta.email}`} class={`${siteConfig.theme.text.highlight} underline`}>
+      {siteConfig.siteMeta.email}
+    </a>. Genellikle 24 saat içinde yanıt vermeyi hedefliyoruz.
+  </p>
+
+  <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} border-b ${siteConfig.theme.text.borderColor} pb-2`}>İşbirliği ve Öneriler</h2>
+  <p class={`${siteConfig.theme.text.p}`}>
+    KumarPuan.com olarak, sektörde güvenilir bilgi kaynağı olmayı amaçlıyoruz. Bu doğrultuda, yeni projeler, reklam çalışmaları veya içerik önerileriniz için bizimle iletişime geçebilirsiniz. Özellikle kullanıcılarımız için faydalı olabilecek rehber içeriklerde, örneğin <em>freespin veren casino siteleri</em> listeleri veya bonus karşılaştırmaları gibi konularda, işbirliğine açığız.
+  </p>
+
+  <h2 class={`text-xl font-bold ${siteConfig.theme.text.primary} border-b ${siteConfig.theme.text.borderColor} pb-2`}>Geri Bildirimleriniz Bizim İçin Önemli</h2>
+  <p class={`${siteConfig.theme.text.p}`}>
+    Sizlerden gelecek her türlü yorum, öneri ve hata bildirimi, platformumuzu geliştirmemiz için kritik öneme sahiptir. Lütfen düşüncelerinizi bizimle paylaşın; çünkü hedefimiz, güvenilir ve şeffaf bir bilgi kaynağı olarak kullanıcı deneyimini sürekli iyileştirmektir.
+  </p>
+</article>
+
 </BaseLayout>

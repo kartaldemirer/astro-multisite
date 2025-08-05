@@ -608,19 +608,19 @@ export const siteConfig = {
   highlights: [
     {
       title: "Freespin Veren Casino Siteleri Neden Tercih Edilmeli?",
-      description: "Freespin bonusları, yatırım yapmadan oyun deneyimi sunar. Bu fırsatlar sayesinde riske girmeden kazanç elde edebilirsiniz. <a href='/freespin-veren-casino-siteleri-2025/'><strong>Freespin Veren Siteler</strong></a> listemizi inceleyin."
+      description: "Freespin bonusları, yatırım yapmadan oyun deneyimi sunar. Bu fırsatlar sayesinde riske girmeden kazanç elde edebilirsiniz. <a href='/freespin-veren-casino-siteleri-2025/'><strong>Freespin Veren Siteler</strong></a> listemizi inceleyin. Ayrıca <a href='/freespin-bonus-turleri/'><strong>Freespin Bonus Türleri</strong></a> yazımızı okuyarak detaylı bilgi edinin."
     },
     {
       title: "Çevirimsiz Freespin Fırsatları",
-      description: "Çevirimsiz freespin, kazandığınız tutarı ek şartlar olmadan çekebilmenizi sağlar. Bu nedenle 2025 yılında en çok tercih edilen promosyonlar arasındadır. <a href='/freespin-cevirim-sartlari/'><strong>Çevirim Şartları</strong></a> rehberimizi okuyun."
+      description: "Çevirimsiz freespin, kazandığınız tutarı ek şartlar olmadan çekebilmenizi sağlar. Bu nedenle 2025 yılında en çok tercih edilen promosyonlar arasındadır. <a href='/freespin-cevirim-sartlari/'><strong>Çevirim Şartları</strong></a> rehberimizi okuyun ve <a href='/freespin-bonus-kombinasyonlari/'><strong>Kombinasyon Taktikleri</strong></a> bölümüne göz atın."
     },
     {
       title: "En Güvenilir Lisanslı Casino Siteleri",
-      description: "Curacao veya Malta lisansına sahip siteler, düzenli denetimlerden geçer ve güvenlik standartlarını uygular. <a href='/guvenilir-freespin-casino-siteleri/'><strong>Güvenilir Casino Siteleri</strong></a> listemizi kontrol edin."
+      description: "Curacao veya Malta lisansına sahip siteler, düzenli denetimlerden geçer ve güvenlik standartlarını uygular. <a href='/guvenilir-freespin-casino-siteleri/'><strong>Güvenilir Casino Siteleri</strong></a> listemizi kontrol edin. Ayrıca kazancınızı artırmak için <a href='/freespin-ile-kazanma-taktikleri/'><strong>Kazanma Taktikleri</strong></a> yazımızı inceleyin."
     },
     {
       title: "Mobil Freespin ile Kazanç Fırsatı",
-      description: "Mobil uyumlu casino siteleri sayesinde istediğiniz yerden freespin bonuslarını kullanabilirsiniz. <a href='/mobil-freespin-siteleri/'><strong>Mobil Freespin Siteleri</strong></a> sayfamızdan detaylara ulaşın."
+      description: "Mobil uyumlu casino siteleri sayesinde istediğiniz yerden freespin bonuslarını kullanabilirsiniz. <a href='/mobil-freespin-siteleri/'><strong>Mobil Freespin Siteleri</strong></a> sayfamızdan detaylara ulaşın veya <a href='/mrgamb-giris/'><strong>MrGamb Giriş</strong></a> linkinden güncel adres bilgisine erişin."
     }
   ],
 };

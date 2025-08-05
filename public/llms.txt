@@ -1,0 +1,19 @@
+# KumarPuan LLM
+
+> KumarPuan LLM, kullanıcıların casino bonusları, freespin fırsatları ve güvenilir siteler hakkında sorularına yapay zeka tabanlı yanıtlar veren bir Python kütüphanesidir. Sistem, LangChain, OpenAI API ve özel eğitimli verilerle güçlendirilmiştir.
+
+---
+
+## Özellikler
+- **Doğal Dil Arayüzü**: Casino bonusları, çevirim şartları, freespin fırsatları hakkında sorulara yanıt verir.
+- **LangChain & Embeddings**: Bilgiler vektör tabanlı aranır, doğru ve hızlı cevap sağlanır.
+- **HTMX + FastHTML Entegrasyonu**: API çağrısı olmadan server-rendered dinamik arayüz.
+- **SEO Dostu**: KumarPuan içeriğiyle uyumlu, kullanıcı deneyimini artırır.
+
+---
+
+## Hızlı Başlangıç
+
+### Kurulum
+```bash
+pip install kumarpuan-llm

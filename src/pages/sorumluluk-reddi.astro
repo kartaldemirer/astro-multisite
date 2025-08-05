@@ -7,14 +7,23 @@ const page = siteConfig.pages.disclaimer;
 
 <BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="disclaimer">
   <article class="prose prose-invert max-w-4xl mx-auto">
-    <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
+  <h1 class={`text-4xl font-extrabold mb-6 ${siteConfig.theme.text.highlight} pb-2`}>{page.heading}</h1>
 
-    <p class={`${siteConfig.theme.text.p}`}>{siteConfig.siteMeta.publisher}, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizde yer alan hiçbir içerik, kullanıcıyı yasal olmayan oyunlara teşvik etmez veya yönlendirme amacı taşımaz.</p>
+  <p class={`${siteConfig.theme.text.p}`}>
+    {siteConfig.siteMeta.publisher}, yalnızca bilgilendirme amacıyla casino ve bahis içerikleri sunar. Sitemizdeki tüm içerikler, kullanıcıları yasal olmayan faaliyetlere teşvik etmek amacı taşımaz. Amacımız, ziyaretçilere tarafsız ve güncel bilgi sağlamaktır. Örneğin, freespin veren casino siteleri gibi konular yalnızca bilgi amaçlı paylaşılıp, kullanıcıların kendi tercihlerine bırakılır.
+  </p>
 
-    <p class={`${siteConfig.theme.text.p}`}>Sunulan bağlantılar, üçüncü taraf sitelere yönlendirme içerir. Bu sitelerin içeriği ve güvenliği konusunda herhangi bir sorumluluk kabul edilmez. Her kullanıcı, yönlendirilen siteyi kendi sorumluluğunda ziyaret eder.</p>
+  <p class={`${siteConfig.theme.text.p}`}>
+    Sitemizde sunulan bağlantılar, üçüncü taraf web sitelerine yönlendirme içerir. Bu sitelerin içerikleri, güvenlik önlemleri ve yasal uygunluğu üzerinde kontrolümüz bulunmamaktadır. KumarPuan.com, yönlendirme yapılan sitelerin hizmetlerinden veya kullanıcıların bu sitelerde yaşayabileceği olası sorunlardan sorumlu tutulamaz. Ziyaretçiler, bu siteleri kendi sorumlulukları altında kullanır.
+  </p>
 
-    <p class={`${siteConfig.theme.text.p}`}>Sitemizde yer alan bilgiler, tamamen editör değerlendirmelerine ve genel araştırmalara dayanmaktadır. Kullanıcılar, kararlarını verirken yasal düzenlemeleri ve kişisel durumlarını göz önünde bulundurmalıdır.</p>
+  <p class={`${siteConfig.theme.text.p}`}>
+    Yayınladığımız bilgiler, editörlerimizin değerlendirmeleri ve genel araştırmalara dayalıdır. Bu bilgiler finansal veya hukuki tavsiye niteliği taşımaz. Kullanıcılar, herhangi bir karar almadan önce kendi yasal yükümlülüklerini ve kişisel durumlarını göz önünde bulundurmalıdır.
+  </p>
 
-    <p class={`${siteConfig.theme.text.p}`}>18 yaş altındaki kullanıcıların bu siteyi ziyaret etmesi yasaktır.</p>
-  </article>
+  <p class={`${siteConfig.theme.text.p}`}>
+    Kumar ve bahis oyunları yalnızca 18 yaş ve üzeri kullanıcılar için uygundur. KumarPuan.com'u ziyaret eden tüm kullanıcılar, bu kurala uyacaklarını kabul eder. Sitemizi kullanmaya devam eden ziyaretçiler, bu sorumluluk reddi şartlarını kabul etmiş sayılır.
+  </p>
+</article>
+
 </BaseLayout>
