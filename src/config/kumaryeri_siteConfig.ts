@@ -548,23 +548,23 @@ export const siteConfig = {
 
   hero: {
     title: "2025’in En Avantajlı Casino Bonusları",
-    description: "MrGamb ve diğer güvenilir sitelerden freespin almak için en güncel liste burada.",
+    description: "MrGamb ve diğer lisanslı, güvenilir casino sitelerinden freespin ve yatırım bonusu fırsatlarını keşfedin. Güncel kampanyalar tek bir sayfada!",
     ctaText: "Bonusları İncele",
-    ctaLink: "#bonuslar",
+    ctaLink: "#bonuslar"
   },
 
   promoIntro: {
     title: "2025’te En Çok Freespin Veren Siteler | %100 Güncel Liste",
     brand: "KumarYeri.com",
     features: [
-      { icon: "🎯", text: "%200’e varan hoş geldin promosyonları" },
-      { icon: "🎁", text: "Yatırım & kayıp iade promosyonları" },
-      { icon: "🧲", text: "Slot makinelerine özel ekstra çevrimler" },
-      { icon: "🏆", text: "Sadece güvenilir lisanslı siteler" }
+      { icon: "🎯", text: "%200’e varan hoş geldin bonusları ve özel kampanyalar" },
+      { icon: "🎁", text: "Yatırım ve kayıp iade promosyonlarıyla ekstra kazanç" },
+      { icon: "🧲", text: "Popüler slot makinelerine özel freespin fırsatları" },
+      { icon: "🏆", text: "Sadece lisanslı ve güvenilir casino siteleri" }
     ],
     ctaText: "🎰 Bonusları Keşfet",
     ctaLink: "#bonuslar",
-    ctaTitle: "Bonusları Keşfet",
+    ctaTitle: "Bonusları Keşfet"
   },
 
   bonusSites: {
@@ -573,30 +573,27 @@ export const siteConfig = {
 
   faq: [
     {
-        question: "Online casino promosyonu nedir?",
-        answer: "Kayıt veya yatırım karşılığında sunulan promosyonlardır. En yaygın türleri freespin ve %100 hoş geldin promosyonudur.",
+      question: "Online casino promosyonu nedir?",
+      answer: "Online casino promosyonu, kullanıcıların kayıt olması veya belirli bir yatırım yapması karşılığında verilen ekstra avantajlardır. En popüler promosyon türleri freespin, hoş geldin bonusu ve yatırım bonuslarıdır."
     },
     {
-        question: "Bonuslar hemen kullanılabilir mi?",
-        answer: "Bazı bonuslar otomatik olarak tanımlanır, bazıları manuel olarak talep edilir.",
+      question: "Bonuslar hemen kullanılabilir mi?",
+      answer: "Çoğu bonus, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı platformlarda promosyonu manuel olarak talep etmeniz gerekebilir."
     },
     {
-        question: "En iyi promosyon nasıl seçilir?",
-        answer: "Çevrim şartı düşük, güvenilir lisanslı sitelerin sunduğu promosyonlar tercih edilmelidir.",
+      question: "En iyi promosyon nasıl seçilir?",
+      answer: "En iyi promosyonlar, çevrim şartı düşük, süresi uzun ve güvenilir lisanslı siteler tarafından sunulan kampanyalardır. Ayrıca, kullanıcı yorumlarını dikkate almak da faydalıdır."
     },
     {
-        question: "Promosyonların çevrim şartı ne demektir?",
-        answer: "Kazanılan promosyonun gerçek para olarak çekilebilmesi için belirli sayıda çevrilmesi gerekir. Örneğin 20x çevrim, 100₺ promosyon için 2000₺ bahis yapılması gerektiği anlamına gelir.",
+      question: "Promosyonların çevrim şartı ne demektir?",
+      answer: "Çevrim şartı, kazandığınız bonusu çekebilmek için belirli bir miktarda bahis yapmanız gerektiği anlamına gelir. Örneğin, 20x çevrim şartı olan 100₺ bonus için 2000₺ tutarında bahis yapılmalıdır."
     },
     {
-        question: "Promosyonlar hemen kullanılabilir mi?",
-        answer: "Çoğu promosyon, yatırım yapar yapmaz veya kayıt sonrası otomatik olarak tanımlanır. Ancak bazı siteler promosyonu manuel olarak talep etmenizi ister.",
-    },
-    {
-        question: "Her oyuncu aynı promosyonu alabilir mi?",
-        answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler içindir, bazıları ise VIP seviyenize göre artar. Ayrıca bazı promosyonlar belirli bölgelerle sınırlıdır.",
-    },
+      question: "Her oyuncu aynı promosyonu alabilir mi?",
+      answer: "Hayır. Bazı promosyonlar yalnızca yeni üyeler için geçerlidir, bazıları ise VIP seviyenize göre farklılık gösterir. Ayrıca, bazı promosyonlar belirli ülkeler veya bölgelerle sınırlı olabilir."
+    }
   ],
+
 
   highlights: [
     {
@@ -605,27 +602,28 @@ export const siteConfig = {
     },
     {
       title: "Hoş Geldin Promosyonu Nedir, Nasıl Alınır?",
-      description: "Hoş geldin promosyonu, yeni üye olan kullanıcılara özel verilen bir promosyondur. Genellikle ilk para yatırma işlemine %100 promosyon ya da freespin şeklinde sunulur. Promosyonun geçerli olması için bazı çevrim şartları vardır. Promosyon almadan önce kullanım koşullarını dikkatlice incelemek gerekir."
+      description: "Hoş geldin promosyonu, yeni üye olan kullanıcılara özel verilen bir promosyondur. Genellikle ilk para yatırma işlemine %100 promosyon ya da freespin şeklinde sunulur. Promosyonun geçerli olması için bazı çevrim şartları vardır. Promosyon almadan önce kullanım koşullarını dikkatlice incelemek gerekir. <a href='/hos-geldin-bonusu-casino-siteleri/'><strong>Hoş Geldin Bonusu Veren Siteler</strong></a> listesine göz atabilirsiniz."
     },
     {
       title: "En İyi Casino Sitelerini Nasıl Seçiyoruz?",
-      description: "KumarYeri.com olarak, her siteyi detaylı kriterlere göre değerlendiriyoruz: lisans durumu, promosyon miktarı, ödeme hızı, kullanıcı yorumları ve müşteri desteği başlıca kriterlerimizdir. Sadece güvenilirliği kanıtlanmış platformlara sitemizde yer veriyoruz."
+      description: "KumarYeri.com olarak, her siteyi detaylı kriterlere göre değerlendiriyoruz: lisans durumu, promosyon miktarı, ödeme hızı, kullanıcı yorumları ve müşteri desteği başlıca kriterlerimizdir. Sadece güvenilirliği kanıtlanmış platformlara sitemizde yer veriyoruz. <a href='/lisansli-casino-siteleri/'><strong>Lisanslı Casino Siteleri Rehberi</strong></a>ni inceleyin."
     },
     {
       title: "%100 Bonus Veren Siteler Gerçek mi?",
-      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri/'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
+      description: "Bazı casino siteleri, ilk yatırımınıza karşılık %100 oranında promosyon sunar. Bu tür promosyonlar oyuncular için cazip olsa da, çevrim şartlarını dikkatlice incelemek gerekir. KumarYeri.com olarak, bu promosyonları test edip yalnızca gerçekten sunulan ve oyuncuların faydalanabildiği teklifleri listeliyoruz.  <a href='/freespin-veren-casino-siteleri-2025/'><strong>Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
     },
     {
       title: "Freespin ile Oynanabilecek Popüler Slot Oyunları",
-      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/en-cok-freespin-veren-siteler-2025/'><strong>En Çok Freespin Veren Sitelerin Listesi</strong></a>'ni görebilirsiniz."
+      description: "Freespin promosyonu aldığınızda genellikle belli başlı slot oyunlarında geçerli olur. En çok kullanılan oyunlar arasında <strong>Sweet Bonanza</strong>, <strong>Gates of Olympus</strong> ve <strong>Book of Dead</strong> gibi yüksek kazanç potansiyelli makineler yer alır. Promosyonun geçerli olduğu oyunları casino sitesinin kampanya detaylarından görebilirsiniz. <a href='/freespin-veren-casino-siteleri-2025/'><strong>Freespin Veren Sitelerin Güncel Listesi</strong></a>'ne göz atın."
     },
     {
       title: "Çevrim Şartsız Bonus Nedir, Gerçekten Var mı?",
-      description: "Çevrim şartsız promosyonlar, kazandığınız tutarı doğrudan çekebileceğiniz anlamına gelir. Ancak bu tür kampanyalar oldukça nadirdir. Bazı siteler “çevrim şartsız” ifadesini pazarlama amacıyla kullansa da, detaylara inildiğinde belirli şartların olduğu görülür. KumarYeri.com olarak bu konudaki tüm detayı şeffaf şekilde sunarız."
+      description: "Çevrim şartsız promosyonlar, kazandığınız tutarı doğrudan çekebileceğiniz anlamına gelir. Ancak bu tür kampanyalar oldukça nadirdir. Bazı siteler “çevrim şartsız” ifadesini pazarlama amacıyla kullansa da, detaylara inildiğinde belirli şartların olduğu görülür. KumarYeri.com olarak bu konudaki tüm detayı şeffaf şekilde sunarız. <a href='/cevrimsiz-bonus-sunan-siteler/'><strong>Çevrim Şartsız Bonus Veren Siteler</strong></a> rehberini inceleyin."
     },
     {
       title: "Mobil Uyumlu Casino Siteleri ve Avantajları",
-      description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar."
-    },
+      description: "Mobil uyumlu casino siteleri, akıllı telefon ya da tablet üzerinden kolayca erişim sağlar. Ek bir uygulama indirmenize gerek kalmadan tarayıcıdan giriş yapabilir, oyunlara ve promosyonlara ulaşabilirsiniz. Hızlı erişim, kesintisiz oyun deneyimi ve 7/24 destek gibi avantajlar sunar. <a href='/mobil-uyumlu-casino-siteleri-2025/'><strong>Mobil Uyumlu Siteler Listesi</strong></a>ni keşfedin."
+    }
   ],
+
 };
