@@ -440,24 +440,23 @@ export const siteConfig = {
     },
 
     mrgambGiris: {
-      title: "mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
-      description: "mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
+      title: "Mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
+      description: "Mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
       keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
       canonical: "https://kumarpuan.com/mrgamb-giris/",
-      heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
+      heading: "Mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
       schemaType: "Article",
       extra: {
         faq: [
-          { question: "mrgamb giriş adresi neden değişiyor?", answer: "BTK erişim engelleri nedeniyle adresler güncellenir. Güncel linkleri her zaman resmi kaynaklardan takip edin." },
-          { question: "mrgamb güvenilir mi?", answer: "Evet, mrgamb Curacao lisansı ile hizmet verir ve SSL koruması sağlar." },
-          { question: "Mobil mrgamb giriş nasıl yapılır?", answer: "Tarayıcıdan giriş yapabilir veya resmi uygulamayı indirerek giriş sağlayabilirsiniz." },
+          { question: "MrGamb adresi neden değişiyor?", answer: "BTK erişim engelleri nedeniyle adresler güncellenir. Güncel linkleri her zaman resmi kaynaklardan takip edin." },
+          { question: "MrGamb güvenilir mi?", answer: "Evet, mrgamb Curacao lisansı ile hizmet verir ve SSL koruması sağlar." },
+          { question: "Mobil MrGamb'a nasıl girilir yapılır?", answer: "Tarayıcıdan giriş yapabilir veya resmi uygulamayı indirerek giriş sağlayabilirsiniz." },
           { question: "VPN kullanmak güvenli mi?", answer: "Evet, güvenilir VPN servisleri ile bağlantınızı koruyabilirsiniz." },
-          { question: "mrgamb bonusları nasıl alınır?", answer: "Kayıt olduktan sonra hesabınıza giriş yaparak promosyonlar bölümünden bonusları talep edebilirsiniz." },
-          { question: "mrgamb giriş sorunlarını nasıl çözerim?", answer: "DNS veya VPN kullanabilir ya da bu sayfadan güncel bağlantıyı takip edebilirsiniz." },
-          { question: "mrgamb canlı destek var mı?", answer: "Evet, 7/24 canlı destek hizmeti sunuluyor." },
-          { question: "mrgamb ödeme yöntemleri nelerdir?", answer: "Banka transferi, kredi kartı, e-cüzdan ve kripto para yöntemleri kullanılabilir." },
+          { question: "MrGamb bonusları nasıl alınır?", answer: "Kayıt olduktan sonra hesabınıza giriş yaparak promosyonlar bölümünden bonusları talep edebilirsiniz." },
+          { question: "MrGamb giriş sorunlarını nasıl çözerim?", answer: "DNS veya VPN kullanabilir ya da bu sayfadan güncel bağlantıyı takip edebilirsiniz." },
+          { question: "MrGamb canlı destek var mı?", answer: "Evet, 7/24 canlı destek hizmeti sunuluyor." },
+          { question: "MrGamb ödeme yöntemleri nelerdir?", answer: "Banka transferi, kredi kartı, e-cüzdan ve kripto para yöntemleri kullanılabilir." },
           { question: "Hesabım kapatıldı, ne yapmalıyım?", answer: "Hemen canlı destek ile iletişime geçin ve hesabınızın neden kapatıldığını öğrenin." },
-          { question: "mrgamb girişte IP engeli alırsam ne yapabilirim?", answer: "VPN veya alternatif DNS çözümleri kullanabilirsiniz." }
         ],
         highlights: [
           { title: "Güncel mrgamb Giriş Linki", description: "Kesintisiz erişim için en son bağlantıları burada bulabilirsiniz." },
