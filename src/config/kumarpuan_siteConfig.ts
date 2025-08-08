@@ -439,6 +439,209 @@ export const siteConfig = {
       }
     },
 
+    otobetGiris: {
+      title: "Otobet Giriş & Güvenilir Casino Siteleri Rehberi",
+      description: "Otobet’e giriş için en güncel adresi ve alternatif bağlantıları keşfedin. Güvenilir casino siteleri hakkında detaylı bilgiye ulaşın.",
+      keywords: "otobet giriş, otobet güncel adres, otobet mobil giriş, otobet güvenilir mi, otobet casino, otobet üyelik, otobet alternatif link, güvenilir casino siteleri, lisanslı casino",
+      canonical: "https://kumarpuan.com/otobet-giris/",
+      heading: "Otobet Giriş Rehberi 2025 – En Güncel Adres ve Casino Önerileri",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Otobet neden erişilemiyor?", answer: "BTK tarafından uygulanan erişim engelleri nedeniyle Otobet zaman zaman adres değiştirir." },
+          { question: "Otobet güvenilir mi?", answer: "Otobet, lisanslı yapısı ve kullanıcı yorumlarıyla güvenilirliğini kanıtlamıştır." },
+          { question: "Otobet'e mobil nasıl giriş yapılır?", answer: "iOS veya Android cihazınızdan tarayıcıyla ya da resmi uygulama ile giriş sağlayabilirsiniz." },
+          { question: "VPN ile giriş yapmak güvenli mi?", answer: "Evet, güvenilir bir VPN ile bağlantınızı şifreleyerek güvenli erişim sağlayabilirsiniz." },
+          { question: "Otobet bonusları nasıl alınır?", answer: "Üyelik işleminizi tamamladıktan sonra promosyonlar sekmesinden bonusları talep edebilirsiniz." },
+          { question: "Otobet giriş problemi yaşıyorum, ne yapmalıyım?", answer: "Güncel linki bu sayfadan edinebilir, DNS veya VPN çözümlerini deneyebilirsiniz." },
+          { question: "Canlı destek hizmeti var mı?", answer: "Evet, Otobet 7/24 canlı destek hizmeti sunmaktadır." },
+          { question: "Hangi ödeme yöntemleri geçerli?", answer: "Banka havalesi, Papara, kripto para ve diğer e-cüzdan sistemleri ile işlem yapabilirsiniz." },
+          { question: "Otobet hesabım kapatıldı, ne yapmalıyım?", answer: "Canlı destek ekibi ile iletişime geçerek hesabınızla ilgili detayları öğrenebilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Otobet Giriş Linki", description: "Sansüre takılmadan Otobet’e ulaşmak için en güncel bağlantı burada." },
+          { title: "Mobil Uyumlu Erişim", description: "Tüm mobil cihazlara özel tasarlanmış hızlı ve güvenli giriş imkanı." },
+          { title: "Lisanslı Yapı ve Güvenlik", description: "Uluslararası oyun lisansı ve SSL korumasıyla güvenli oyun deneyimi." },
+          { title: "Özel Bonuslar", description: "Yeni üyelere özel hoş geldin bonusları ve yatırım promosyonları." },
+          { title: "7/24 Canlı Destek", description: "Tüm sorularınız için anında destek alabileceğiniz bir ekip sizi bekliyor." }
+        ]
+      }
+    },
+
+    betpuanGiris: {
+      title: "Betpuan Giriş: Güvenilir Casino Deneyimi %100",
+      description: "Betpuan giriş için en güncel adres bilgilerine ulaşın. %100 güvenilir casino deneyimi, mobil uyumlu yapı ve avantajlı bonuslarla hemen katılın.",
+      keywords: "betpuan giriş, betpuan güncel adres, betpuan mobil giriş, betpuan casino, betpuan güvenilir mi, betpuan üyelik, betpuan bonus, betpuan alternatif link, betpuan para yatırma",
+      canonical: "https://kumarpuan.com/betpuan-giris/",
+      heading: "Betpuan Giriş Rehberi 2025 – %100 Güvenli Casino Deneyimi",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Betpuan giriş adresi neden değişiyor?", answer: "Türkiye'deki BTK engellemeleri nedeniyle adres zamanla güncellenmektedir. Bu sayfadan en yeni linklere ulaşabilirsiniz." },
+          { question: "Betpuan güvenilir mi?", answer: "Evet, Betpuan lisanslı yapısı ve kullanıcı memnuniyetiyle güvenilir platformlar arasında yer alır." },
+          { question: "Mobil Betpuan'a nasıl giriş yapılır?", answer: "Mobil tarayıcı veya Betpuan'ın mobil uygulaması üzerinden hızlıca giriş yapabilirsiniz." },
+          { question: "VPN kullanarak Betpuan'a girmek güvenli mi?", answer: "Evet, kaliteli VPN servisleri ile erişiminizi güvence altına alabilirsiniz." },
+          { question: "Betpuan bonusları nasıl alınır?", answer: "Üyelik işlemlerini tamamladıktan sonra promosyonlar sekmesinden bonuslarınızı seçebilirsiniz." },
+          { question: "Giriş yapamıyorum, ne yapmalıyım?", answer: "Sayfada verilen güncel adresi kontrol edin veya DNS/VPN yöntemlerini deneyin." },
+          { question: "Betpuan canlı destek sunuyor mu?", answer: "Evet, 7/24 aktif canlı destek hizmeti mevcuttur." },
+          { question: "Hangi ödeme yöntemleri kullanılabilir?", answer: "Banka transferi, Papara, kripto para ve diğer e-cüzdanlar geçerlidir." },
+          { question: "Hesabım kapandıysa ne yapmalıyım?", answer: "Betpuan canlı destek ile iletişime geçerek hesabınızı yeniden aktifleştirebilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Betpuan Giriş Linki", description: "Kesintisiz erişim için en son bağlantıya tek tıkla ulaşın." },
+          { title: "Mobil Uyumluluk", description: "Her cihazda sorunsuz ve hızlı giriş imkanı." },
+          { title: "Lisanslı ve Güvenli Altyapı", description: "Yasal lisans ve gelişmiş şifreleme teknolojileriyle korunur." },
+          { title: "Yüksek Bonus Oranları", description: "%100 hoş geldin bonusu dahil birçok avantajlı promosyon sizi bekliyor." },
+          { title: "7/24 Canlı Destek", description: "Her an yanınızda olan profesyonel yardım ekibi." }
+        ]
+      }
+    },
+
+    ngsbahisGiris: {
+      title: "Online Casino Dünyasına Giriş: Ngsbahis ve Güvenilir Casino Siteleri",
+      description: "Ngsbahis ile online casino dünyasına ilk adımınızı güvenle atın. Güncel giriş adresi, bonus fırsatları ve güvenilir casino platformları hakkında detaylı rehber.",
+      keywords: "ngsbahis giriş, ngsbahis güncel adres, ngsbahis mobil, ngsbahis güvenilir mi, online casino siteleri, güvenilir casino siteleri, ngsbahis bonus, casino rehberi 2025",
+      canonical: "https://kumarpuan.com/ngsbahis-giris/",
+      heading: "Ngsbahis Giriş Rehberi – Güvenilir Casino Siteleri ile İlk Adımı Atın",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Ngsbahis’e neden erişim engeli geliyor?", answer: "Yasal düzenlemeler gereği BTK tarafından zaman zaman erişim engelleri uygulanmaktadır. Bu nedenle adresler güncellenir." },
+          { question: "Ngsbahis güvenilir mi?", answer: "Evet, Ngsbahis lisanslı bir casino sitesidir ve yüksek güvenlik önlemleri sunar." },
+          { question: "Mobil cihazlarla Ngsbahis'e nasıl giriş yapılır?", answer: "Tarayıcı veya mobil uygulama üzerinden güncel linklerle kolayca erişebilirsiniz." },
+          { question: "VPN kullanımı güvenli midir?", answer: "Güvenilir VPN servisleri ile bağlantı güvenliğini artırabilirsiniz." },
+          { question: "Ngsbahis bonusları nasıl alınır?", answer: "Kayıt sonrası promosyonlar sayfasından uygun bonusları seçerek anında faydalanabilirsiniz." },
+          { question: "Online casino siteleri güvenli mi?", answer: "Lisanslı ve denetlenen casino siteleri güvenlidir. Sayfamızda önerilen siteler bu kriterlere uygundur." },
+          { question: "Ngsbahis canlı destek var mı?", answer: "Evet, 7/24 hizmet veren canlı destek hattı mevcuttur." },
+          { question: "Ödeme seçenekleri neler?", answer: "Papara, kripto, banka transferi ve diğer e-cüzdan yöntemleri desteklenmektedir." },
+          { question: "Hesabım kapatıldıysa ne yapmalıyım?", answer: "Ngsbahis canlı destek ekibiyle iletişime geçerek detaylı bilgi alabilirsiniz." }
+        ],
+        highlights: [
+          { title: "Ngsbahis Giriş Linki", description: "Erişim engellerini aşarak Ngsbahis’e anında ulaşın." },
+          { title: "Mobil Uyumluluk", description: "Akıllı telefonlar ve tabletlerle sorunsuz erişim keyfi." },
+          { title: "Güvenilir Lisans Yapısı", description: "Ngsbahis, uluslararası lisanslara sahiptir ve denetim altındadır." },
+          { title: "Yüksek Oranlı Bonuslar", description: "Yeni üyelere özel bonuslar ve sadakat ödülleri sunulmaktadır." },
+          { title: "Güvenilir Casino Rehberi", description: "Online casino dünyasına dair bilinmesi gereken her şey tek sayfada." }
+        ]
+      }
+    },
+
+    betcioGiris: {
+      title: "Betcio Giriş Güncel Bilgiler ve Güvenilir Casino",
+      description: "Betcio giriş adresine anında ulaşın! Güncel bağlantılar, güvenilir casino deneyimi, bonus fırsatları ve mobil erişim seçenekleri bu sayfada.",
+      keywords: "betcio giriş, betcio güncel adres, betcio mobil giriş, betcio güvenilir mi, betcio casino, betcio üyelik, betcio bonus, betcio alternatif link, güvenilir casino siteleri",
+      canonical: "https://kumarpuan.com/betcio-giris/",
+      heading: "Betcio Giriş 2025 – En Güncel Bilgilerle Güvenilir Casino Erişimi",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Betcio giriş adresi neden değişiyor?", answer: "BTK tarafından uygulanan erişim kısıtlamaları nedeniyle Betcio zamanla yeni adresler kullanmaktadır." },
+          { question: "Betcio güvenilir mi?", answer: "Evet, Betcio lisanslı altyapısı ve kullanıcı verilerini koruyan güvenlik önlemleriyle güvenilir kabul edilir." },
+          { question: "Mobil cihazdan Betcio’ya nasıl giriş yapılır?", answer: "iOS ve Android cihazlardan tarayıcı ile veya mobil uygulama aracılığıyla giriş yapabilirsiniz." },
+          { question: "VPN ile Betcio’ya erişim sağlanabilir mi?", answer: "Evet, kaliteli VPN servisleri sayesinde Betcio’ya güvenli bağlantı kurulabilir." },
+          { question: "Betcio bonusları nasıl alınır?", answer: "Kayıt işlemini tamamladıktan sonra promosyonlar sekmesinden uygun bonusları seçebilirsiniz." },
+          { question: "Giriş yapamıyorum, ne yapmalıyım?", answer: "Bu sayfada yer alan güncel adresi kullanın, ayrıca DNS veya VPN alternatiflerini deneyin." },
+          { question: "Betcio canlı destek sunuyor mu?", answer: "Evet, 7/24 aktif destek ekibiyle hizmet vermektedir." },
+          { question: "Hangi ödeme yöntemleri destekleniyor?", answer: "Banka havalesi, Papara, kripto para ve çeşitli e-cüzdan yöntemleriyle ödeme yapılabilir." },
+          { question: "Hesabım kapatıldıysa nasıl işlem yapmalıyım?", answer: "Betcio’nun canlı destek ekibiyle iletişime geçerek hesap durumu hakkında bilgi alabilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Betcio Giriş Linki", description: "Anlık olarak erişim sağlayabileceğiniz en yeni Betcio bağlantısı burada." },
+          { title: "Mobil Uyumlu Giriş", description: "Tüm cihazlara uygun, hızlı ve sorunsuz erişim altyapısı." },
+          { title: "Lisans ve Güvenlik", description: "Betcio, lisanslı hizmet sunar ve SSL ile tüm verilerinizi korur." },
+          { title: "Avantajlı Bonuslar", description: "Yeni üyelere özel promosyonlar ve yüksek oranlı fırsatlar sizi bekliyor." },
+          { title: "7/24 Canlı Destek", description: "Sorularınıza anında çözüm bulabileceğiniz profesyonel destek ekibi." }
+        ]
+      }
+    },
+
+    efesbetGiris: {
+      title: "Efesbet Giriş: Güvenilir Casino Siteleri Rehberi",
+      description: "Efesbet güncel giriş adresi, bonus kampanyaları ve mobil uyumlu erişim detaylarıyla güvenilir casino siteleri rehberinde yerini aldı.",
+      keywords: "efesbet giriş, efesbet güncel adres, efesbet mobil giriş, efesbet güvenilir mi, efesbet casino, efesbet üyelik, efesbet bonus, güvenilir casino siteleri, online casino rehberi",
+      canonical: "https://kumarpuan.com/efesbet-giris/",
+      heading: "Efesbet Giriş Rehberi – Güvenilir Casino Siteleri Listesi 2025",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Efesbet'e neden doğrudan giriş yapamıyorum?", answer: "Efesbet zaman zaman BTK engellemelerine maruz kaldığı için adres değişikliği yapılmaktadır. Güncel linklere bu sayfadan ulaşabilirsiniz." },
+          { question: "Efesbet güvenilir mi?", answer: "Efesbet, lisanslı bir platformdur ve kullanıcı verilerini koruyan güvenlik sistemlerine sahiptir." },
+          { question: "Efesbet'e mobil giriş nasıl yapılır?", answer: "Mobil tarayıcı veya uygulama üzerinden güncel bağlantıyla hızlı giriş sağlayabilirsiniz." },
+          { question: "VPN kullanarak erişim sağlanabilir mi?", answer: "Evet, kaliteli bir VPN hizmetiyle erişim sorunlarını aşabilir ve güvenli bağlantı kurabilirsiniz." },
+          { question: "Efesbet bonusları nasıl alınır?", answer: "Üye olduktan sonra promosyonlar sekmesinden bonus talebinde bulunabilirsiniz." },
+          { question: "Efesbet giriş yapamıyorum, çözüm nedir?", answer: "DNS değişikliği, VPN kullanımı veya bu sayfada yer alan güncel linki kullanarak erişim sağlayabilirsiniz." },
+          { question: "Efesbet canlı destek sunuyor mu?", answer: "Evet, 7 gün 24 saat aktif destek hizmeti mevcuttur." },
+          { question: "Hangi ödeme yöntemleri mevcut?", answer: "Papara, banka havalesi, kripto para ve çeşitli e-cüzdan yöntemleriyle işlem yapılabilir." },
+          { question: "Hesabım kapatıldıysa nasıl destek alabilirim?", answer: "Canlı destek ekibine bağlanarak hesabınızla ilgili detaylı yardım alabilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Efesbet Giriş Linki", description: "Kesintisiz ve güvenli erişim için en yeni Efesbet bağlantısı burada." },
+          { title: "Mobil ve Tablet Uyumlu", description: "Tüm cihazlarla tam uyumlu hızlı ve güvenli erişim deneyimi." },
+          { title: "Lisanslı ve Güvenli Altyapı", description: "Efesbet, uluslararası lisanslar ve SSL güvenliğiyle donatılmıştır." },
+          { title: "Bonus ve Promosyonlar", description: "Yeni üyelere özel hoş geldin bonusları ve yatırım kampanyaları sizi bekliyor." },
+          { title: "Güvenilir Casino Rehberi", description: "Yalnızca denetlenmiş ve lisanslı siteleri içeren detaylı casino listesi." }
+        ]
+      }
+    },
+
+    ladesbetGiris: {
+      title: "Ladesbet Giriş: Güvenilir Casino Deneyimi",
+      description: "Ladesbet giriş adresi ve güvenli erişim bilgileriyle online casino dünyasına adım atın. Lisanslı yapı, mobil uyumluluk ve özel bonus fırsatları sizi bekliyor.",
+      keywords: "ladesbet giriş, ladesbet güncel adres, ladesbet mobil giriş, ladesbet güvenilir mi, ladesbet casino, ladesbet üyelik, ladesbet bonus, güvenilir casino siteleri, online casino deneyimi",
+      canonical: "https://kumarpuan.com/ladesbet-giris/",
+      heading: "Ladesbet Giriş Rehberi – Güvenilir ve Kesintisiz Casino Deneyimi",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Ladesbet adresi neden değişiyor?", answer: "BTK erişim engelleri nedeniyle Ladesbet sık sık yeni alan adları kullanmak zorunda kalır." },
+          { question: "Ladesbet güvenilir mi?", answer: "Evet, Ladesbet lisanslı hizmet sunar ve kullanıcı bilgileriniz SSL ile korunur." },
+          { question: "Mobil cihazlardan Ladesbet'e nasıl giriş yapılır?", answer: "Tarayıcınızdan veya uygulama üzerinden güncel adresle kolayca erişim sağlayabilirsiniz." },
+          { question: "VPN kullanımı güvenli mi?", answer: "Evet, kaliteli bir VPN ile erişim hem güvenli hem de hızlı olur." },
+          { question: "Ladesbet bonusları nasıl alınır?", answer: "Üyelik işlemi tamamlandıktan sonra promosyonlar menüsünden istediğiniz bonusu seçebilirsiniz." },
+          { question: "Ladesbet’e giriş yapamıyorum, çözüm nedir?", answer: "Bu sayfada yer alan güncel giriş linkini kullanın. Gerekirse DNS veya VPN tercih edin." },
+          { question: "Ladesbet canlı destek hizmeti veriyor mu?", answer: "Evet, 7/24 ulaşabileceğiniz profesyonel canlı destek birimi bulunmaktadır." },
+          { question: "Hangi ödeme yöntemleri geçerli?", answer: "Banka havalesi, Papara, kripto para ve diğer e-cüzdan yöntemleri desteklenmektedir." },
+          { question: "Hesabım kapatıldı, nasıl açtırabilirim?", answer: "Canlı destek ile iletişime geçerek hesap durumu hakkında yardım alabilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Ladesbet Giriş Linki", description: "Erişim engellerine takılmadan Ladesbet’e anında ulaşım sağlayın." },
+          { title: "Mobil Uyumlu Erişim", description: "iOS ve Android cihazlar için optimize edilmiş sorunsuz giriş deneyimi." },
+          { title: "Lisanslı Casino Platformu", description: "Güvenli altyapı ve uluslararası lisans desteği ile gönül rahatlığıyla oynayın." },
+          { title: "Yeni Üyelere Özel Bonuslar", description: "%100 hoş geldin bonusu ve yatırım promosyonları sizi bekliyor." },
+          { title: "7/24 Canlı Destek", description: "Her an ulaşabileceğiniz yardım ekibi ile sorunlarınıza anında çözüm." }
+        ]
+      }
+    },
+
+    supertotobetGiris: {
+      title: "En İyi Supertotobet Giriş ve Casino Siteleri",
+      description: "Supertotobet giriş adresi ile en iyi casino sitelerine hızlı erişim sağlayın. Lisanslı altyapı, güvenilir ödeme yöntemleri ve özel bonus fırsatları sizi bekliyor.",
+      keywords: "supertotobet giriş, supertotobet güncel adres, supertotobet mobil giriş, supertotobet güvenilir mi, supertotobet casino, en iyi casino siteleri, güvenilir casino, supertotobet bonus",
+      canonical: "https://kumarpuan.com/supertotobet-giris/",
+      heading: "Supertotobet Giriş Rehberi – En İyi ve Güvenilir Casino Siteleri 2025",
+      schemaType: "Article",
+      extra: {
+        faq: [
+          { question: "Supertotobet giriş adresi neden değişiyor?", answer: "BTK tarafından uygulanan erişim engelleri nedeniyle Supertotobet belirli aralıklarla adres değişikliği yapmaktadır." },
+          { question: "Supertotobet güvenilir bir platform mu?", answer: "Evet, Supertotobet lisanslı altyapısı, kullanıcı yorumları ve güvenlik önlemleriyle güvenilirliğini kanıtlamıştır." },
+          { question: "Mobil giriş nasıl yapılır?", answer: "Güncel linki mobil tarayıcınızda açarak veya mobil uygulama ile hızlı erişim sağlayabilirsiniz." },
+          { question: "VPN kullanmak gerekli mi?", answer: "Zorunlu değil ancak erişim sorunlarında kaliteli bir VPN ile güvenli bağlantı sağlanabilir." },
+          { question: "Supertotobet’te bonuslar nasıl alınır?", answer: "Kayıt sonrası promosyonlar sekmesinden dilediğiniz bonusa başvurabilirsiniz." },
+          { question: "Giriş sorunu yaşıyorum, ne yapmalıyım?", answer: "Sayfamızdaki güncel adresi kontrol edin. Gerekirse DNS ya da VPN alternatiflerini kullanabilirsiniz." },
+          { question: "Supertotobet canlı destek var mı?", answer: "Evet, haftanın her günü 7/24 hizmet veren canlı destek birimi mevcuttur." },
+          { question: "Ödeme yöntemleri neler?", answer: "Papara, banka havalesi, kripto para ve e-cüzdan yöntemleri desteklenmektedir." },
+          { question: "Hesabım kapatıldıysa nasıl geri alabilirim?", answer: "Canlı destek ile iletişime geçerek hesabınız hakkında detaylı bilgi alabilirsiniz." }
+        ],
+        highlights: [
+          { title: "Güncel Supertotobet Giriş Linki", description: "Erişim engeline takılmadan en yeni bağlantı üzerinden Supertotobet’e ulaşın." },
+          { title: "Mobil Uyumlu Erişim", description: "iOS ve Android cihazlarla tam uyumlu, hızlı ve kolay giriş." },
+          { title: "Lisanslı ve Denetlenen Altyapı", description: "Supertotobet uluslararası lisanslara sahip güvenilir bir platformdur." },
+          { title: "Yüksek Oranlı Bonuslar", description: "%100 hoş geldin bonusu ve yatırım kampanyaları sizi bekliyor." },
+          { title: "En İyi Casino Siteleri", description: "Güvenilir, lisanslı ve popüler casino sitelerine dair önerileri burada bulabilirsiniz." }
+        ]
+      }
+    },
+
     mrgambGiris: {
       title: "Mrgamb Giriş | Güncel Adres ve Hızlı Erişim 2025",
       description: "Mrgamb giriş için en güncel link ve güvenilir erişim yöntemlerini keşfedin. Bonuslar, mobil giriş ve güvenli erişim bilgileri burada!",
