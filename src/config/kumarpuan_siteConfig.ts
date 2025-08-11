@@ -43,6 +43,8 @@ export const siteConfig = {
       description: "Freespin veren casino siteleri 2025 listesi burada! Çevirimsiz freespin bonusları, bedava freespin kampanyaları ve güvenilir lisanslı platformlar bir arada.",
       canonical: "https://kumarpuan.com/",
       keywords: "freespin veren casino siteleri 2025, bedava freespin, çevirimsiz freespin, online casino bonusları, en iyi casino siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -83,6 +85,8 @@ export const siteConfig = {
       keywords: "hakkımızda, KumarPuan ekibi, freespin bonusları, casino rehberi",
       canonical: "https://kumarpuan.com/hakkimizda/",
       heading: "Hakkımızda",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "AboutPage",
       extra: {
         faq: [
@@ -106,6 +110,8 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
       schemaType: "ContactPage",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       extra: {
         faq: [
           {
@@ -128,6 +134,8 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
       schemaType: "PrivacyPolicyPage",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       extra: {
         faq: [
           {
@@ -153,6 +161,8 @@ export const siteConfig = {
       keywords: "sorumluluk reddi, yasal uyarı, KumarPuan.com, casino içerikleri",
       canonical: "https://kumarpuan.com/sorumluluk-reddi/",
       heading: "Sorumluluk Reddi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "DisclaimerPage",
       extra: {
         faq: [
@@ -178,6 +188,8 @@ export const siteConfig = {
       description: "2025 yılında freespin veren en iyi casino siteleri ve bonus fırsatlarını keşfedin. Güvenilir ve lisanslı platformların listesi burada.",
       canonical: "https://kumarpuan.com/freespin-veren-casino-siteleri-2025/",
       heading: "Freespin Veren Casino Siteleri 2025 – En Güncel Liste",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin veren casino siteleri, freespin 2025, bedava freespin",
       extra: {
@@ -212,6 +224,8 @@ export const siteConfig = {
       description: "Bedava freespin veren sitelerin listesi ve detaylı rehberi. Çevirimsiz ve avantajlı fırsatlar burada.",
       canonical: "https://kumarpuan.com/bedava-freespin-veren-casino-siteleri/",
       heading: "Bedava Freespin Veren En İyi Siteler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "bedava freespin, freespin veren siteler, casino freespin bonus",
       extra: {
@@ -241,6 +255,8 @@ export const siteConfig = {
       description: "Freespin çevirim şartları hakkında bilmeniz gerekenler. En avantajlı şartları sunan casino siteleri için rehber.",
       canonical: "https://kumarpuan.com/freespin-cevirim-sartlari/",
       heading: "Freespin Çevirim Şartları ve Stratejiler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin çevirim şartları, bonus çevrimleri",
       extra: {
@@ -270,6 +286,8 @@ export const siteConfig = {
       description: "Yeni üyelere özel freespin veren siteleri keşfedin. Kayıt sonrası avantajlı freespin fırsatları sizi bekliyor.",
       canonical: "https://kumarpuan.com/yeni-uyelere-freespin/",
       heading: "Yeni Üyelere Özel Freespin Veren Siteler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "yeni üye freespin, freespin bonus 2025",
       extra: {
@@ -299,6 +317,8 @@ export const siteConfig = {
       description: "Mobil cihazlarda freespin veren casino siteleri. iOS ve Android için optimize edilmiş platformlar.",
       canonical: "https://kumarpuan.com/mobil-freespin-siteleri/",
       heading: "Mobil Cihazlarda Freespin Veren Siteler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "mobil freespin siteleri, mobil casino freespin",
       extra: {
@@ -328,6 +348,8 @@ export const siteConfig = {
       description: "Freespin ile kazanç sağlamak için en iyi slotlar ve stratejiler. Maksimum kazanç için ipuçları.",
       canonical: "https://kumarpuan.com/freespin-ile-kazanma-taktikleri/",
       heading: "Freespin ile Kazanma Taktikleri ve Slot Seçimi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin taktikleri, freespin slot stratejileri",
       extra: {
@@ -357,6 +379,8 @@ export const siteConfig = {
       description: "Freespin bonus türlerini keşfedin: Çevirimsiz, kayıt sonrası ve promosyon bonusları hakkında bilgi alın.",
       canonical: "https://kumarpuan.com/freespin-bonus-turleri/",
       heading: "Freespin Bonus Türleri ve Avantajları",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin bonus türleri, freespin promosyonları",
       extra: {
@@ -386,6 +410,8 @@ export const siteConfig = {
       description: "Freespin veren güvenilir casino sitelerini nasıl seçersiniz? Lisans, SSL ve kullanıcı yorumlarına göre rehber.",
       canonical: "https://kumarpuan.com/guvenilir-freespin-casino-siteleri/",
       heading: "Güvenilir Freespin Casino Siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "güvenilir freespin siteleri, lisanslı freespin casino",
       extra: {
@@ -415,6 +441,8 @@ export const siteConfig = {
       description: "Freespin ve bonus kombinasyonları ile kazancınızı artırın. Hangi promosyonlar en avantajlı?",
       canonical: "https://kumarpuan.com/freespin-bonus-kombinasyonlari/",
       heading: "Freespin ve Bonus Kombinasyonları Rehberi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin bonus kombinasyonu, casino bonus stratejisi",
       extra: {
@@ -445,6 +473,8 @@ export const siteConfig = {
       keywords: "otobet giriş, otobet güncel adres, otobet mobil giriş, otobet güvenilir mi, otobet casino, otobet üyelik, otobet alternatif link, güvenilir casino siteleri, lisanslı casino",
       canonical: "https://kumarpuan.com/otobet-giris/",
       heading: "Otobet Giriş Rehberi 2025 – En Güncel Adres ve Casino Önerileri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -474,6 +504,8 @@ export const siteConfig = {
       keywords: "betpuan giriş, betpuan güncel adres, betpuan mobil giriş, betpuan casino, betpuan güvenilir mi, betpuan üyelik, betpuan bonus, betpuan alternatif link, betpuan para yatırma",
       canonical: "https://kumarpuan.com/betpuan-giris/",
       heading: "Betpuan Giriş Rehberi 2025 – %100 Güvenli Casino Deneyimi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -503,6 +535,8 @@ export const siteConfig = {
       keywords: "ngsbahis giriş, ngsbahis güncel adres, ngsbahis mobil, ngsbahis güvenilir mi, online casino siteleri, güvenilir casino siteleri, ngsbahis bonus, casino rehberi 2025",
       canonical: "https://kumarpuan.com/ngsbahis-giris/",
       heading: "Ngsbahis Giriş Rehberi – Güvenilir Casino Siteleri ile İlk Adımı Atın",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -532,6 +566,8 @@ export const siteConfig = {
       keywords: "betcio giriş, betcio güncel adres, betcio mobil giriş, betcio güvenilir mi, betcio casino, betcio üyelik, betcio bonus, betcio alternatif link, güvenilir casino siteleri",
       canonical: "https://kumarpuan.com/betcio-giris/",
       heading: "Betcio Giriş 2025 – En Güncel Bilgilerle Güvenilir Casino Erişimi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -561,6 +597,8 @@ export const siteConfig = {
       keywords: "efesbet giriş, efesbet güncel adres, efesbet mobil giriş, efesbet güvenilir mi, efesbet casino, efesbet üyelik, efesbet bonus, güvenilir casino siteleri, online casino rehberi",
       canonical: "https://kumarpuan.com/efesbet-giris/",
       heading: "Efesbet Giriş Rehberi – Güvenilir Casino Siteleri Listesi 2025",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -590,6 +628,8 @@ export const siteConfig = {
       keywords: "ladesbet giriş, ladesbet güncel adres, ladesbet mobil giriş, ladesbet güvenilir mi, ladesbet casino, ladesbet üyelik, ladesbet bonus, güvenilir casino siteleri, online casino deneyimi",
       canonical: "https://kumarpuan.com/ladesbet-giris/",
       heading: "Ladesbet Giriş Rehberi – Güvenilir ve Kesintisiz Casino Deneyimi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -619,6 +659,8 @@ export const siteConfig = {
       keywords: "supertotobet giriş, supertotobet güncel adres, supertotobet mobil giriş, supertotobet güvenilir mi, supertotobet casino, en iyi casino siteleri, güvenilir casino, supertotobet bonus",
       canonical: "https://kumarpuan.com/supertotobet-giris/",
       heading: "Supertotobet Giriş Rehberi – En İyi ve Güvenilir Casino Siteleri 2025",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -648,6 +690,8 @@ export const siteConfig = {
       keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
       canonical: "https://kumarpuan.com/mrgamb-giris/",
       heading: "Mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-10T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
