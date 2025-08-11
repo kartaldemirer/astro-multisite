@@ -1,19 +1,29 @@
 ---
-// components/Footer.astro
-import {siteConfig} from "../config/main_siteConfig";
+import { siteConfig } from "../config/main_siteConfig";
+
+// Tüm sayfaları al
+const allPages = Object.values(siteConfig.pages)
+  // Filtre: anasayfa, admin, gizli/draft sayfalar hariç
+  .filter(p => 
+    p.canonical && 
+    !p.canonical.endsWith('/') || p.canonical !== siteConfig.siteMeta.url + '/'
+  )
+  .filter(p => !p.noFooter) // İstersen siteConfig’te `noFooter` alanı ile kontrol ekleyebilirsin
+  .sort((a, b) => a.title.localeCompare(b.title, 'tr')); // alfabetik sıralama
 ---
 
 <footer class={siteConfig.theme.footer.wrapper}>
   <div class={siteConfig.theme.footer.container}>
     {siteConfig.footer.text}
-    <div>
-      <a href="/" title="Anasayfa">Ana Sayfa</a> • 
-      <a href="/hakkimizda/" title="Hakkımızda">Hakkımızda</a> • 
-      <a href="/iletisim/" title="İletişim">İletişim</a> • 
-      <a href="/gizlilik-politikasi/" title="Gizlilik Politikası">Gizlilik Politikası</a> • 
-      <a href="/sorumluluk-reddi/" title="Sorumluluk Reddi">Sorumluluk Reddi</a>
-    </div>
-    <p class="mt-4 text-xs text-gray-500">&copy; {new Date().getFullYear()} {siteConfig.siteMeta.name} — Tüm hakları saklıdır.</p>
+
+    <p class="mt-4 text-xs text-gray-500">
+      &copy; {new Date().getFullYear()} {siteConfig.siteMeta.name} — Tüm hakları saklıdır.
+    </p>
+
+    <nav class="mt-4 flex flex-wrap gap-x-2 gap-y-1 text-sm">
+      {allPages.map(page => (
+        <a href={page.canonical} title={page.title}>{page.title}</a>
+      ))}
+    </nav>
   </div>
-  
 </footer>
