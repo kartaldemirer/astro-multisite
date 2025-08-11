@@ -40,6 +40,8 @@ export const siteConfig = {
       title: "2025’in En Güvenilir Casino ve Bahis Siteleri | Güncel Üyelik Fırsatları",
       description: "En iyi lisanslı oyun platformlarını keşfedin. 2025 yılına özel bonuslar, promosyonlar ve güvenilir casino siteleri burada.",
       keywords: "online casino bonusları, 2025 casino bonus, freespin, yatırım bonusu, en iyi kumar siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       canonical: "https://kumaryeri.com",
       schemaType: "Article",
       extra: {
@@ -85,6 +87,8 @@ export const siteConfig = {
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri",
       canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       schemaType: "AboutPage",
       extra : {
         faq : [],
@@ -98,6 +102,8 @@ export const siteConfig = {
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim",
       canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       schemaType: "ContactPage",
       extra : {
         faq : [],
@@ -111,6 +117,8 @@ export const siteConfig = {
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik",
       canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       schemaType: "WebPage",
       extra : {
         faq : [],
@@ -124,6 +132,8 @@ export const siteConfig = {
       keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri",
       canonical: "https://kumaryeri.com/sorumluluk-reddi/",
       heading: "Sorumluluk Reddi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       schemaType: "WebPage",
       extra: {
         faq: [],
@@ -137,6 +147,8 @@ export const siteConfig = {
       keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
       canonical: "https://kumaryeri.com/mrgamb-giris/",
       heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-09T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [

@@ -1,3 +1,4 @@
+// generateSchemas.ts
 type FAQItem = { question: string; answer: string };
 type BreadcrumbItem = { name: string; item: string };
 type ItemListElement = { position: number; url: string; name: string; image?: string };
@@ -7,12 +8,13 @@ interface SchemaOptions {
   schemaType: "Article" | "FAQPage";
   title: string;
   description: string;
-  url: string;
+  url: string;                // sayfanın kanonik URL'si
   logoUrl: string;
   organizationName: string;
   organizationUrl: string;
   sameAs?: string[];
-  datePublished?: string;
+  datePublished?: string;     // ISO 8601
+  dateModified?: string;      // ISO 8601  << YENİ
   inLanguage?: string;
   faq?: FAQItem[];
   breadcrumbs?: BreadcrumbItem[];
@@ -29,7 +31,8 @@ export function generateSchemas({
   organizationName,
   organizationUrl,
   sameAs = [],
-  datePublished = new Date().toISOString().split("T")[0],
+  datePublished = new Date().toISOString(),
+  dateModified,                                // << YENİ
   inLanguage = "tr",
   faq,
   breadcrumbs,
@@ -38,12 +41,14 @@ export function generateSchemas({
 }: SchemaOptions) {
   const schemas: any[] = [];
 
-  // Main Article or FAQ schema
+  // Article/FAQ ana şema
   const mainSchema: any = {
     "@context": "https://schema.org",
     "@type": schemaType || "Article",
     "headline": title,
     "description": description,
+    "mainEntityOfPage": url,                   // Google tavsiyesi
+    "inLanguage": inLanguage,
     "author": {
       "@type": "Organization",
       "name": organizationName,
@@ -58,9 +63,10 @@ export function generateSchemas({
       }
     },
     "datePublished": datePublished,
-    "inLanguage": inLanguage
+    ...(dateModified ? { "dateModified": dateModified } : {}), // << YENİ
   };
 
+  // Article ise FAQ'yı "mainEntity" olarak gömebilirsin (uygulaman doğru)
   if (faq && faq.length > 0 && schemaType === "Article") {
     mainSchema.mainEntity = faq.map(f => ({
       "@type": "Question",
@@ -74,7 +80,7 @@ export function generateSchemas({
 
   schemas.push(mainSchema);
 
-  // Organization schema
+  // Organization
   schemas.push({
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -84,7 +90,7 @@ export function generateSchemas({
     ...(sameAs.length > 0 ? { sameAs } : {})
   });
 
-  // BreadcrumbList schema
+  // BreadcrumbList
   if (breadcrumbs && breadcrumbs.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
@@ -98,12 +104,12 @@ export function generateSchemas({
     });
   }
 
-  // ItemList schema
+  // ItemList
   if (itemList && itemList.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "2025'in En İyi Casino Siteleri",
+      "name": title, // sabit isim yerine sayfa başlığını kullanmak daha doğal
       "itemListElement": itemList.map(i => ({
         "@type": "ListItem",
         "position": i.position,
@@ -114,7 +120,7 @@ export function generateSchemas({
     });
   }
 
-  // WebSite schema
+  // WebSite
   schemas.push({
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -127,7 +133,7 @@ export function generateSchemas({
     }
   });
 
-  // Reviews schema with URL relation
+  // Review ilişkileri
   if (reviews && reviews.length > 0) {
     reviews.forEach(review => {
       const matchedItem = itemList?.find(item => item.name === review.name);
