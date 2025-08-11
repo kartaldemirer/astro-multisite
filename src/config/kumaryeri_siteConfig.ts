@@ -62,6 +62,8 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/",
       schemaType: "Article",
       heading: "2025’in En Güvenilir Casino ve Bahis Siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       extra: {
         faq: [
           {
@@ -116,6 +118,8 @@ export const siteConfig = {
       keywords: "hakkımızda, KumarYeri ekibi, güvenilir casino rehberi, bonus incelemeleri, 2025 casino siteleri",
       canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "AboutPage",
       extra: {
         faq: [],
@@ -129,6 +133,8 @@ export const siteConfig = {
       keywords: "iletişim, KumarYeri iletişim bilgileri, casino rehberi iletişim, müşteri desteği",
       canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "ContactPage",
       extra: {
         faq: [],
@@ -142,6 +148,8 @@ export const siteConfig = {
       keywords: "gizlilik politikası, kullanıcı verisi, çerezler, veri koruma, KumarYeri.com gizlilik, KVKK, GDPR",
       canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "WebPage",
       extra: {
         faq: [],
@@ -155,6 +163,8 @@ export const siteConfig = {
       keywords: "sorumluluk reddi, yasal uyarı, KumarYeri.com, casino içerikleri, bilgilendirme metni",
       canonical: "https://kumaryeri.com/sorumluluk-reddi/",
       heading: "Sorumluluk Reddi",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "WebPage",
       extra: {
         faq: [],
@@ -168,6 +178,8 @@ export const siteConfig = {
       keywords: "mrgamb giriş, mrgamb güncel adres, mrgamb mobil giriş, mrgamb giriş linki, mrgamb üyelik, mrgamb casino giriş, mrgamb para yatırma, mrgamb güvenilir mi, mrgamb bonus, mrgamb alternatif giriş",
       canonical: "https://kumaryeri.com/mrgamb-giris/",
       heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -199,6 +211,8 @@ export const siteConfig = {
       keywords: "freespin veren siteler 2025, çevrim şartsız freespin bonusu, bedava freespin veren casino siteleri, yatırımsız freespin bonusu 2025, en iyi freespin fırsatları, 2025 casino bonusları ve freespinler, güncel freespin promosyonları, mobil freespin veren siteler, freespin kazanma yöntemleri, ücretsiz slot dönüş bonusu",
       canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri/",
       heading: "2025’te En Çok Freespin Veren Casino Siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       extra: {
         faq: [
           { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan promosyon türüdür. Genellikle hoş geldin bonusları ile birlikte verilir." },
@@ -256,6 +270,8 @@ export const siteConfig = {
       keywords: "freespin veren siteler 2025, en çok freespin sunan casino siteleri, çevrim şartsız freespin bonusları, yatırımsız freespin kampanyaları, mobil freespin veren siteler, bedava spin bonusları 2025, Sweet Bonanza freespin fırsatları, VIP freespin avantajları, güvenilir freespin platformları, en iyi freespin promosyonları",
       canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025/",
       heading: "2025’te En Çok Freespin Veren Siteler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -289,6 +305,8 @@ export const siteConfig = {
       keywords: "güvenilir casino siteleri 2025, lisanslı casino siteleri, en güvenli bahis siteleri, 2025 online casino",
       canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025/",
       heading: "Güvenilir Casino Siteleri 2025",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -322,6 +340,8 @@ export const siteConfig = {
       keywords: "casino bonusları 2025, promosyonlar, freespin bonusları, hoş geldin bonusu, yatırım promosyonu",
       canonical: "https://kumaryeri.com/casino-bonuslari-2025/",
       heading: "2025’in En İyi Casino Bonusları ve Promosyonları",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -351,6 +371,8 @@ export const siteConfig = {
       keywords: "freespin veren casino siteleri 2025, ücretsiz spin, casino freespin promosyonu",
       canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri-2025/",
       heading: "Freespin Veren Casino Siteleri 2025",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -380,6 +402,8 @@ export const siteConfig = {
       keywords: "çevrim şartsız bonus, casino bonusu 2025, çekilebilir bonus",
       canonical: "https://kumaryeri.com/cevrimsiz-bonus-sunan-siteler/",
       heading: "Çevrim Şartsız Bonus Sunan Siteler",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -409,6 +433,8 @@ export const siteConfig = {
       keywords: "hoş geldin bonusu, casino bonusu 2025, ilk yatırım bonusu",
       canonical: "https://kumaryeri.com/hos-geldin-bonusu-casino-siteleri/",
       heading: "Hoş Geldin Bonusu Veren En Güvenilir Casino Siteleri",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -438,6 +464,8 @@ export const siteConfig = {
       keywords: "yatırım bonusu, casino promosyonları, yatırım promosyonu 2025",
       canonical: "https://kumaryeri.com/yatirim-bonusu-casino-siteleri/",
       heading: "Yatırım Bonusu Nedir ve En Çok Kazandıran Siteler Hangileri?",
+      datePublished: "2025-08-01T09:00:00Z",
+      dateModified:  "2025-08-08T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
