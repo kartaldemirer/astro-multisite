@@ -46,7 +46,7 @@ export const siteConfig = {
       keywords: "freespin veren casino siteleri 2025, bedava freespin, çevirimsiz freespin, online casino bonusları, en iyi casino siteleri",
       datePublished: "2025-08-01T09:00:00Z",
       dateModified:  "2025-08-10T14:32:00Z",
-      schemaType: "Article",
+      schemaType: "WebSite",
       extra: {
         faq: [
           {
@@ -190,7 +190,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/freespin-veren-casino-siteleri-2025/",
       heading: "Freespin Veren Casino Siteleri 2025 – En Güncel Liste",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-11T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin veren casino siteleri, freespin 2025, bedava freespin",
       extra: {

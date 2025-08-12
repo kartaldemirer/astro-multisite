@@ -1,25 +1,21 @@
 ---
 import { generateSchemas } from "../lib/generateSchemas";
+import { toIsoUtcOrNull, freezePublished } from "../lib/dateUtils";
 import { siteConfig } from "../config/kumarpuan_siteConfig";
 import "../styles/global.css";
 const { siteMeta } = siteConfig;
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-// Sayfa bazlı meta değerleri
 const { title, description, canonical, schemaType, extra, keywords } = Astro.props;
-
-// Sayfa için config değerini al
 const { pageKey } = Astro.props;
 const pageData = siteConfig.pages[pageKey] || siteConfig.pages.home;
 
-// FAQ varsa çek
+// FAQ
 const faq = pageData.extra?.faq || [];
 
-// Breadcrumb
-const breadcrumbs = [
-  { name: "Anasayfa", item: siteConfig.siteMeta.url }
-];
+// Breadcrumbs
+const breadcrumbs = [{ name: "Anasayfa", item: siteConfig.siteMeta.url }];
 if (pageData?.category) {
   breadcrumbs.push({ name: pageData.category.name, item: pageData.category.url });
 }
@@ -27,45 +23,46 @@ if (pageKey !== "home" && pageData?.heading) {
   breadcrumbs.push({ name: pageData.heading, item: pageData.canonical });
 }
 
+// ItemList & Reviews
 const itemList = siteConfig.siteMeta.recommendedSites.map(site => ({
-  position: site.position,
-  url: site.url,
-  name: site.name,
-  image: site.image
+  position: site.position, url: site.url, name: site.name, image: site.image
 }));
-
 const reviews = siteConfig.siteMeta.recommendedSites.map(site => ({
-  name: site.name,
-  ratingValue: site.ratingValue,
-  bestRating: site.bestRating
+  name: site.name, ratingValue: site.ratingValue, bestRating: site.bestRating
 }));
 
-// === YENİ: Tarihleri tek noktadan çek ===
-const datePublished = pageData.datePublished;
-const dateModified  = pageData.dateModified ?? pageData.datePublished;
+// === Tarihler: published sabit, modified gerçek olduğunda set ===
+const datePublished = freezePublished(pageData.datePublished);    // sadece geçerliyse
+const dateModifiedRaw = pageData.dateModified && pageData.dateModified !== pageData.datePublished
+  ? pageData.dateModified
+  : undefined;
+const dateModified = toIsoUtcOrNull(dateModifiedRaw);
 
-// Şemaları üret
+// Şemalar
 const schemas = generateSchemas({
   schemaType: pageData.schemaType || "Article",
   title: pageData.title,
   description: pageData.description,
   url: pageData.canonical,
-  logoUrl: pageData.logo || siteMeta.og?.image, // fallback
+  logoUrl: pageData.logo || siteMeta.og?.image,
   organizationName: siteConfig.siteMeta.name,
   organizationUrl: siteConfig.siteMeta.url,
+  sameAs: siteMeta.sameAs || [],
   faq,
   breadcrumbs,
   itemList,
   reviews,
-  // === YENİ: tarihleri geçiriyoruz ===
   datePublished,
   dateModified
 });
+
+// OG type koşullu
+const isHome = pageKey === "home";
+const ogType = isHome ? "website" : "article";
 ---
 <!DOCTYPE html>
 <html lang="tr" class="scroll-smooth">
   <head>
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRBDQQGDWY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -79,7 +76,6 @@ const schemas = generateSchemas({
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- Dynamic Meta -->
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
@@ -89,16 +85,16 @@ const schemas = generateSchemas({
     <meta name="publisher" content={siteMeta.publisher} />
 
     <!-- OpenGraph -->
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image" content={siteMeta.og.image} />
-    <!-- === YENİ: article zamanları === -->
-    <meta property="article:published_time" content={datePublished} />
-    <meta property="article:modified_time"  content={dateModified} />
+    {datePublished && <meta property="article:published_time" content={datePublished} />}
+    {dateModified && <meta property="article:modified_time"  content={dateModified} />}
+    {dateModified && <meta property="og:updated_time" content={dateModified} />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -113,19 +109,14 @@ const schemas = generateSchemas({
   <body class={siteConfig.theme.bodyClass}>
     <Header />
     <main class="max-w-3xl mx-auto px-6 py-10 flex-grow">
-      <!-- === YENİ: kullanıcıya da göster (güven + tazelik sinyali) === -->
       {pageKey !== "home" && datePublished && (
-      <p class="text-sm text-gray-400 mb-4">
-        <time datetime={datePublished}>
-          Yayın: {new Date(datePublished).toLocaleDateString('tr-TR')}
-        </time>
-        {dateModified && dateModified !== datePublished && (
-          <> · <time datetime={dateModified}>
-            Güncelleme: {new Date(dateModified).toLocaleDateString('tr-TR')}
-          </time></>
-        )}
-      </p>
-    )}
+        <p class="text-sm text-gray-400 mb-4">
+          <time datetime={datePublished}>Yayın: {new Date(datePublished).toLocaleDateString('tr-TR')}</time>
+          {dateModified && (
+            <> · <time datetime={dateModified}>Güncelleme: {new Date(dateModified).toLocaleDateString('tr-TR')}</time></>
+          )}
+        </p>
+      )}
       <slot />
     </main>
     <Footer />

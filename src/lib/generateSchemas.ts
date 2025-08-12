@@ -4,23 +4,23 @@ type BreadcrumbItem = { name: string; item: string };
 type ItemListElement = { position: number; url: string; name: string; image?: string };
 type ReviewItem = { name: string; ratingValue: string; bestRating: string };
 
-interface SchemaOptions {
-  schemaType: "Article" | "FAQPage";
+type SchemaOptions = {
+  schemaType?: string;
   title: string;
   description: string;
-  url: string;                // sayfanın kanonik URL'si
+  url: string;
   logoUrl: string;
   organizationName: string;
   organizationUrl: string;
   sameAs?: string[];
-  datePublished?: string;     // ISO 8601
-  dateModified?: string;      // ISO 8601  << YENİ
+  datePublished?: string;
+  dateModified?: string; // ❗ default kaldırıldı
   inLanguage?: string;
   faq?: FAQItem[];
   breadcrumbs?: BreadcrumbItem[];
   itemList?: ItemListElement[];
   reviews?: ReviewItem[];
-}
+};
 
 export function generateSchemas({
   schemaType,
@@ -32,7 +32,7 @@ export function generateSchemas({
   organizationUrl,
   sameAs = [],
   datePublished,
-  dateModified = new Date().toISOString(),                                // << YENİ
+  dateModified,                 // ❗ default kaldırıldı
   inLanguage = "tr",
   faq,
   breadcrumbs,
@@ -41,56 +41,50 @@ export function generateSchemas({
 }: SchemaOptions) {
   const schemas: any[] = [];
 
-  // Article/FAQ ana şema
+  // Kimlikler (entity reuse) — arama motoru tarafında ilişkilendirme netleşir
+  const websiteId = `${organizationUrl}#website`;
+  const orgId = `${organizationUrl}#org`;
+  const webPageId = `${url}#webpage`;
+
   const mainSchema: any = {
     "@context": "https://schema.org",
     "@type": schemaType || "Article",
+    "@id": webPageId,
     "headline": title,
     "description": description,
-    "mainEntityOfPage": url,                   // Google tavsiyesi
+    "mainEntityOfPage": { "@type": "WebPage", "@id": url },
+    "isPartOf": { "@id": websiteId },
     "inLanguage": inLanguage,
-    "author": {
-      "@type": "Organization",
-      "name": organizationName,
-      "url": organizationUrl
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": organizationName,
-      "logo": {
-        "@type": "ImageObject",
-        "url": logoUrl
-      }
-    },
-    "datePublished": datePublished,
-    ...(dateModified ? { "dateModified": dateModified } : {}), // << YENİ
+    "author": { "@id": orgId },
+    "publisher": { "@id": orgId },
+    ...(datePublished ? { "datePublished": datePublished } : {}),
+    ...(dateModified ? { "dateModified": dateModified } : {}),
   };
 
-  // Article ise FAQ'yı "mainEntity" olarak gömebilirsin (uygulaman doğru)
   if (faq && faq.length > 0 && schemaType === "Article") {
     mainSchema.mainEntity = faq.map(f => ({
       "@type": "Question",
       "name": f.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": f.answer
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
     }));
   }
 
   schemas.push(mainSchema);
 
-  // Organization
+  // Organization (tekil @id ile)
   schemas.push({
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": orgId,
     "name": organizationName,
     "url": organizationUrl,
-    "logo": logoUrl,
+    "logo": {
+      "@type": "ImageObject",
+      "url": logoUrl
+    },
     ...(sameAs.length > 0 ? { sameAs } : {})
   });
 
-  // BreadcrumbList
   if (breadcrumbs && breadcrumbs.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
@@ -104,12 +98,11 @@ export function generateSchemas({
     });
   }
 
-  // ItemList
   if (itemList && itemList.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": title, // sabit isim yerine sayfa başlığını kullanmak daha doğal
+      "name": title,
       "itemListElement": itemList.map(i => ({
         "@type": "ListItem",
         "position": i.position,
@@ -120,21 +113,21 @@ export function generateSchemas({
     });
   }
 
-  // WebSite
+  // WebSite (tekil @id ile)
   schemas.push({
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": websiteId,
     "name": organizationName,
     "alternateName": ["Kumar Puan", "kumarpuan"],
     "url": organizationUrl,
     "potentialAction": {
       "@type": "SearchAction",
-      "target": `${organizationUrl}/?s={search_term_string}`,
+      "target": `${organizationUrl}?s={search_term_string}`,
       "query-input": "required name=search_term_string"
     }
   });
 
-  // Review ilişkileri
   if (reviews && reviews.length > 0) {
     reviews.forEach(review => {
       const matchedItem = itemList?.find(item => item.name === review.name);
@@ -151,10 +144,7 @@ export function generateSchemas({
           "ratingValue": review.ratingValue,
           "bestRating": review.bestRating
         },
-        "author": {
-          "@type": "Organization",
-          "name": organizationName
-        }
+        "author": { "@id": orgId }
       });
     });
   }
