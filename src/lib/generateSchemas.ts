@@ -31,8 +31,8 @@ export function generateSchemas({
   organizationName,
   organizationUrl,
   sameAs = [],
-  datePublished = new Date().toISOString(),
-  dateModified,                                // << YENİ
+  datePublished,
+  dateModified = new Date().toISOString(),                                // << YENİ
   inLanguage = "tr",
   faq,
   breadcrumbs,
@@ -125,6 +125,7 @@ export function generateSchemas({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": organizationName,
+    "alternateName": ["Kumar Puan", "kumarpuan"],
     "url": organizationUrl,
     "potentialAction": {
       "@type": "SearchAction",
