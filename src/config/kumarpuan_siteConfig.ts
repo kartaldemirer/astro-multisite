@@ -14,14 +14,14 @@ export const siteConfig = {
       title: "Freespin Veren Casino Siteleri 2025 | KumarPuan",
       description: "En iyi freespin veren casino sitelerini keşfedin. Güncel bonuslar ve lisanslı platformlar bir arada.",
       url: "https://kumarpuan.com/",
-      image: "https://kumarpuan.com/assets/kumarpuan/og-image.jpg", // Tam URL yaptık
+      image: "https://kumarpuan.com/freespin-veren-siteler-2025.jpg", // Tam URL yaptık
       type: "website"
     },
     twitter: {
       card: "summary_large_image",
       title: "Freespin Veren Casino Siteleri 2025 | KumarPuan",
       description: "En güncel freespin veren casino siteleri listesi. Bonus fırsatları ve güvenilir platformlar.",
-      image: "https://kumarpuan.com/assets/kumarpuan/twitter-card.jpg" // Tam URL yaptık
+      image: "https://kumarpuan.com/social-banner.jpg" // Tam URL yaptık
     },
     author: "KumarPuan.com",
     publisher: "Kumar Puan",
