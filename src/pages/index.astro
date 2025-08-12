@@ -6,11 +6,12 @@ import Highlights from "../components/Highlights.astro"
 import PromoIntro from "../components/PromoIntro.astro"
 import SiteDirectory from "../components/SiteDirectory.astro"
 import FAQ from "../components/Faq.astro"
+import freespinVereSiteler2025 from '../assets/kumarpuan/freespin-cevirim.jpg';
 
 const page = siteConfig.pages.home;
 ---
 
-<BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} pageKey="home">
+<BaseLayout title={page.title} keywords={page.keywords} description={page.description} canonical={page.canonical} extra={page.extra} image={freespinVereSiteler2025} pageKey="home">
   <Hero />
   <PromoIntro />
   <SiteDirectory />
