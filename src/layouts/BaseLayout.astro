@@ -1,46 +1,44 @@
 ---
 import { generateSchemas } from "../lib/generateSchemas";
-import { toIsoUtcOrNull, freezePublished } from "../lib/dateUtils";
 import { siteConfig } from "../config/kumarpuan_siteConfig";
 import "../styles/global.css";
 const { siteMeta } = siteConfig;
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title, description, canonical, schemaType, extra, keywords } = Astro.props;
+// image prop'u string veya { src, width?, height? } olabilir
+type ImgLike = string | { src: string; width?: number; height?: number } | undefined;
+
+const { title, description, canonical, schemaType, extra, keywords, image } = Astro.props as {
+  title: string; description: string; canonical: string; schemaType?: string;
+  extra?: any; keywords?: string; image?: ImgLike;
+};
+
 const { pageKey } = Astro.props;
 const pageData = siteConfig.pages[pageKey] || siteConfig.pages.home;
 
-// FAQ
-const faq = pageData.extra?.faq || [];
-
-// Breadcrumbs
-const breadcrumbs = [{ name: "Anasayfa", item: siteConfig.siteMeta.url }];
-if (pageData?.category) {
-  breadcrumbs.push({ name: pageData.category.name, item: pageData.category.url });
-}
-if (pageKey !== "home" && pageData?.heading) {
-  breadcrumbs.push({ name: pageData.heading, item: pageData.canonical });
+function toAbs(urlLike?: string) {
+  if (!urlLike) return undefined;
+  return urlLike.startsWith("http") ? urlLike : new URL(urlLike, Astro.site).href;
 }
 
-// ItemList & Reviews
-const itemList = siteConfig.siteMeta.recommendedSites.map(site => ({
-  position: site.position, url: site.url, name: site.name, image: site.image
-}));
-const reviews = siteConfig.siteMeta.recommendedSites.map(site => ({
-  name: site.name, ratingValue: site.ratingValue, bestRating: site.bestRating
-}));
+// sayfa görseli önceliği: prop -> pageData.image -> site genel og.image
+const imgCandidate: ImgLike = image ?? (pageData.image as ImgLike) ?? (siteMeta.og?.image as ImgLike);
 
-// === Tarihler: published sabit, modified gerçek olduğunda set ===
-const datePublished = freezePublished(pageData.datePublished);    // sadece geçerliyse
-const dateModifiedRaw = pageData.dateModified && pageData.dateModified !== pageData.datePublished
-  ? pageData.dateModified
-  : undefined;
-const dateModified = toIsoUtcOrNull(dateModifiedRaw);
+// normalize et (string veya obje)
+const imgSrcRel = typeof imgCandidate === "string" ? imgCandidate : imgCandidate?.src;
+const imgW = typeof imgCandidate === "object" ? imgCandidate?.width : undefined;
+const imgH = typeof imgCandidate === "object" ? imgCandidate?.height : undefined;
 
-// Şemalar
+const pageImageAbs = toAbs(imgSrcRel);
+
+// tarihler
+const datePublished = pageData.datePublished;
+const dateModified  = pageData.dateModified ?? pageData.datePublished;
+
+// şemalar
 const schemas = generateSchemas({
-  schemaType: pageData.schemaType || "Article",
+  schemaType: (pageData.schemaType || "Article") as "Article" | "FAQPage",
   title: pageData.title,
   description: pageData.description,
   url: pageData.canonical,
@@ -48,15 +46,25 @@ const schemas = generateSchemas({
   organizationName: siteConfig.siteMeta.name,
   organizationUrl: siteConfig.siteMeta.url,
   sameAs: siteMeta.sameAs || [],
-  faq,
-  breadcrumbs,
-  itemList,
-  reviews,
+  faq: pageData.extra?.faq || [],
+  breadcrumbs: [
+    { name: "Anasayfa", item: siteConfig.siteMeta.url },
+    ...(pageKey !== "home" && pageData?.heading ? [{ name: pageData.heading, item: pageData.canonical }] : [])
+  ],
+  // liste / review kısımların varsa aynen ekle
+  itemList: siteConfig.siteMeta.recommendedSites?.map((s, i) => ({
+    position: s.position ?? i + 1, url: s.url, name: s.name, image: s.image
+  })) || [],
+  reviews: siteConfig.siteMeta.recommendedSites?.map(s => ({
+    name: s.name, ratingValue: s.ratingValue, bestRating: s.bestRating
+  })) || [],
   datePublished,
-  dateModified
+  dateModified,
+  imageUrl: pageImageAbs,        // ✅ önemli
+  imageWidth: imgW,
+  imageHeight: imgH
 });
 
-// OG type koşullu
 const isHome = pageKey === "home";
 const ogType = isHome ? "website" : "article";
 ---
@@ -89,18 +97,18 @@ const ogType = isHome ? "website" : "article";
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image" content={siteMeta.og.image} />
+    {pageImageAbs && <meta property="og:image" content={pageImageAbs} />}
+    {imgW && <meta property="og:image:width" content={String(imgW)} />}
+    {imgH && <meta property="og:image:height" content={String(imgH)} />}
+
     {datePublished && <meta property="article:published_time" content={datePublished} />}
     {dateModified && <meta property="article:modified_time"  content={dateModified} />}
     {dateModified && <meta property="og:updated_time" content={dateModified} />}
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={siteMeta.twitter.image} />
+    {pageImageAbs && <meta name="twitter:image" content={pageImageAbs} />}   
 
     {schemas.map(schema => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
