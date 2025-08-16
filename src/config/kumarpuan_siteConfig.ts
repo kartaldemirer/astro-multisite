@@ -45,7 +45,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/",
       keywords: "freespin veren casino siteleri 2025, bedava freespin, çevirimsiz freespin, online casino bonusları, en iyi casino siteleri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "WebSite",
       extra: {
         faq: [
@@ -87,7 +87,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/hakkimizda/",
       heading: "Hakkımızda",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "AboutPage",
       extra: {
         faq: [
@@ -112,7 +112,7 @@ export const siteConfig = {
       heading: "Bizimle İletişime Geçin",
       schemaType: "ContactPage",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       extra: {
         faq: [
           {
@@ -136,7 +136,7 @@ export const siteConfig = {
       heading: "Gizlilik Politikası",
       schemaType: "PrivacyPolicyPage",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       extra: {
         faq: [
           {
@@ -163,7 +163,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/sorumluluk-reddi/",
       heading: "Sorumluluk Reddi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "DisclaimerPage",
       extra: {
         faq: [
@@ -226,7 +226,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/bedava-freespin-veren-casino-siteleri/",
       heading: "Bedava Freespin Veren En İyi Siteler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "bedava freespin, freespin veren siteler, casino freespin bonus",
       extra: {
@@ -257,7 +257,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/freespin-cevirim-sartlari/",
       heading: "Freespin Çevirim Şartları ve Stratejiler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin çevirim şartları, bonus çevrimleri",
       extra: {
@@ -288,7 +288,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/yeni-uyelere-freespin/",
       heading: "Yeni Üyelere Özel Freespin Veren Siteler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "yeni üye freespin, freespin bonus 2025",
       extra: {
@@ -319,7 +319,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/mobil-freespin-siteleri/",
       heading: "Mobil Cihazlarda Freespin Veren Siteler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "mobil freespin siteleri, mobil casino freespin",
       extra: {
@@ -350,7 +350,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/freespin-ile-kazanma-taktikleri/",
       heading: "Freespin ile Kazanma Taktikleri ve Slot Seçimi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin taktikleri, freespin slot stratejileri",
       extra: {
@@ -381,7 +381,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/freespin-bonus-turleri/",
       heading: "Freespin Bonus Türleri ve Avantajları",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin bonus türleri, freespin promosyonları",
       extra: {
@@ -412,7 +412,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/guvenilir-freespin-casino-siteleri/",
       heading: "Güvenilir Freespin Casino Siteleri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "güvenilir freespin siteleri, lisanslı freespin casino",
       extra: {
@@ -443,7 +443,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/freespin-bonus-kombinasyonlari/",
       heading: "Freespin ve Bonus Kombinasyonları Rehberi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       keywords: "freespin bonus kombinasyonu, casino bonus stratejisi",
       extra: {
@@ -475,7 +475,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/otobet-giris/",
       heading: "Otobet Giriş Rehberi 2025 – En Güncel Adres ve Casino Önerileri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -506,7 +506,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/betpuan-giris/",
       heading: "Betpuan Giriş Rehberi 2025 – %100 Güvenli Casino Deneyimi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -537,7 +537,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/ngsbahis-giris/",
       heading: "Ngsbahis Giriş Rehberi – Güvenilir Casino Siteleri ile İlk Adımı Atın",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -568,7 +568,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/betcio-giris/",
       heading: "Betcio Giriş 2025 – En Güncel Bilgilerle Güvenilir Casino Erişimi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -599,7 +599,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/efesbet-giris/",
       heading: "Efesbet Giriş Rehberi – Güvenilir Casino Siteleri Listesi 2025",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -630,7 +630,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/ladesbet-giris/",
       heading: "Ladesbet Giriş Rehberi – Güvenilir ve Kesintisiz Casino Deneyimi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -661,7 +661,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/supertotobet-giris/",
       heading: "Supertotobet Giriş Rehberi – En İyi ve Güvenilir Casino Siteleri 2025",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -692,7 +692,7 @@ export const siteConfig = {
       canonical: "https://kumarpuan.com/mrgamb-giris/",
       heading: "Mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-10T14:32:00Z",
+      dateModified:  "2025-08-15T14:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
