@@ -556,6 +556,7 @@ export const siteConfig = {
       titleClass: "text-yellow-400",
       descriptionClass: "text-gray-300",
       brandClass: "text-yellow-500",
+      border: "border-yellow-500",
       highlightClass: "text-yellow-400 font-bold",
       ctaClass: "inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold py-3 px-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 text-lg",
     },

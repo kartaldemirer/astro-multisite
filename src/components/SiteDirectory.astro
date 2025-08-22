@@ -27,7 +27,7 @@ try {
 ---
 
 <section id="bonuslar" class={`flex flex-col gap-6 scroll-mt-20 mt-16`}>
-  <h2 class={`text-2xl font-bold ${siteConfig.bonusSites.titleColor} border-b ${siteConfig.bonusSites.borderColor} pb-2`}>
+  <h2 class={`text-2xl font-bold ${siteConfig.theme.promoIntro.titleClass} border-b ${siteConfig.theme.promoIntro.border} pb-2`}>
     {siteConfig.bonusSites.title}
   </h2>
 
@@ -83,7 +83,7 @@ try {
             title={`${site.name} sitesine git`}
             class={`inline-block text-sm sm:text-base font-medium hover:underline ${siteConfig.theme.text.highlight}`}
           >
-            Detayları Gör
+            {`${site.name} Güncel Giriş Linki`}
           </a>
         </div>
 
