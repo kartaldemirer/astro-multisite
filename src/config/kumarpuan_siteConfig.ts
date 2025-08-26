@@ -753,7 +753,7 @@ export const siteConfig = {
   },
 
   theme: {
-    bodyClass: "min-h-screen flex flex-col bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a] text-white font-sans",
+    bodyClass: "min-h-screen flex flex-col bg-gradient-to-r from-[#0a0a23] to-[#222] text-white font-sans",
 
     header: "w-full px-6 py-4 border-b border-gray-800",
 
