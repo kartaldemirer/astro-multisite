@@ -63,7 +63,7 @@ export const siteConfig = {
       schemaType: "Article",
       heading: "2025’in En Güvenilir Casino ve Bahis Siteleri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       extra: {
         faq: [
           {
@@ -119,7 +119,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/hakkimizda/",
       heading: "Hakkımızda",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "AboutPage",
       extra: {
         faq: [],
@@ -134,7 +134,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/iletisim/",
       heading: "Bizimle İletişime Geçin",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "ContactPage",
       extra: {
         faq: [],
@@ -149,7 +149,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/gizlilik-politikasi/",
       heading: "Gizlilik Politikası",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "WebPage",
       extra: {
         faq: [],
@@ -164,7 +164,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/sorumluluk-reddi/",
       heading: "Sorumluluk Reddi",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "WebPage",
       extra: {
         faq: [],
@@ -179,7 +179,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/mrgamb-giris/",
       heading: "mrgamb Giriş 2025 – Güncel Adres ve Güvenli Bağlantılar",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -212,7 +212,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri/",
       heading: "2025’te En Çok Freespin Veren Casino Siteleri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       extra: {
         faq: [
           { question: "Freespin nedir ve nasıl çalışır?", answer: "Freespin, slot oyunlarında ücretsiz dönüş yapmanızı sağlayan promosyon türüdür. Genellikle hoş geldin bonusları ile birlikte verilir." },
@@ -271,7 +271,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/en-cok-freespin-veren-siteler-2025/",
       heading: "2025’te En Çok Freespin Veren Siteler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -306,7 +306,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/guvenilir-casino-siteleri-2025/",
       heading: "Güvenilir Casino Siteleri 2025",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -341,7 +341,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/casino-bonuslari-2025/",
       heading: "2025’in En İyi Casino Bonusları ve Promosyonları",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -372,7 +372,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/freespin-veren-casino-siteleri-2025/",
       heading: "Freespin Veren Casino Siteleri 2025",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -403,7 +403,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/cevrimsiz-bonus-sunan-siteler/",
       heading: "Çevrim Şartsız Bonus Sunan Siteler",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -434,7 +434,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/hos-geldin-bonusu-casino-siteleri/",
       heading: "Hoş Geldin Bonusu Veren En Güvenilir Casino Siteleri",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
@@ -465,7 +465,7 @@ export const siteConfig = {
       canonical: "https://kumaryeri.com/yatirim-bonusu-casino-siteleri/",
       heading: "Yatırım Bonusu Nedir ve En Çok Kazandıran Siteler Hangileri?",
       datePublished: "2025-08-01T09:00:00Z",
-      dateModified:  "2025-08-08T14:32:00Z",
+      dateModified:  "2025-08-26T09:32:00Z",
       schemaType: "Article",
       extra: {
         faq: [
