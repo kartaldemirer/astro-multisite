@@ -828,6 +828,7 @@ export const siteConfig = {
       { name: "Ana Sayfa", href: "/" },
       { name: "Freespin Siteleri", href: "/freespin-veren-casino-siteleri-2025/" },
       { name: "Bedava Freespin", href: "/bedava-freespin-veren-casino-siteleri/" },
+      { name: "MrGamp", href: "https://affmrgamb1.com/?modal=register&ref=kumarpuan" },
       { name: "İletişim", href: "/iletisim/" }
     ],
   },
