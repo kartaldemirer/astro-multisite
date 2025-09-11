@@ -567,6 +567,7 @@ export const siteConfig = {
       { name: "Ana Sayfa", href: "/" },
       { name: "Bonuslar", href: "/#bonuslar" },
       { name: "Hakkımızda", href: "/hakkimizda/" },
+      { name: "MrGamb", href: "https://affmrgamb1.com/?modal=register&ref=kumarpuan" },
       { name: "İletişim", href: "/iletisim/" }
     ],
   },
